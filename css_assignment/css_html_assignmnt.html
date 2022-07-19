@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google icon  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        p {
+            line-height: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        ul.a {
+            list-style-type: upper-alpha;
+            ;
+        }
+
+        ul.b {
+            list-style-type: lower-alpha;
+            ;
+        }
+
+        .selector {
+            height: 40px;
+        }
+
+        .cards {
+            border-radius: 20px 20px 0 0 ;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .p {
+            line-height: 1;
+            width: 80%;
+            text-align: center;
+        }
+
+       
+
+        .card__image {
+            width: 474px;
+            display: block;
+            border-radius: 20px 20px 0 0 ;
+            /* border-top: 2px solid #333333; */
+            /* border-right: 2px solid #333333; */
+            /* border-left: 2px solid #333333; */
+        }
+
+        .card__content {
+            line-height: 1.5;
+            font-size: 0.9em;
+            padding: 15px;
+            background: #fafafa;
+            /* border-right: 2px solid #333333; */
+            /* border-left: 2px solid #333333; */
+        }
+
+        .card__content>p:first-of-type {
+            margin-top: 0;
+        }
+
+        .card__content>p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .card__info {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #555555;
+            background: #eeeeee;
+            font-size: 0.8em;
+            border-top: 2px solid #333333;
+            border-bottom: 2px solid #333333;
+            border-right: 2px solid #333333;
+            border-left: 2px solid #333333;
+        }
+
+        .card__info i {
+            font-size: 0.9em;
+            margin-right: 8px;
+        }
+
+        .card__link {
+            color: #64968c;
+            text-decoration: none;
+        }
+
+        .card__link:hover {
+            text-decoration: underline;
+        }
+
+        .card:hover {
+            box-shadow: 5px 5px 16px 0 rgba(0, 0, 0, 0.6);
+            transform: scale(1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 align="center">ASSIGNMENT</h1>
+
+    <div>
+        <ol>
+            <li>
+                <h3>What are the main benefits of using CSS?</h3>
+            </li>
+            <p><strong>Answere:</strong>
+            <ul>
+                <li> CSS stands for Cascading Style Sheets</li>
+                <li>It reduces the file transfer size.</li>
+                <li>The main advantage of CSS is that style is applied consistently across variety of sites. One
+                    instruction can control several areas which is advantageous</li>
+                <li>Some of the advantages to using external style sheets include that you can control the look and feel
+                    of several documents at once.</li>
+                <li>You can easily group your styles to be more efficient. All the grouping methods that are available
+                    to CSS can be used in external style sheets, and this provides you with more control and flexibility
+                    on your pages.</li>
+                <li>Every time you create a new CSS file and link or import it into your document, that requires the Web
+                    browser to make another call to the Web server to get the file. And server calls slow down page load
+                    times.</li>
+                <li>CSS saves time: You can write CSS once and then reuse the same sheet in multiple HTML pages.</li>
+                <li>Easy maintenance: To make a global change,simply change the style,and all elements in all the web
+                    pages will be updated automatically.</li>
+                <li>Global web standards: Now HTML attributes are being deprecated and it is being recommended to use
+                    CSS. ...</li>
+            </ul>
+            </p>
+
+            <li>
+                <h3>What are the disadvantages of CSS? </h3>
+            </li>
+            <p><strong>Answere:</strong> &#126; There are a few downsides while using CSS. One must know these
+                disadvantages so that he or she is aware and takes care of them while designing a website
+            <ul>
+                <li style="list-style-type: upper-alpha;">Confusion due to many CSS level</li>
+                <ul>
+                    <li>Beginners are more vulnerable to this issue. They might get confused while opting to learn CSS
+                        as there are many levels of CSS such as CSS2, CSS3, etc.</li>
+                </ul>
+
+                <li style="list-style-type: upper-alpha;">Cross-Browser Issues</li>
+                <ul>
+                    <li>Different browsers work differently. So, you have to check that changes implemented in the
+                        website via CSS codes are reflected properly among all the browsers.</li>
+                </ul>
+
+                <li style="list-style-type: upper-alpha;">Security Issues</li>
+                <ul>
+                    <li>Security is important in today’s world driven by technology and data. One of the major
+                        disadvantages of CSS is that it has limited security.</li>
+                </ul>
+
+                <li style="list-style-type: upper-alpha;">Extra Work for Developers</li>
+                <ul>
+                    <li>Design services are required to consider and test all CSS codes across different browsers for
+                        compatibility. Due to developers testing compatibility for different browsers, their workload
+                        increases.</li>
+                </ul>
+            </ul>
+            </p>
+
+            <li>
+                <h3>What is the difference between CSS2 and CSS3?</h3>
+            </li>
+            <p><strong>Answere:</strong>
+            <table border="2" cellpadding="5" cellspacing="1" bordercolor="gray">
+                <caption></caption>
+                <thead>
+                    <th colspan="3">Difference between CSS2 and CSS3</th>
+                </thead>
+                <tfoot>
+                    <th colspan="3">CSS2 / CSS3</th>
+                </tfoot>
+                <thead>
+                    <tr>
+                        <th>S. No.</th>
+                        <th>CSS2</th>
+                        <th>CSS3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>CSS is capable of positioning texts and objects. </td>
+                        <td>On the other hand, CSS3 is capable of making the web page more attractive and takes less
+                            time to create. CSS3 is backward compatible with CSS.</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Responsive designing is not supported in CSS</td>
+                        <td>CSS3 is the latest version, hence it supports responsive design.</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>CSS cannot be split into modules.</td>
+                        <td>Whereas CSS3 can be breakdown into modules.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Using CSS, we cannot build 3D animation and transformation.</td>
+                        <td>But in CSS3 we can perform all kinds of animation and transformations as it supports
+                            animation and 3D transformations.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>CSS is very slow as compared to CSS3</td>
+                        <td>Whereas CSS3 is faster than CSS.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>In CSS we have set of standard colors and it uses basic color schemes only.</td>
+                        <td>Whereas CSS3 has a good collection of HSL RGBA, HSLA, and gradient colors.</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>In CSS we can only use single text blocks.</td>
+                        <td>But in CSS3 we can use multi-column text blocks</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>CSS does not support media queries.</td>
+                        <td>But CSS3 supports media queries</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>CSS codes are not supported by all types of modern browsers.</td>
+                        <td>Being the latest version, CSS3 codes are supported by all modern browsers.</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>In CSS, designers have to manually develop rounded gradients and corners.</td>
+                        <td>But CSS3 provides advanced codes for setting rounded gradients and corners</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>There is no special effect like shadowing text, text animation, etc. in CSS. The animation
+                            was coded in jQuery and JavaScript.</td>
+                        <td>CSS3 has many advance features like text shadows, visual effects, and a wide range of font
+                            styles and colors.</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>In CSS, the user can add background colors to list items and lists, set images for the list
+                            items, etc.</td>
+                        <td>Whereas CSS3 list has a special display property defined in it. Even list items also have
+                            counter reset properties.</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>CSS was developed in 1996.</td>
+                        <td>CSS3 is the latest version of CSS and was released in 2005.</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>CSS is memory intensive.</td>
+                        <td>CSS3 memory consumption is low as compared to CSS.</td>
+                    </tr>
+
+
+
+                </tbody>
+            </table>
+            </p>
+
+            <li>
+                <h3>Name a few CSS style components?</h3>
+            </li>
+            <p><strong>Answere:</strong>
+                The components of css style are:
+            <ol style="list-style-type: upper-roman;">
+                <li>Selecter:HTML element name, id name or element name that is target.</li>
+                <li>Property:It's like an attribute such as background color,font-size,position,text-align,color,border
+                    etc.</li>
+                <li>Values:which defines property or values allocate for properties.</li>
+            </ol>
+            </p>
+
+            <li>
+                <h3>What do you understand by CSS opacity?</h3>
+            </li>
+            <p><q>The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind
+                    an element is hidden, and is the opposite of transparency.</q>
+            <p> The opacity-level describes the transparency-level, where 1 is not transparent at all, 0.5 is 50%
+                see-through, and 0 is completely transparent.</p>
+            <p>That's where the CSS opacity property comes in. The CSS opacity property is used to specify the
+                transparency of a web element.</p>
+            <ol>
+                <li>Here's the syntax for the CSS opacity property:</li>
+                <ul>
+                    <li>img{ opacity: 0.5}</li>
+                </ul>
+            </ol>
+            </p>
+
+            <li>
+                <h3>How can the background color of an element be changed? </h3>
+            </li>
+            <p><strong>Answere:</strong>
+            <ol>
+                <li>The default background color of a div is transparent. So if you do not specify the background-color
+                    of a div, it will display that of its parent element.</li>
+                <li>Changing the background color of div:-</li>
+                <img src="images/backColor.jpg" height="90px" alt="">
+                <li>Without any styling, this will translate to the following visually:-</li>
+                <img src="images/withoutColor.jpg" height="80px" alt="">
+                <li>Let's change the background color of the divs by adding styles to the classes. You can follow along
+                    by trying the examples in an HTML file.</li>
+                <img src="images/color.jpg" height="300px" width="800px" alt="">
+                <li>This will result in the following:-</li>
+                <img src="images/result.jpg" height="80px" alt="">
+            </ol>
+            </p>
+
+            <li>
+                <h3>How can image repetition of the backup be controlled?</h3>
+            </li>
+            <p><strong>Answere:</strong>
+            <ul type='square'>
+                <li>To control the repetition of an image in the background, use the background-repeat property. You can
+                    use no-repeat value for the background-repeat property if you do not want to repeat an image, in
+                    this case, the image will display only once</li>
+                <li> <strong>Example</strong>You can try to run the following code to learn how to work with the
+                    background-repeat property:</li>
+                <img src="images/imagesRepeat.jpg" alt="">
+            </ul>
+            </p>
+
+            <li>
+                <h3>What is the use of the background-position property?</h3>
+            </li>
+            <p><strong>Answere:</strong>
+            <ul type="square">
+                <li>The background-position property in CSS is mainly used to sets the initial position for the
+                    background image ie., it is used to set an image at a certain position. The position that is
+                    relative to the positioning layer, can be set by using the background-origin property.</li>
+                <ul type="disc">
+                    <li><strong>Syntax</strong></li>
+                    <img src="images/syntaxProperty.jpg" height="30px" alt="">
+                </ul>
+            </ul>
+            <ul type="square">
+                <li><strong>Note:</strong>The background-image is placed default to the top-left corner of an element
+                    with a repetition on both horizontally & vertically.</li>
+                <li><strong>Property values:</strong></li>
+                <ul style="list-style-type: upper-alpha;">
+                    <li> <strong>background-position: left top;</strong> This property is used to set the image at the
+                        left top.</li>
+
+                    <li><strong>background-position: left center;</strong> This property is used to set the image at the
+                        left center.</li>
+
+                    <li><strong>background-position: left bottom;</strong>This property is used to set the image at the
+                        left bottom.</li>
+
+                    <li><strong>background-position: center top;</strong> This property is used to set the image at the
+                        center top position.</li>
+
+                    <li><strong>background-position: center center;</strong>This property is used to set the image at
+                        the center center position.</li>
+
+                    <li><strong>background-position: center bottom;</strong> This property is used to set the image at
+                        the center bottom position.</li>
+
+                    <li><strong>background-position: right top;</strong>This property is used to set the image at the
+                        right top position.</li>
+
+                    <li><strong>background-position: right center;</strong>This property is used to set the image at the
+                        right center position.</li>
+
+                    <li><strong>background-position: right bottom;</strong>This property is used to set the image at the
+                        right bottom position.</li>
+                </ul>
+            </ul>
+            </p>
+
+            <li>
+                <h3>Which property controls the image scroll in the background?
+                </h3>
+            </li>
+            <p><strong>Answere:</strong>
+            <ul type="square">
+                <li>To set the scrolling of an image in the background, use the background-attachment property.</li>
+                <li>Learn how to work with the background-attachment property:</li>
+                <img src="images/backgroud_attach.jpg" width="500px" alt="">
+            </ul>
+            </p>
+
+            <li>
+                <h3>Why should background and color be used as separate properties? </h3>
+            </li>
+            <p><strong>Answere:</strong>
+            <ul type="square">
+                <li>This is done with mainly two purposes:</li>
+                <ol>
+                    <li>Background property, which is complex in itself, becomes all the more complex with color.</li>
+                    <li>Color is an in-built property while the background is not one.</li>
+                </ol>
+                <li> The main difference between background and Background-color CSS is that the CSS background property
+                    is the shorthand property of all background properties. At the same time, the background-color is
+                    the property that is used to specify the background color.</li>
+            </ul>
+            </p>
+            <li>
+                <h3>How to center block elements using CSS1? </h3>
+            </li>
+            <p><strong>Answere</strong>
+            <ul type="square">
+                <li><b>Note</b>:We can see that the “text-align : center” is not centering the block elements. They are
+                    only centering the non-block or inline-block elements.</li>
+                <li> <b>Center block elements using margin property</b> : We need to specify the margin from left and
+                    right such that it looks centered. We do not need to do this manually, we have one property value
+                    “auto” which will automatically set the margin such that our block element is placed in the center.
+                    Use the below CSS property to center your block element.
+                </li>
+                <img src="images/text-center.jpg" width="500px" alt="">
+                <img title="result of text center" src="images/result_text_center.jpg" width="700px" height="200px"
+                    style="float: right; padding: 50px;" alt="">
+            </ul>
+            </p>
+
+            <li>
+                <h3>How to maintain the CSS specifications?</h3>
+            </li>
+            <p><strong>Answere</strong>
+            <ul type="square">
+                <li>Keep styles of components (pages, layouts) in isolation all the time. Keep the same name across the
+                    javascript file name, component name, style file name, and style class name. These simple rules will
+                    make your system effectively maintain and scale.</li>
+                <li>
+                    I'll cover one of the ways how CSS maintenance can be achieved. Don't take it as a single right way
+                    of doing it, I'm only going to share which approach works for me and is proven to be good scaled and
+                    shared between several projects. <br>
+                    Before diving into details let's have a look at this picture and see how several large UI products
+                    can be built inside of the single organization. They use custom components and share them between
+                    products, to give them the same look and feel and gain performance in development, as problems have
+                    to be solved only once and can be reused across products.
+                </li>
+                <li>The Specification defines how CSS properties should be implemented by browser vendors along with
+                    detailed algorithms, code samples and tabular information.</li>
+                <li>The Specification also include:</li>
+                <ol>
+                    <li>The syntax and data types of the language</li>
+                    <li>Detailed explanation on CSS Selectors</li>
+                    <li>How you can assign values to properties</li>
+                    <li>The Cascade (the "C" in CSS)</li>
+                    <li>How inheritance works</li>
+                    <li>The Box Model e.t.c</li>
+                </ol>
+            </ul>
+            </p>
+
+            <li>
+                <h3>What are the ways to integrate CSS as a web page? </h3>
+            </li>
+            <p><strong>Answere</strong>
+            <ul type="square">
+                <li>There are 4 ways of adding CSS to a webpage:</li>
+                <ol>
+                    <li>Inline style</li>
+                    <li>Embed into the head of your document</li>
+                    <li>Link to an external CSS file</li>
+                    <li>Import CSS file</li>
+                </ol>
+            </ul>
+            <ol>
+                <li>Inline Styles:</li>
+                <ul>
+                    <li>Inline styles, style sheet information is applied directly to the HTML element. Instead of
+                        defining the style once, then applying the style against all instances of an element (say the <
+                            p> tag), you add the style directly to the specific element you want the style to apply to.
+                    </li>
+                    <li>For Example:</li>
+                    <img src="images/inline_css.jpg" width="500px" alt="">
+                    <img title="output Red Inline css" src="images/inline_result.jpg" width="500px"
+                        style="padding: 20px; margin:15px;" alt="">
+                    <li>Adding inline styles all over a website can make it much more difficult to maintain. A small
+                        change can become a major undertaking if the style has been applied to many pages across the
+                        site.</li>
+                </ul>
+                <li>Embedded Styles:</li>
+                <ul>
+                    <li>You add all CSS information to one part of the document (usually the top). This allows you to
+                        style any element on the page from a single place. You do this by embedding the CSS information
+                        within tags in the of your document</li>
+                </ul>
+                <li>External Styles</li>
+                <ul>
+                    <li>External style sheets are the most common method of applying styles to a website. Most modern
+                        websites use an external stylesheet to apply site-wide styles to the whole website.</li>
+                    <li>To add an external stylesheet to a web page, use the
+                        <link> tag, providing the URL of the style sheet in the href attribute, as well as
+                        rel="stylesheet".
+                    </li>
+                </ul>
+                <li>Import Styles:</li>
+                <ul>
+                    <li>We can also use the CSS @import rule to import an external style sheet.</li>
+                    <li>Example:</li>
+                    <img src="images/import.jpg" width="450px" alt="">
+                    <img src="images/import_style.jpg" width="400px" style="padding:20px; margin:10px;" alt="">
+                    <li>This time we use the @import rule to import the style sheet.</li>
+                </ul>
+            </ol>
+            </p>
+
+            <li>
+                <h3>What is embedded style sheets</h3>
+            </li>
+            <p><strong>Answere</strong>
+            <ul>
+                <li>Embedded Styles:</li>
+                <ul>
+                    <li>You add all CSS information to one part of the document (usually the top). This allows you to
+                        style any element on the page from a single place. You do this by embedding the CSS information
+                        within tags in the of your document</li>
+                    <li>For Example:</li>
+                    <img src="images/EmbeddedStyle.jpg" width="500px" alt="">
+                    <img src="images/Embedded_styles.jpg" width="450px" style="padding: 20px; margin:80px;" alt="">
+                </ul>
+            </ul>
+            </p>
+
+            <li>
+                <h3>What are the external style sheets? </h3>
+            </li>
+            <p><Strong>Answere</Strong>
+            <ul>
+                <li>External Styles</li>
+                <ul>
+                    <li>External style sheets are the most common method of applying styles to a website. Most modern
+                        websites use an external stylesheet to apply site-wide styles to the whole website.</li>
+                    <li>To add an external stylesheet to a web page, use the
+                        <link> tag, providing the URL of the style sheet in the href attribute, as well as
+                        rel="stylesheet".
+                    </li>
+                    <li>For Example:</li>
+                    <img src="images/external_style.jpg" width="500px" alt="">
+                    <img src="images/external_css.jpg" width="450px" style="padding:20px; margin:10px;" alt="">
+                    <li> The CSS code is located in the external file.</li>
+                </ul>
+            </ul>
+            </p>
+
+            <li>
+                <h3>What are the advantages and disadvantages of using external style sheets?</h3>
+            </li>
+            <p><strong>Answere</strong>
+            <ul>
+                <table border="2" cellpadding="5" cellspacing="1" bordercolor="gray">
+                    <caption>Advantages and Disadvantages</caption>
+                    <thead>
+                        <th colspan="3">Table</th>
+                    </thead>
+                    <tfoot>
+                        <th colspan="3">Advantages and Disadvantages</th>
+                    </tfoot>
+                    <thead>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Advantage</th>
+                            <th>Disadwantage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>With the help of External Style Sheets, the styles of numerous documents can be
+                                organized from one single file</td>
+                            <td>An extra download is essential to import style information for each file.</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>In External Style Sheets, Classes can be made for use on numerous HTML element types in
+                                many forms of the site.</td>
+                            <td>The execution of the file may be deferred till the external style sheet is loaded.</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>In complex contexts, Methods like selector and grouping can be implemented to apply
+                                styles.</td>
+                            <td>While implementing style sheets, we need to test Web pages with multiple browsers in
+                                order to check compatibility issues.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ul>
+            </p>
+
+            <li>
+                <h3>What is the meaning of the CSS selector? </h3>
+            </li>
+            <p> <strong>Answere</strong>
+            <ul class="a">
+                <li><q>A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that
+                        tell the browser which HTML elements should be selected to have the CSS property values inside
+                        the rule applied to them.</q></li>
+                <li>We can divide CSS selectors into five categories:</li>
+                <ul class="b">
+                    <li>Simple selectors (select elements based on name, id, class)</li>
+                    <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+                    <li>Pseudo-class selectors (select elements based on a certain state)</li>
+                    <li>Pseudo-elements selectors (select and style a part of an element)</li>
+                    <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+                </ul>
+                <li>Type, class, and ID selectors:</li>
+                <ul>
+                    <li>This group includes selectors that target an HTML element such as an < h1>
+                    </li>
+                    <img src="images/element_selecter.jpg" class="selector" alt="">
+                    <li>It also includes selectors which target a class:</li>
+                    <img src="images/class_selecter.jpg" class="selector" alt="">
+                    <li>or, an ID:</li>
+                    <img src="images/id_selecter.jpg" class="selector" alt="">
+                    <li>This group of selectors gives you different ways to select elements based on the presence of a
+                        certain attribute on an element:</li>
+                    <img src="images/Attributeselectors.jpg" class="selector" alt="">
+                    <li>This group of selectors includes pseudo-classes, which style certain states of an element. The
+                        :hover pseudo-class for example selects an element only when it is being hovered over by the
+                        mouse pointer:</li>
+                    <img src="images/hover_selector.jpg" class="selector" alt="">
+                </ul>
+            </ul>
+            </p>
+
+            <li>
+                <h3>What are the media types allowed by CSS? </h3>
+            </li>
+            <p><strong>Answere</strong>
+            <ol>
+                <li>We have currently two ways to specify media dependencies for style sheets −</li>
+                <ul>
+                    <li>Specify the target medium from a style sheet with the @media or @import at-rules.</li>
+                    <li>Specify the target medium within the document language.</li>
+                </ul>
+                <li>The following 10 media types are supported:</li>
+                <table border="2" cellpadding="5" cellspacing="1">
+                    <caption>Types: of Media</caption>
+                    <thead>
+                        <tr>
+                            <th>Media Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>All</td>
+                            <td>Suitable/intended for all devises (default)</td>
+                        </tr>
+
+                        <tr>
+                            <td>Aural</td>
+                            <td>Intended for speech synthesizers</td>
+                        </tr>
+
+                        <tr>
+                            <td>Braille</td>
+                            <td>Intended for braille tactile feedback devices</td>
+                        </tr>
+
+                        <tr>
+                            <td>Embossed</td>
+                            <td>Intended for paged braille printers</td>
+                        </tr>
+
+                        <tr>
+                            <td>Handheld</td>
+                            <td>Intended for handheld devices (typically small screen, monochrome, limited bandwidth)
+                        </tr>
+                        </tr>
+
+                        <tr>
+                            <td>Print</td>
+                            <td>Intended for printed documents (applies to docs viewed in print preview mode too)</td>
+                        </tr>
+
+                        <tr>
+                            <td>Projection</td>
+                            <td>Intended for projected presentations (ie: projectors or print to transparencies)</td>
+                        </tr>
+
+                        <tr>
+                            <td>Screen</td>
+                            <td>Intended for computer screens</td>
+                        </tr>
+
+                        <tr>
+                            <td>tty</td>
+                            <td>Intended for media using a fixed-pitch character grid (ie: teletypes or terminals)</td>
+                        </tr>
+
+                        <tr>
+                            <td>tv</td>
+                            <td>Intended for television-type devices</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ol>
+            </p>
+
+            <li>
+                <h3>What is the rule set?</h3>
+            </li>
+            <p><strong>Answere:</strong>
+                There are five important rules for coding with HTML tags.:
+            <ol>
+                <li>Tags are always surrounded by angle brackets (less-than/greater-than characters), as
+                    in<code>&lt;HEAD&gt;</code></code></li>
+                <li>Most tags come in pairs and surround the material they affect. They work like a light switch: the
+                    first tag turns the action on, and the second turns it off. (There are some exceptions. For
+                    instance, the <code>&lt;BR&gt;</code> tag creates a blank line and doesn’t have an “off switch.”
+                    Once you’ve made a line break, you can’t unmake it.)</li>
+                <li>The second tag–the “off switch”–always starts with a forward slash. For example, you turn on bold
+                    with <code>&lt;B&gt;</code>, shout your piece, and then go back to regular text with
+                    <code>&lt;/B&gt;</code>.
+                </li>
+                <li>First tag on, last tag off. Tags are embedded, so when you start a tag within another tag, you have
+                    to close that inner tag before closing the outer tag. For instance, the page will not display
+                    properly with the tags in this order:
+                    <p>
+                        <code>&lt;HEAD&gt;&lt;TITLE&gt;</code>ASSIGNMENT<code>&lt;/HEAD&gt;&lt;/TITLE&gt;</code>.
+                    </p>
+                    <p>
+                        The correct order is:
+                    </p>
+                    <p>
+                        <code>&lt;HEAD&gt;&lt;TITLE&gt;</code>Your text<code>&lt;/TITLE&gt;&lt;/HEAD&gt;</code>.
+                    </p>
+                </li>
+                <li>Many tags have optional <i>attributes</i> that use <i>values</i> to modify the tag’s behavior. The
+                    <code>&lt;P&gt;</code> (paragraph) tag’s <code>ALIGN</code> attribute, for instance, lets you change
+                    the default (left) paragraph alignment. For example, <code>&lt;P ALIGN=CENTER&gt;</code> centers the
+                    next paragraph on the page.
+                </li>
+            </ol>
+            </p>
+
+            <li><h3>Sample Layouts:</h3></li>
+            <p><strong>Answere:</strong>
+            <div class="cards">
+                <div class="card">
+                    <img class="card__image" src="images/image1.jpg" alt="">
+                    <div class="card__content">
+                        <p class="p">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus
+                            reiciendis fugit autem qui at.
+                        </p>
+                        <p class="p">
+                            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit
+                            minima?
+                        </p>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <i class="material-icons">thumb_up</i>310
+                        </div>
+                        <div>
+                            <a href="./" class="card__link">View Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="images/image2.jpg" alt="">
+                    <div class="card__content">
+                        <p class="p">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus
+                            reiciendis fugit autem qui at.
+                        </p>
+                        <p class="p">
+                            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit
+                            minima?
+                        </p>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <i class="material-icons">thumb_up</i>1,993
+                        </div>
+                        <div>
+                            <a href="./" class="card__link">View Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="images/image3.jpg" alt="">
+                    <div class="card__content">
+                        <p class="p">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus
+                            reiciendis fugit autem qui at.
+                        </p>
+                        <p class="p">
+                            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit
+                            minima?
+                        </p>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <i class="material-icons">thumb_up</i>887
+                        </div>
+                        <div>
+                            <a href="./" class="card__link">View Article</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card__image" src="images/image4.jpg" alt="">
+                    <div class="card__content">
+                        <p class="p">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus
+                            reiciendis fugit autem qui at.
+                        </p>
+                        <p class="p">
+                            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit
+                            minima?
+                        </p>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <i class="material-icons">thumb_up</i>887
+                        </div>
+                        <div>
+                            <a href="./" class="card__link">View Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="images/image5.jpg" alt="">
+                    <div class="card__content">
+                        <p class="p">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus
+                            reiciendis fugit autem qui at.
+                        </p>
+                        <p class="p">
+                            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit
+                            minima?
+                        </p>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <i class="material-icons">thumb_up</i>2,512
+                        </div>
+                        <div>
+                            <a href="./" class="card__link">View Article</a>
+                        </div>
+                    </div>
+                </div>
+
+                </style>
+                <div class="card">
+                    <img class="card__image card2" src="images/image6.jpg" alt="">
+                    <div class="card__content">
+                        <p class="p">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus
+                            reiciendis fugit autem qui at.
+                        </p>
+                        <p class="p">
+                            Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit
+                            minima?
+                        </p>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <i class="material-icons">thumb_up</i>140
+                        </div>
+                        <div>
+                            <a href="./" class="card__link">View Article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </p>
+            
+        </ol>
+    </div>
+</body>
+
+</html>

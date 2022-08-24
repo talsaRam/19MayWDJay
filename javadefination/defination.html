@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* padding: 0; */
+            /* margin: 0; */
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .col1 {
+            width: 1000px;
+        }
+
+        body {
+            background: linear-gradient(#e66465, #9198e5);
+        }
+
+        hr {
+            border: 1px dotted red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="col1">
+            <ol>
+                <!-- <li>JavaScript Defination:</li> -->
+                <h2>
+                    <li>What can do JavaScripts:</li>
+                </h2>
+                <ul>
+                    <li>Scripting lang. that helps to make our web page dyanamic form client side</li>
+                    <li>with the helps of JS we can creat some dynamic task line</li>
+                    <ul>
+                        <li>validation</li>
+                        <li>Slider</li>
+                        <li>We can handle event based data like if we click on btn that time we want to some changes on
+                            our HTML Doc.</li>
+                    </ul>
+                    <li>There are lot more things you can do with JavaScripts</li>
+                    <li>You can modify the content of a web page by adding or removing elements</li>
+                    <li>You can changes the style and position of the elenment on a web pages.</li>
+                    <li>You can monitor events like mouse click , hover, etc and react to it</li>
+                    <li>You can perform and control transitions and aniamtion</li>
+                    <li>You can create alert pop-ups to display info or warning messages to the use</li>
+                    <li>You can perform operation based on user inputs and display the result</li>
+                    <li>You can validates user inputs before submitting it to the server </li>
+                </ul>
+                <hr>
+                <h2>
+                    <li>JavaScript Defination:</li>
+                </h2>
+                <ul type="">
+                    <li>JavaScript is a programming language commonly used in web development.</li>
+                    <li>JavaScript can update and change both HTML and CSS.</li>
+                    <li>JavaScript can calculate, manipulate and validate data.</li>
+                </ul>
+                <hr>
+                <h2>
+                    <li>Variable:</li>
+                </h2>
+                <ul>
+
+                    <li>Variable means conatiner it may conatian some data or we can say Variable hold value and we can
+                        able to make change on it</li>
+                    <li>Console.log(); is a function provided by JavaScript with the help of colsole developer can debug
+                        tha data</li>
+                    <li>Variable doesnt need to be declered before its use </li>
+                    <li>variable tend to start with a letter</li>
+                    <li>Speces are not allowed in variables</li>
+                    <li>Special charaters such as "!,_,@" are not allowed in the name</li>
+                    <li>Digits are allowed but keep rule number 1 in mind</li>
+                    <li>We can declered variable using 3 keywords
+                        <ol>
+                            <li><strong>var</strong></li>
+                            <ol>
+                                <li>If we declare a variable from var,then we can also declare it again with the same
+                                    name, and if we want to re-assign its value then we can do it.</li>
+                            </ol>
+                            <li><strong>let</strong></li>
+                            <ol>
+                                <li>If we declare a variable with let, then we can't declared it again with the same
+                                    name , but can re-assign its value.</li>
+                            </ol>
+                            <li><strong>const</strong></li>
+                            <ol>
+                                <li>And If declare variable with const, then we can neither declared it again, nor can
+                                    re-assign its value.</li>
+                            </ol>
+                        </ol>
+                    </li>
+                </ul>
+                <hr>
+
+            </ol>
+        </div>
+    </div>
+
+
+    <script>
+        // var
+        var myname = "Tushar";
+        // var myname = "Suthar";
+        console.log(myname);
+
+
+        // let
+        let fname = "tushar";
+        fname = "suthar";
+        console.log(fname);
+
+
+        // const
+        const name = "tushar";
+        // name = "suthar";
+        console.log(name);
+
+
+        const xyz = { a: 1, b: 2, c: 3 };
+
+        const a = xyz.a;
+        const b = xyz.b;
+        const c = xyz.c;
+        console.log(a + b + c);
+
+
+        var d = 10, e = 20, f = 20;
+
+        sum = eval("d + e + f");
+        mul = eval("d * e * f");
+        sub = eval("f - d");
+
+
+        console.log(document),
+        console.log(sum),
+        console.log(mul),
+        console.log(sub);
+
+    </script>
+
+</body>
+
+</html>

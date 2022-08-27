@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+            width:;
+            display: flex;
+            flex-wrap: wrap;
+            /* padding: 0; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .filter-hue-rotate{
+            filter: hue-rotate(52deg);
+        }
+
+        .filter-grascale{
+            filter: grayscale(100%);
+        }
+
+        .filter-blur{
+            filter: blur(2px);
+        }
+
+        .filter-contrast{
+            filter: contrast(200%);
+        }
+
+        .filter-drop-shadow{
+            filter: drop-shadow(16px 10px 20px  #085554);
+        }
+
+        .filter-invert{
+            filter: invert(75%);
+        }
+
+        .filter-opacity{
+            filter: opacity(40%);
+        } 
+
+        .filter-saturate{
+            filter: saturate(30%);
+        } 
+
+        .filter-sepia{
+            filter: sepia(60%);
+        }
+
+        .filter{
+            filter: none;
+        }
+
+        .filter-contrat-brightness{
+            filter: contrast(175%) brightness(40%);
+        }
+        .image{
+            position: relative;
+            padding: 10px;
+            margin: 0 auto;
+        }
+
+        .filter-contrat-brightness:hover,
+        .filter-hue-rotate:hover,
+        .filter-grascale:hover,
+        .filter-blur:hover,
+        .filter-contrast:hover,
+        .filter-invert:hover,
+        .filter-opacity:hover,
+        .filter-saturate:hover,
+        .filter-drop-shadow:hover,
+        .filter-sepia:hover{
+            filter: none;
+        }
+
+         .filter-animation{
+            animation: animation 3s infinite;
+            transition: 3s ease;
+        }
+
+
+
+         .filter-animation:hover{
+
+             transform:scale(-1);
+
+        }
+
+        h2 { 
+             position: absolute; 
+             top: 0; 
+             left: 20px; 
+             width: 100%; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="image">
+            <img src="pineapple-filter.jpg" class="filter" alt="">
+            <h2>filter-none</h2>
+        </div>
+
+         <div class="image">
+            <img src="pineapple-filter.jpg" class="filter-contrat-brightness" alt="">
+            <h2>filter-contrat-brightness</h2>
+        </div>
+
+       
+
+        <div class="image">
+            <img src="pineapple-filter.jpg" class="filter-hue-rotate" alt="">
+            <h2>filter-hue-rotate</h2>
+        </div>
+
+        <div class="image">
+            <img src="pineapple-filter.jpg" class="filter-grascale" alt="">
+            <h2>filter-grascale</h2>
+
+        </div>
+
+        <div class="image">
+            <img src="pineapple-filter.jpg" class="filter-blur" alt="">
+            <h2>filter-blur</h2>
+
+        </div>
+
+        <div class="image">
+            <img src="pineapple-filter.jpg" class="filter-contrast" alt="">
+            <h2>filter-contrast</h2>
+
+        </div>
+
+        <div class="image">
+            <img src="pineapple-filter.jpg" class="filter-drop-shadow" alt="">
+            <h2>filter-drop-shadow</h2>
+
+        </div>
+
+        <div class="image">
+            <img src="pineapple-filter.jpg" class="filter-invert" alt="">
+            <h2>filter-invert</h2>
+
+        </div>
+
+        <div class="image">
+            <img src="pineapple-filter.jpg" class="filter-opacity" alt="">
+            <h2>filter-opacity</h2>
+
+        </div>
+
+        <div class="image">
+            <img src="pineapple-filter.jpg" class="filter-saturate" alt="">
+            <h2>filter-saturate</h2>
+        </div>
+
+        <div class="image">
+            <img src="pineapple-filter.jpg" class="filter-sepia" alt="">
+            <h2>filter-sepia</h2>
+        </div>
+
+          <div class="image image-animation">
+            <img src="pineapple-filter.jpg" class="filter-animation" alt="">
+            <h2>transform:scale(-1);</h2>
+        </div>
+
+    </div>
+    
+</body>
+</html>
+

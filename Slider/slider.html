@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font icon -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <style>
+        body{
+            display:  flex;
+            align-items:center;
+            justify-content: center;
+            height: 100vh ;
+            width: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        .slider{
+            position: relative;
+            width:500px;
+            background-color: #fff;
+            margin:0 auto;
+            /* height: 400px; */
+        }
+        .slider-item img{
+            width: 100%;
+            /* height: 300px; */
+        }
+        .slider-effect{
+            position: relative;
+            animation: slidereff 3s ;
+        }
+        @keyframes slidereff { 
+            0%{ right: 2400px; }
+            100%{ right: 0px; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slider-item"><img src="images/rawpixel-574846-unsplash.jpeg" alt=""></div>
+        <div class="slider-item"><img src="images/rawpixel-577490-unsplash.jpeg" alt=""></div>
+        <div class="slider-item"><img src="images/rawpixel-579243-unsplash.jpeg" alt=""></div>
+        <div class="slider-item"><img src="images/rawpixel-596092-unsplash.jpeg" alt=""></div>
+        <div class="slider-item"><img src="./images/home-bg-1.jpg" alt=""></div>
+        <div class="slider-item"><img src="./images/home-bg-2.jpg" alt=""></div>
+        <div class="slider-item"><img src="./images/home-bg-3.jpg" alt=""></div>
+        <i class="fa-solid fa-angles-left btn prev" id="prev"></i>
+        <i class="fa-solid fa-angles-right btn next" id="next"></i>
+    </div>
+    <script>
+        
+        let SliderData = document.getElementsByClassName('slider-item');
+        counter = 0;
+        function Slider() {
+            console.log("called");
+            for (let index = 0; index < SliderData.length; index++) {
+                SliderData[index].style.display="none"
+                SliderData[index].classList.remove('slider-effect')
+                
+            }
+            if (counter>=SliderData.length) {
+                counter = 0;   
+            }
+            SliderData[counter].style.display="block"
+            console.log(SliderData[counter].classList);
+            SliderData[counter].classList.add('slider-effect')
+            counter++;
+            setTimeout(Slider, 2900);  
+        }
+        Slider()
+
+    </script>
+
+</body>
+
+</html>

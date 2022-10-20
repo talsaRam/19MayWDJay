@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- toggle nav mobile -->
+    <link rel="stylesheet" href="./css/togle-nav-mobile.css">
+    <!-- icon -->
+    <link href="./images/footer-top-bg.png" rel="shortcut icon" />
+    <!-- external css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/forum.css">
+    <link rel="stylesheet" href="./css/responsice.css">
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+
+<body>
+
+    <!-- animation loder-->
+    <div id="loder_box" class="loder_box">
+        <div class="loder_circle"></div>
+    </div>
+    <!-- animation loder end -->
+
+    <!-- mobile nav menu toggle -->
+
+    <div class="navemobile remove none" id="javascript">
+        <div class="icon11" onclick="closeNav()">
+            <a href="#"><i class="fa-solid fa-1x fa-power-off openbar"></i></a>
+        </div>
+        <div class="casll1">
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="blog.html">Blog</a>
+            <a href="forum.html">Forums</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <!-- mobile nav menu toggle end -->
+
+    <!-- Header section -->
+    <header class="header-section">
+        <div class="container">
+            <div class="d-flex">
+                <!-- logo -->
+                <a class="site-logo" href="index.html">
+                    <img src="./images/logo.png" alt="">
+                </a>
+                <!-- site menu -->
+                <nav class="main-menu">
+                    <ul>
+                        <li class="d-none"><a href="index.html">Home</a></li>
+                        <li class="d-none"><a href="games.html">Games</a></li>
+                        <li class="d-none"><a href="blog.html">Blog</a></li>
+                        <li class="d-none"><a href="forum.html">Forums</a></li>
+                        <li class="d-none active"><a href="contact.html">Contact</a></li>
+                        <li class="d-none2"><a class="a-bar" onclick="openNav()" href="#"><i id=""
+                                    class="fa-solid fa-caret-down"></i></a>
+                            <!-- <li><a class="a-bar" id="close" href="#"><i class="fa-solid fa-caret-down"></i></a> -->
+
+
+                    </ul>
+                </nav>
+                <div class="user-panel">
+                    <a href="#">Login</a> / <a href="#">Register</a>
+                </div>
+                <!-- <div class="nav-switch">
+                    <i class="fa fa-bars"></i>
+                </div> -->
+            </div>
+        </div>
+    </header>
+    <!-- section blog background -->
+
+
+    <!--  -->
+    <section class="forum-info-section-contact set-bg">
+        <div class="pi-content">
+            <div class="container">
+                <div class="row">
+                    <div class="bottom-text text-white padyt">
+                        <h2>Our Community
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris
+                            scelerisque, at rutrum nulla dictum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  -->
+    <section class="news_high_light sticky row" id="new-line">
+        <div class="news-text">
+            Latest News
+        </div>
+        <div>
+            <div class="marquee">
+                <marquee class="" onmouseover="this.stop()" onmouseout="this.start()" loop="20" scrollamount="20">
+                    <span class="new">new</span>Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                    <span class="strategy">strategy</span>Isum dolor sit amet, consectetur
+                    adipiscing elit.
+                    <span class="racing">racing</span>Isum dolor sit amet, consectetur adipiscing
+                    elit.
+                </marquee>
+            </div>
+        </div>
+    </section>
+
+    <!-- map -->
+
+    <section class="map-section p-97">
+        <div class="container">
+            <div class="row">
+                <div class="col-100">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.957969810835!2d72.52955991477094!3d23.098634384914668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8328ae1a7cf3%3A0x7423c252bd1cd0ba!2sGota%20Chokdi%20Flyover%2C%20Gota%2C%20Ahmedabad%2C%20Gujarat%20380081!5e0!3m2!1sen!2sin!4v1665840308606!5m2!1sen!2sin"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- map End -->
+
+
+
+    <!-- conatct Form -->
+    <section class="contact-form p-97" id="contact_id">
+        <div class="container">
+            <div class="row m-auto ">
+                <div class="col-33 m-00">
+                    <div class="connect_us ">
+                        <div class="contact_us">
+                            <h4>Contact Us</h4>
+                            <p>Odio ultrices ut. Etiam ac erat ut enim maximus accumsan vel ac nisl. Duis feug iat
+                                bibendum orci, non elementum urna. Cras sit amet sapien aliquam.</p>
+                        </div>
+                        <div class="contact_list">
+                            <table>
+                                <tr>
+                                    <td class="left">
+                                        <div>Address</div>
+                                    </td>
+                                    <td class="right">1481 Creekside Lane Avila Beach, CA 931</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="left">Phone</td>
+                                    <td class="right">+53 345 7953 32453</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="left">E-mail</td>
+                                    <td class="right">yourmail@gmail.com</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-66 w-100">
+                    <div class="col-66-context-text ml-50">
+
+                        <div class="contact-left">
+                            <h3 class="">Send Your Message</h3>
+                            <form action="">
+                                <div class="input-row ">
+                                    <div class="input-group mb-20">
+                                        <input type="text" placeholder="name" name="name" id="name" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="email" placeholder="email" name="email" id="email" required>
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="subject" class="subject">
+                                </div>
+                                <textarea name="" id="" rows="10" name="message" id="message"
+                                    placeholder="Write your message here..."></textarea>
+                                <button type="submit">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact Form  end -->
+
+
+
+
+
+  <!-- game warrior -->
+
+  <section class="footer-section pt-70">
+    <div class="container pos-rel">
+        <div class="img-footer-box pos-abs">
+            <img src="./images/footer-top-bg.png" alt="">
+        </div>
+        <div class="row">
+            <div class="col-33 foterBox">
+                <div class="title-footer m-20">
+                    <img src="./images/footer-logo.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                </div>
+            </div>
+            <div class="col-33 foter25Box">
+                <div class="latest_post_footer m-20">
+                    <h3>Latest Post</h3>
+                    <div class="latest-Blog mb">
+                        <div class="blog-contain-text">
+                            <div class="flex ssss">
+                                <div class="vlog_img">
+                                    <img src="./images/latest-blog/1.jpg" alt="">
+                                </div>
+                                <div class="div_text">
+                                    <div class="lb-date">June 21, 2018</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum </p>
+                                    <a href="" class="class-fst-p2">By Admin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="latest-Blog mb">
+                        <div class="blog-contain-text">
+                            <div class="flex ssss">
+                                <div class="vlog_img">
+                                    <img src="./images/latest-blog/2.jpg" alt="">
+                                </div>
+                                <div class="div_text">
+                                    <div class="lb-date">June 21, 2018</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum </p>
+                                    <a href="" class="class-fst-p2">By Admin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="latest-Blog">
+                        <div class="blog-contain-text">
+                            <div class="flex ssss">
+                                <div class="vlog_img">
+                                    <img src="./images/latest-blog/3.jpg" alt="">
+                                </div>
+                                <div class="div_text">
+                                    <div class="lb-date">June 21, 2018</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum </p>
+                                    <a href="" class="class-fst-p2">By Admin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-33 foter25Box">
+                <div class="latest_post_footer m-20">
+                    <h3>Top Comments</h3>
+                    <div class="latest-Blog">
+                        <div class="blog-contain-text">
+                            <div class="flex sss">
+                                <div class="vlog_img2 border-radius">
+                                    <img src="./images/authors/1.jpg" alt="">
+                                </div>
+                                <div class="div_text">
+                                    <p class="ppp"><a href="#" class="red">James Smith</a> <span>on</span> Lorem
+                                        ipsum dolor sit amet, co
+                                    </p>
+                                    <div class="tc-date yellow">June 21, 2018</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="latest-Blog">
+                        <div class="blog-contain-text">
+                            <div class="flex sss">
+                                <div class="vlog_img2 border-radius">
+                                    <img src="./images/authors/2.jpg" alt="">
+                                </div>
+                                <div class="div_text">
+                                    <p class="ppp"><a href="#" class="red">James Smith</a> <span>on</span> Lorem
+                                        ipsum dolor sit amet, co
+                                    </p>
+                                    <div class="tc-date yellow">June 21, 2018</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="latest-Blog">
+                        <div class="blog-contain-text">
+                            <div class="flex sss">
+                                <div class="vlog_img2 border-radius">
+                                    <img src="./images/authors/3.jpg" alt="">
+                                </div>
+                                <div class="div_text">
+                                    <p class="ppp"><a href="#" class="red">James Smith</a> <span>on</span> Lorem
+                                        ipsum dolor sit amet, co
+                                    </p>
+                                    <div class="tc-date yellow">June 21, 2018</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="latest-Blog">
+                        <div class="blog-contain-text">
+                            <div class="flex sss">
+                                <div class="vlog_img2 border-radius">
+                                    <img src="./images/authors/4.jpg" alt="">
+                                </div>
+                                <div class="div_text">
+                                    <p class="ppp"><a href="#" class="red">James Smith</a> <span>on</span> Lorem
+                                        ipsum dolor sit amet, co
+                                    </p>
+                                    <div class="tc-date yellow">June 21, 2018</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- end game Warriro -->
+
+
+    <!-- footer -->
+    <footer class="section-footer">
+        <div class="container">
+            <div class="d-flex d-flex-wrap p-30">
+                <p class="copyright mb">
+                    Copyright ©
+                    <script>document.write(new Date().getFullYear());</script>2022 All rights reserved | This template
+                    is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="">Tushar</a>
+                </p>
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- slider for background -->
+    <!-- slider for background end   -->
+    </script>
+    <script src="./js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

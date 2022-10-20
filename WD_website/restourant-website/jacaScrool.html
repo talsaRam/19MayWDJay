@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/mosRespomsive.css">
+
+    <script defer src="./js/javaScript.js"></script>
+
+    <style>
+
+        body{
+            background: #494949;
+        }
+
+        section{
+            display: grid;
+            place-items: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .hidden{
+            opacity: 0;
+            transition: all 1s;
+            filter: blur(5px);
+            transform: translateX(100%);
+        }
+
+        .show{
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0);
+        }
+
+        @media (prefers-reduced-motion) {
+            .hidden{
+                transition: nono;
+            }
+            
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <h1>Hello World</h1>
+
+    <section class="hidden">
+        <h3>hello Worldfa-pull-left</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias voluptates provident, perspiciatis atque, reiciendis officia excepturi natus est quam iure recusandae aliquid autem facilis aspernatur at. Quaerat consequatur incidunt animi!</p>
+    </section>
+
+
+    
+    <section class="hidden">
+        <h3>hello Worldfa-pull-left</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias voluptates provident, perspiciatis atque, reiciendis officia excepturi natus est quam iure recusandae aliquid autem facilis aspernatur at. Quaerat consequatur incidunt animi!</p>
+    </section>
+
+    
+    <section class="hidden">
+        <h3>hello Worldfa-pull-left</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias voluptates provident, perspiciatis atque, reiciendis officia excepturi natus est quam iure recusandae aliquid autem facilis aspernatur at. Quaerat consequatur incidunt animi!</p>
+    </section>
+
+    
+    <section class="hidden">
+        <h3>hello Worldfa-pull-left</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias voluptates provident, perspiciatis atque, reiciendis officia excepturi natus est quam iure recusandae aliquid autem facilis aspernatur at. Quaerat consequatur incidunt animi!</p>
+    </section>
+
+    <section class="hidden">
+        <section class="six-col hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-50">
+                        <div class="row">
+                            <div class="img-box-six">
+                                <img src="./images/star.png" alt="alt">
+                            </div>
+                            <div class="dis-f">
+                                <div>
+                                    <h3>Nasi Lemak</h3>
+                                    <p class="div">$5</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatem
+                                        !Lorem, ipsum dolor sit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="img-box-six">
+                                <img src="./images/star.png" alt="alt">
+                            </div>
+                            <div class="dis-f">
+                                <div>
+                                    <h3>Nasi Water</h3>
+                                    <p class="div">$2</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatem
+                                        !Lorem, ipsum dolor sit
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="img-box-six">
+                                <img src="./images/star.png" alt="alt">
+                            </div>
+                            <div class="dis-f">
+                                <div>
+                                    <h3>Nasi Lemon</h3>
+                                    <p class="div">$4</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatem
+                                        !Lorem, ipsum dolor sit
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-50">
+                        <div class="row">
+                            <div class="img-box-six">
+                                <img src="./images/star.png" alt="alt">
+                            </div>
+                            <div class="dis-f">
+                                <div>
+                                    <h3>Nasi Footer</h3>
+                                    <p class="div">$7</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatem
+                                        !Lorem, ipsum dolor sit
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="img-box-six">
+                                <img src="./images/star.png" alt="alt">
+                            </div>
+                            <div class="dis-f">
+                                <div>
+                                    <h3>Nasi Boul</h3>
+                                    <p class="div">$6</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatem
+                                        !Lorem, ipsum dolor sit
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="img-box-six">
+                                <img src="./images/star.png" alt="alt">
+                            </div>
+                            <div class="dis-f">
+                                <div>
+                                    <h3>Nasi Udak</h3>
+                                    <p class="div">$8</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatem !
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="point-dot">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot dotTwo pos-rel"><span class="circal"> </span></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+</body>
+
+</html>

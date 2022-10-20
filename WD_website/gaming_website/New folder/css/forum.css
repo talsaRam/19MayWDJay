@@ -1,0 +1,101 @@
+.forum-info-section{
+    background-image: url('../images/page-top-bg/4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 90vh;
+}
+
+.allmember{
+    background-image: url(../images/community-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+.bg-color{
+    background-color: rgba(0, 0, 0, 0.28);
+    max-width: 1350px;
+}
+
+.m-auto{
+    margin: 0 auto;
+}
+
+.p-40{
+}
+
+.boxMenber p{
+    font-size: 35px;
+}
+
+.jcb{
+    justify-content: space-between;
+}
+
+.form-group{
+    padding: 10px;
+}
+
+.form-group label{
+    font-size: 20px;
+    padding: 0 25px;
+}
+
+.form-group select{
+    width: 200px;
+    padding: 12px 20px ;
+    outline: none;
+    font-weight: 600;
+    appearance: none;
+}
+
+.black-2{
+    background: #1f2225;
+}
+
+.pppp{
+    padding: 20px 20px 25px;
+}
+
+.small_round{
+    width: 200px;
+    margin-right: 35px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.small_round img{
+    border-radius: 50%;
+}
+
+.boxx{
+    width: 450px;
+    padding: 40px 0;
+}
+
+.black_text_forum h5{
+    color: #ff205f;
+    font-size: 19px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.black_text_forum h5 span{
+    color: #7a7a7a;
+    padding-left: 25px;
+    font-size: 18px;
+}
+
+.black_text_forum .nth-child2{
+    color: #ffb320 !important;
+    font-size: 12px;
+    padding: 20px 0;
+}
+
+.nth-child3{
+    color: #fff;
+    font-size: 15px;
+    line-height: 2;
+}

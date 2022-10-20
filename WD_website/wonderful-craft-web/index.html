@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="logo">Adventure</h1>
+        <ul class="nav-links">
+            <li class="avtive"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Tour</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>About</li>
+            <li class="ctn"><a href="#"></a>Contact Us </li>
+        </ul>
+
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>WonderFul Gift</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- section -->
+    <section class="events">
+        <div class="title">
+            <h1>Upcomming Event</h1>
+            <div class="line"></div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img src="./img/img1.png" alt="">
+                <h4>Everest Camp Trek</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi unde dicta.</p>
+                <a href="" class="ctn">Learn More</a>
+            </div>
+
+            <div class="col">
+                <img src="./img/img2.png" alt="">
+                <h4>Walking Holidays</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi unde dicta.</p>
+                <a href="" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="expolore">
+        <div class="explore-content">
+            <h1>Explore The World</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ab fugit, voluptate labore ex vero, iure
+                officia consequatur, officiis doloribus explicabo maiores nam. Omnis dolore distinctio in, nulla
+                voluptatibus sapiente.</p>
+            <a href="" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    
+
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Upcoming Tours & Destination</h1>
+                <div class="line"></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum architecto beatae facilis, animi
+                    officiis porro debitis explicabo in error possimus quo nesciunt fugit recusandae nihil delectus ad
+                    rerum eius sed.</p>
+                <a href="" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./img/img3.png" alt="">
+                    <img src="./img/img4.png" alt="">
+                    <img src="./img/img5.png" alt="">
+                    <img src="./img/img6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>123 Fifth Avenue , Ny New York Usa lphone:800-525-528-8797 | Email : Contatact@gmail.com</p>
+        <p>Copyright @ 2020 outdoor ,Adventure</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector(".menu-btn")
+        const navlinks = document.querySelector(".nav-links")
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+@media (max-width: 1199px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .best-games {
+        width: 100%;
+    }
+
+    .col-50 {
+        /* width: 50%; */
+        margin: 0 auto;
+    }
+
+    .latest_post_footer {
+        height: 520px;
+    }
+
+}
+
+@media (max-width: 999px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-menu .d-none {
+        display: none;
+    }
+
+    .foterBox{
+        padding: 0 30px 0;
+    }
+
+    .col-25 {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .col-33 {
+        width: 50%;
+    }
+
+    .col-50 {
+        margin: 0 auto;
+    }
+
+    .col-review {
+        margin: 0 20px 40px 0;
+    }
+
+
+    .main-menu .d-none2 {
+        display: block;
+    }
+
+    .arrow-box {
+        transform: translate(0, 120px);
+    }
+
+    .img-footer-box {
+        display: none;
+    }
+
+    .img-contain {
+        left: 0;
+        right: 0;
+    }
+
+    .foterBox {
+        width: 100%;
+    }
+
+    .title-footer,.contact_list {
+        margin-bottom: 30px;
+    }
+
+    .title-footer img {
+        width: 60%;
+        margin-bottom: 30px;
+    }
+
+    .latest_post_footer {
+        margin: 0 25px;
+    }
+
+    .mtb-75{
+        margin: 75px 0;
+    }
+
+    .ml-50{
+        margin-left: 0px !important;
+    }
+
+    .bottom-text{
+        height: 65vh;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .arrow-box {
+        transform: translate(0, 100px);
+    }
+
+    .foterBox {
+        width: 100%;
+    }
+
+    .title-footer {
+        margin-bottom: 30px;
+    }
+
+    .title-footer img {
+        width: 60%;
+        margin-bottom: 30px;
+    }
+
+
+    .col-33 {
+        margin: 0 auto;
+    }
+    .m-00{
+        margin: 0;
+    }
+
+    .col-50 {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .col-review {
+        margin: 0px 12px 50px 12px;
+    }
+
+    .latest_post_footer h3{
+        font-size: 20px;
+    }
+
+    .input-row{
+        display: block !important;
+    }
+
+    .input-row .mb-20{
+        margin-bottom: 20px !important;
+    }
+}
+
+@media (max-width: 690px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .latest_post_footer h3 {
+        font-size: 25px;
+    }
+
+    .col-33,.row .w-100{
+        width: 100%;
+    }
+
+    .latest_post_footer {
+        height: 580px;
+        margin-bottom: 25px;
+    }
+
+    .title-footer {
+        margin-bottom: 25px;
+    }
+
+    footer ul {
+        display: flex;
+    }
+
+    .copyright {
+        line-height: 2;
+    }
+
+    .col-50 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .col-25 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .col-4Card-section {
+        background-size: contain;
+    }
+
+    .col-review {
+        margin: 0 auto;
+    }
+
+    .img-back {
+        width: 35%;
+        height: 100%;
+        /* margin: 0 auto; */
+    }
+
+    .tour-contain .text-tour {
+        padding-left: 12px;
+    }
+
+    .tour-contain.m-20 {
+        margin: 0px 0px 20px;
+
+    }
+
+    .news-text {
+        width: 22%;
+        font-size: 15px;
+    }
+
+    .vlog_img {
+        width: 125px;
+    }
+
+    .col-review {
+        margin: 20px 45px;
+    }
+
+    footer ul {
+        display: block;
+    }
+
+    .col-box_33.m-20 {
+        margin: 0 0 20px 0;
+    }
+    .bottom-text{
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .img-back {
+        width: 80%;
+        /* height: 100%; */
+        /* margin: 0 auto; */
+    }
+
+    .tour-contain .text-tour {
+        padding-left: 0px;
+    }
+
+    footer ul {
+        display: block;
+        display: flex;
+    }
+
+    .tour-contain.m-20 {
+        margin-bottom: 20px;
+    }
+
+    .news-text {
+        width: 40%;
+        font-size: 15px;
+    }
+
+    .sss {
+        margin: 11px 0;
+    }
+
+    .user-panel{
+        display: none;
+    }
+
+    .form-group, .form-group label{
+        padding: 20px 0 0 0;
+    }
+
+    /* .boxx{
+        width: 320px;
+    } */
+
+}

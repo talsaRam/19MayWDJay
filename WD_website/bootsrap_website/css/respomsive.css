@@ -1,0 +1,5 @@
+@media (max-width: 576px){
+    .display-n, .circle{
+        display: none;
+    }
+}

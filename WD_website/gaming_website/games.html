@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming</title>
+    <!-- toggle nav mobile -->
+    <link rel="stylesheet" href="./css/togle-nav-mobile.css">
+    <!-- icon -->
+    <link href="./images/footer-top-bg.png" rel="shortcut icon" />
+    <!-- external css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsice.css">
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+
+<body>
+
+    <!-- animation loder-->
+    <div id="loder_box" class="loder_box">
+        <div class="loder_circle"></div>
+    </div>
+    <!-- animation loder end -->
+
+
+
+    <!-- mobile nav menu toggle -->
+    <div class="navemobile remove none" id="javascript">
+        <div class="icon11" onclick="closeNav()">
+            <a href="#"><i class="fa-solid fa-1x fa-power-off openbar"></i></a>
+        </div>
+        <div class="casll1">
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="blog.html">Blog</a>
+            <a href="forum.html">Forums</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <!-- mobile nav menu toggle end -->
+
+
+
+    <!-- Header section -->
+    <header class="header-section">
+        <div class="container">
+            <div class="d-flex">
+                <!-- logo -->
+                <a class="site-logo" href="index.html">
+                    <img src="./images/logo.png" alt="">
+                </a>
+                <!-- site menu -->
+                <nav class="main-menu">
+                    <ul>
+                        <li class="d-none"><a href="index.html">Home</a></li>
+                        <li class="active d-none"><a href="games.html">Games</a></li>
+                        <li class="d-none"><a href="blog.html">Blog</a></li>
+                        <li class="d-none"><a href="forum.html">Forums</a></li>
+                        <li class="d-none"><a href="contact.html">Contact</a></li>
+                        <li class="d-none2"><a class="a-bar" onclick="openNav()" href="#"><i id=""
+                                    class="fa-solid fa-caret-down"></i></a>
+
+
+                    </ul>
+                </nav>
+                <div class="user-panel">
+                    <a href="#">Login</a> / <a href="#">Register</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- section blog background -->
+
+
+
+    <section class="page-info-section set-bg">
+        <div class="pi-content">
+            <div class="container">
+                <div class="row">
+                    <div class="bottom-text text-white padyt">
+                        <h2>Game reviews</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris
+                            scelerisque, at rutrum nulla dictum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news_high_light sticky row" id="new-line">
+        <div class="news-text">
+            Latest News
+        </div>
+        <div>
+            <div class="marquee">
+                <marquee class="" onmouseover="this.stop()" onmouseout="this.start()" loop="20" scrollamount="20">
+                    <span class="new">new</span>Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                    <span class="strategy">strategy</span>Isum dolor sit amet, consectetur
+                    adipiscing elit.
+                    <span class="racing">racing</span>Isum dolor sit amet, consectetur adipiscing
+                    elit.
+                </marquee>
+            </div>
+        </div>
+    </section>
+
+    <section class="haloween-section p-97">
+        <div class="container">
+            <div class="row">
+                <div class="col-50 text-center">
+                    <div class="holoween-img-box">
+                        <div class="img1-box10 img1-box review-cover bsc boc-img-marg"
+                            style="background-image: url('./images/review/10.jpg');">
+                            <div class="score yellow">9.1</div>
+                        </div>
+                        <div class="text-box-holoween">
+                            <h3>Overwatch Halloween</h3>
+                            <div class="star"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame. Lorem ipsum
+                                dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                        </div>
+                    </div>
+
+                    <div class="holoween-img-box">
+                        <div class="img1-box7 img1-box review-cover bsc boc-img-marg"
+                            style="background-image: url('./images/review/7.jpg');">
+                            <div class="score yellow">9.1</div>
+
+                        </div>
+                        <div class="text-box-holoween">
+                            <h3>Overwatch Halloween</h3>
+                            <div class="star"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame. Lorem ipsum
+                                dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                        </div>
+                    </div>
+
+                    <div class="holoween-img-box">
+                        <div class="img1-box6 img1-box review-cover bsc boc-img-marg"
+                            style="background-image: url('./images/review/6.jpg');">
+                            <div class="score yellow">9.1</div>
+
+                        </div>
+                        <div class="text-box-holoween">
+                            <h3>Overwatch Halloween</h3>
+                            <div class="star"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame. Lorem ipsum
+                                dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-50 text-center">
+                    <div class="holoween-img-box">
+                        <div class="img1-box5 img1-box review-cover bsc boc-img-marg"
+                            style="background-image: url('./images/review/5.jpg');">
+                            <div class="score yellow">9.1</div>
+
+                        </div>
+                        <div class="text-box-holoween">
+                            <h3>Overwatch Halloween</h3>
+                            <div class="star"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame. Lorem ipsum
+                                dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                        </div>
+                    </div>
+
+                    <div class="holoween-img-box">
+                        <div class="img1-box8 img1-box review-cover bsc boc-img-marg"
+                            style="background-image: url('./images/review/8.jpg');">
+                            <div class="score yellow">9.1</div>
+
+                        </div>
+                        <div class="text-box-holoween">
+                            <h3>Overwatch Halloween</h3>
+                            <div class="star"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame. Lorem ipsum
+                                dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                        </div>
+                    </div>
+
+                    <div class="holoween-img-box">
+                        <div class="img1-box9 img1-box review-cover boc-img-marg"
+                            style="background-image: url('./images/review/9.jpg');">
+                            <div class="score yellow">9.1</div>
+                        </div>
+                        <div class="text-box-holoween">
+                            <h3>Overwatch Halloween</h3>
+                            <div class="star"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame. Lorem ipsum
+                                dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Header section end -->
+
+    <!-- Blog  Customer review -->
+
+    <section class="col-4Card-section-blog p-97">
+        <div class="container">
+            <div class="title_games text-center">
+                <span class="strategy" style="color: #fff;">Customer Review</span>
+                <h2 class="text-white">Recent Reviews</h2>
+            </div>
+            <div class="col4">
+                <div class="row">
+                    <div class="col-25 ">
+                        <div class="col-review m-20">
+                            <div class="review-cover hover-box c-p"
+                                style="background-image: url('./images/review/1.jpg');">
+                                <div class="score yellow">9.1</div>
+                            </div>
+                            <div class="review-text text-center text-white">
+                                <h5>Assasin’’s Creed</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-25">
+                        <div class="col-review m-20">
+                            <div class="review-cover c-p" style="background-image: url('./images/review/2.jpg');">
+                                <div class="score yellow racing">9.3</div>
+                            </div>
+                            <div class="review-text text-center text-white">
+                                <h5>Dhoom</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-25">
+                        <div class="col-review m-20">
+                            <div class="review-cover c-p" style="background-image: url('./images/review/3.jpg');">
+                                <div class="score yellow strategy">9.3</div>
+                            </div>
+                            <div class="review-text text-center text-white">
+                                <h5>Overwatch</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-25">
+                        <div class="col-review m-20">
+                            <div class="review-cover c-p" style="background-image: url('./images/review/4.jpg');">
+                                <div class="score yellow new">9.3</div>
+                            </div>
+                            <div class="review-text text-center text-white">
+                                <h5>GTA</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog  Customer review -->
+
+
+
+
+    <!-- Game Warrior -->
+    <section class="footer-section pt-70">
+        <div class="container pos-rel">
+            <div class="img-footer-box pos-abs">
+                <img src="./images/footer-top-bg.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col-33 foterBox">
+                    <div class="title-footer m-20">
+                        <img src="./images/footer-logo.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                    </div>
+                </div>
+                <div class="col-33 foter25Box">
+                    <div class="latest_post_footer m-20">
+                        <h3>Latest Post</h3>
+                        <div class="latest-Blog mb">
+                            <div class="blog-contain-text">
+                                <div class="flex ssss">
+                                    <div class="vlog_img">
+                                        <img src="./images/latest-blog/1.jpg" alt="">
+                                    </div>
+                                    <div class="div_text">
+                                        <div class="lb-date">June 21, 2018</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum </p>
+                                        <a href="" class="class-fst-p2">By Admin</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="latest-Blog mb">
+                            <div class="blog-contain-text">
+                                <div class="flex ssss">
+                                    <div class="vlog_img">
+                                        <img src="./images/latest-blog/2.jpg" alt="">
+                                    </div>
+                                    <div class="div_text">
+                                        <div class="lb-date">June 21, 2018</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum </p>
+                                        <a href="" class="class-fst-p2">By Admin</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="latest-Blog">
+                            <div class="blog-contain-text">
+                                <div class="flex ssss">
+                                    <div class="vlog_img">
+                                        <img src="./images/latest-blog/3.jpg" alt="">
+                                    </div>
+                                    <div class="div_text">
+                                        <div class="lb-date">June 21, 2018</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum </p>
+                                        <a href="" class="class-fst-p2">By Admin</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-33 foter25Box">
+                    <div class="latest_post_footer m-20">
+                        <h3>Top Comments</h3>
+                        <div class="latest-Blog">
+                            <div class="blog-contain-text">
+                                <div class="flex sss">
+                                    <div class="vlog_img2 border-radius">
+                                        <img src="./images/authors/1.jpg" alt="">
+                                    </div>
+                                    <div class="div_text">
+                                        <p class="ppp"><a href="#" class="red">James Smith</a> <span>on</span> Lorem
+                                            ipsum dolor sit amet, co
+                                        </p>
+                                        <div class="tc-date yellow">June 21, 2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="latest-Blog">
+                            <div class="blog-contain-text">
+                                <div class="flex sss">
+                                    <div class="vlog_img2 border-radius">
+                                        <img src="./images/authors/2.jpg" alt="">
+                                    </div>
+                                    <div class="div_text">
+                                        <p class="ppp"><a href="#" class="red">James Smith</a> <span>on</span> Lorem
+                                            ipsum dolor sit amet, co
+                                        </p>
+                                        <div class="tc-date yellow">June 21, 2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="latest-Blog">
+                            <div class="blog-contain-text">
+                                <div class="flex sss">
+                                    <div class="vlog_img2 border-radius">
+                                        <img src="./images/authors/3.jpg" alt="">
+                                    </div>
+                                    <div class="div_text">
+                                        <p class="ppp"><a href="#" class="red">James Smith</a> <span>on</span> Lorem
+                                            ipsum dolor sit amet, co
+                                        </p>
+                                        <div class="tc-date yellow">June 21, 2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="latest-Blog">
+                            <div class="blog-contain-text">
+                                <div class="flex sss">
+                                    <div class="vlog_img2 border-radius">
+                                        <img src="./images/authors/4.jpg" alt="">
+                                    </div>
+                                    <div class="div_text">
+                                        <p class="ppp"><a href="#" class="red">James Smith</a> <span>on</span> Lorem
+                                            ipsum dolor sit amet, co
+                                        </p>
+                                        <div class="tc-date yellow">June 21, 2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- game Warrior -->
+
+
+
+
+    <!-- footer start -->
+    <footer class="section-footer">
+        <div class="container">
+            <div class="d-flex d-flex-wrap p-30">
+                <p class="copyright mb">
+                    Copyright ©
+                    <script>document.write(new Date().getFullYear());</script>2022 All rights reserved | This template
+                    is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="">Tushar</a>
+                </p>
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- footer start end-->
+
+
+    <!-- slider for background -->
+    <!-- slider for background end   -->
+    </script>
+    <script src="./js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

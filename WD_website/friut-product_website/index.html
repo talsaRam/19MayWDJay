@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+    <link rel="shortcut icon" href="./image/cat-1.png" type="image/x-icon">
+    <!-- external css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <!-- font-icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- slick theme css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick min css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- animated scrolling -->
+    <link rel="stylesheet" href="./css/aos.css">
+</head>
+
+<body oncontextmenu="return false" , oncopy="return true" , onpaste="return true">
+    <header class="header">
+        <div class="container">
+            <div class="row head-row">
+                <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> Fruits</a>
+                <nav class="navbar">
+                    <a href="#home">home</a>
+                    <a href="#feature">features</a>
+                    <a href="#product">products</a>
+                    <a href="#categorie">categories</a>
+                    <a href="#review">review</a>
+                    <a href="#blogs">blogs</a>
+                </nav>
+
+                <div class="icons">
+                    <div title="" class="fas fa-bars menu-btn" id="menu-btn"></div>
+                    <div title="search" class="fas fa-search" id="search-btn"></div>
+                    <div title="your item" class="fas fa-shopping-cart cart-btn" id="cart-btn"></div>
+                    <div title="user" class="fas fa-user login-btn" id="login-btn"></div>
+                </div>
+
+                <form action="" class="search-form">
+                    <input type="search" id="search-box" placeholder="search here...">
+                    <label for="search-box" class="fas fa-search"></label>
+                </form>
+
+                <!-- cart item -->
+                <div class="shopping-cart">
+                    <div class="box-cart">
+                        <div class="productImg-shop-cart">
+                            <img src="./image/cart-img-1.png" alt="">
+                        </div>
+                        <div class="contain">
+                            <h3>Watermalon</h3>
+                            <span class="price">$4.50/-</span> &nbsp;
+                            <span class="quantity">qty : 1</span>
+                        </div>
+                        <i class="fa fa-trash"></i>
+                    </div>
+
+                    <div class="box-cart">
+                        <div class="productImg-shop-cart">
+                            <img src="./image/cart-img-3.png" alt="">
+                        </div>
+                        <div class="contain">
+                            <h3>Meat</h3>
+                            <span class="price">$4.50/--</span> &nbsp;
+                            <span class="quantity">qty : 1</span>
+                        </div>
+                        <i class="fa fa-trash"></i>
+                    </div>
+
+                    <div class="box-cart">
+                        <div class="productImg-shop-cart">
+                            <img src="./image/cart-img-2.png" alt="">
+                        </div>
+                        <div class="contain">
+                            <h3>Onion</h3>
+                            <span class="price">$4.50/-</span> &nbsp;
+                            <span class="quantity">qty : 1</span>
+                        </div>
+                        <i class="fa fa-trash"></i>
+                    </div>
+                    <div class="totale">Total : $13.50/-</div>
+                    <a href="" class="btn">CheckOut</a>
+                </div>
+
+                <!-- user login -->
+                <form action="" class="login-form">
+                    <h3>login now</h3>
+                    <input type="email" placeholder="your email" class="box-form">
+                    <input type="password" placeholder="your password" class="box-form">
+                    <p>forget your password <a href="#">click here</a></p>
+                    <p>don't have an account <a href="#">create now</a></p>
+                    <input type="submit" value="login now" class="btn">
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- section fisrt section -->
+
+    <section class="first-section home" id="home" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="text-title">
+                    <h1>
+                        Fresh And <span>Organic</span> Products For Your
+                    </h1>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Aliquam Libero Nostrum Veniam Facere
+                        Tempore
+                    Nisi.</p>
+                    <a href="" class="btn" data-aos="fade-down" data-aos-duration="1200">Shop Now</a>
+                </div>
+
+                <!-- <div class="text-title">
+                    <h1>
+                        Fresh And <span>Organic</span> Products For Your
+                    </h1>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Aliquam Libero Nostrum Veniam Facere
+                        Tempore
+                        Nisi.</p>
+                    <a href="" class="btn">Shop Now</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- second Section -->
+    <section class="second-section" id="feature" data-aos="fade-up">
+        <div class="container">
+            <h2 class="second_heading">Our <span>Feature</span></h2>
+            <div class="row gap">
+                <div class="col-33">
+                    <div class="box text-center">
+                        <div class="product-img">
+                            <img src="./image/feature-img-1.png" alt="">
+                        </div>
+                        <h3>Fresh And Organic</h3>
+                        <p>Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Deserunt, Earum!</p>
+                        <a href="" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="box text-center">
+                        <div class="product-img">
+                            <img src="./image/feature-img-2.png" alt="">
+                        </div>
+                        <h3>Free Delivery</h3>
+                        <p>Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Deserunt, Earum!</p>
+                        <a href="" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="box text-center">
+                        <div class="product-img">
+                            <img src="./image/feature-img-3.png" alt="">
+                        </div>
+                        <h3>Easy Payments</h3>
+                        <p>Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Deserunt, Earum!</p>
+                        <a href="" class="btn">Read More</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+    <!--third section -->
+    <section class="third-section" id="product" data-aos="fade-up">
+        <div class="container">
+            <h2 class="second_heading">Our <span>Product</span></h2>
+            <div class="row slider">
+                <div class="col-33">
+                    <div class="box m-0">
+                        <div class="product-img">
+                            <img src="./image/product-1.png" alt="">
+                        </div>
+                        <div class="conten">
+                            <h3>Fresh Orange</h3>
+                            <p>$3.99/--10.99</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <a href="" class="btn">Add To Card</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-33">
+                    <div class="box m-0">
+                        <div class="product-img">
+                            <img src="./image/product-2.png" alt="">
+                        </div>
+                        <div class="conten">
+                            <h3>Fresh Onion</h3>
+                            <p>$2.49/--5.99</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <a href="" class="btn">Add To Card</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-33 ">
+                    <div class="box m-0">
+                        <div class="product-img">
+                            <img src="./image/product-3.png" alt="">
+                        </div>
+                        <div class="conten">
+                            <h3>Fresh Meat</h3>
+                            <p>$5.99/--10.99</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <a href="" class="btn">Add To Card</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-33">
+                    <div class="box m-0">
+                        <div class="product-img">
+                            <img src="./image/product-4.png" alt="">
+                        </div>
+                        <div class="conten">
+                            <h3>Fresh Flowers</h3>
+                            <p>$4.99/--8.99</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <a href="" class="btn">Add To Card</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="row slider2">
+                <!-- <div class="col-33"> -->
+                    <div class="box m-0">
+                        <div class="product-img">
+                            <img src="./image/product-5.png" alt="">
+                        </div>
+                        <div class="conten">
+                            <h3>Fresh Potato</h3>
+                            <p>$3.99/--10.99</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <a href="" class="btn">Add To Card</a>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+
+                    <!-- <div class="col-33"> -->
+                        <div class="box m-0">
+                            <div class="product-img">
+                                <img src="./image/product-6.png" alt="">
+                            </div>
+                            <div class="conten">
+                                <h3>Fresh pkg</h3>
+                                <p>$2.49/--5.99</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <a href="" class="btn">Add To Card</a>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+
+                        <!-- <div class="col-33 "> -->
+                            <div class="box m-0">
+                                <div class="product-img">
+                                    <img src="./image/product-7.png" alt="">
+                                </div>
+                                <div class="conten">
+                                    <h3>Fresh karot</h3>
+                                    <p>$5.99/--10.99</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <a href="" class="btn">Add To Card</a>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+
+                            <!-- <div class="col-33"> -->
+                                <div class="box m-0">
+                                    <div class="product-img">
+                                        <img src="./image/product-8.png" alt="">
+                                    </div>
+                                    <div class="conten">
+                                        <h3>Fresh Flowers</h3>
+                                        <p>$4.99/--8.99</p>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <a href="" class="btn">Add To Card</a>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--  -->
+
+                    <!-- category -->
+                    <section class="category-section" id="categorie" data-aos="fade-up">
+                        <div class="container">
+                            <h2 class="second_heading">Our <span>Category</span></h2>
+                            <div class="row text-center">
+                                <div class="col-25">
+                                    <div class="box mb-15">
+                                        <div class="product-img">
+                                            <img src="./image/cat-1.png" alt="">
+                                        </div>
+                                        <h3>Vegitables</h3>
+                                        <p>Upto 45% Off</p>
+                                        <a href="" class="btn">Shop now</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-25">
+                                    <div class="box mb-15">
+                                        <div class="product-img">
+                                            <img src="./image/cat-2.png" alt="">
+                                        </div>
+                                        <h3>Fresh Fruits</h3>
+                                        <p>Upto 45% Off</p>
+                                        <a href="" class="btn">Shop now</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-25">
+                                    <div class="box mb-15">
+                                        <div class="product-img">
+                                            <img src="./image/cat-3.png" alt="">
+                                        </div>
+                                        <h3>Dairy Products</h3>
+                                        <p>Upto 45% Off</p>
+                                        <a href="" class="btn">Shop now</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-25">
+                                    <div class="box mb-15">
+                                        <div class="product-img">
+                                            <img src="./image/cat-4.png" alt="">
+                                        </div>
+                                        <h3>Fresh Meat</h3>
+                                        <p>Upto 45% Off</p>
+                                        <a href="" class="btn">Shop now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!--  -->
+                    <!-- customer review -->
+                    <section class="customer-section" id="review" data-aos="fade-up">
+                        <div class="container">
+                            <h2 class="second_heading">Customer's<span>Reviews</span></h2>
+                            <div class="row multiple-items m-0">
+                                <div class="col-33 text-center">
+                                    <div class="box m-0">
+                                        <img class="radius" src="./image/pic-1.png" alt="">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga nam quo perferendis
+                                        accusamus.</p>
+                                        <h3>John Deo</h3>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-33 text-center">
+                                    <div class="box m-0">
+                                        <img class="radius" src="./image/pic-2.png" alt="">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga nam quo perferendis
+                                        accusamus.</p>
+                                        <h3>Kensi Row</h3>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-33 text-center">
+                                    <div class="box m-0">
+                                        <img class="radius" src="./image/pic-3.png" alt="">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga nam quo perferendis
+                                        accusamus.</p>
+                                        <h3>Denial Kon</h3>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-33 text-center">
+                                    <div class="box m-0">
+                                        <img class="radius" src="./image/pic-4.png" alt="">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga nam quo perferendis
+                                        accusamus.</p>
+                                        <h3>Jisrs Kon</h3>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--  -->
+
+
+                    <section class="blog-section" id="blogs" data-aos="fade-up">
+                        <div class="container">
+                            <h2 class="second_heading">Our<span>Blog</span></h2>
+                            <div class="row gap">
+                                <div class="col-33">
+                                    <div class="box-blog">
+                                        <div class="productImg">
+                                            <img class="blog" src="./image/blog-1.jpg" alt="">
+                                        </div>
+                                        <div class="contain">
+                                            <div class="icon">
+                                                <a href=""> <i class="fa fa-user"></i> By User</a>
+                                                <a href=""> <i class="fa fa-calendar"></i> 1st May, 2021</a>
+                                            </div>
+                                            <h3>Fresh And Organic Vegitables And Fruits
+                                            </h3>
+                                            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veniam, Expedita.</p>
+                                            <a href="" class="btn">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-33">
+                                    <div class="box-blog">
+                                        <div class="productImg">
+                                            <img class="blog" src="./image/blog-3.jpg" alt="">
+                                        </div>
+                                        <div class="contain">
+                                            <div class="icon">
+                                                <a href=""> <i class="fa fa-user"></i> By User</a>
+                                                <a href=""> <i class="fa fa-calendar"></i> 1st May, 2021</a>
+                                            </div>
+                                            <h3>Fresh And Organic Vegitables And Fruits
+                                            </h3>
+                                            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veniam, Expedita.</p>
+                                            <a href="" class="btn">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-33">
+                                    <div class="box-blog">
+                                        <div class="productImg">
+                                            <img class="blog" src="./image/blog-2.jpg" alt="">
+                                        </div>
+                                        <div class="contain">
+                                            <div class="icon">
+                                                <a href=""> <i class="fa fa-user"></i> By User</a>
+                                                <a href=""> <i class="fa fa-calendar"></i> 1st May, 2021</a>
+                                            </div>
+                                            <h3>Fresh And Organic Vegitables And Fruits
+                                            </h3>
+                                            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veniam, Expedita.</p>
+                                            <a href="" class="btn">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--  -->
+                    <!-- footer -->
+                    <section class="footer" data-aos="fade-up">
+                        <div class="container">
+                            <div class="box-container">
+                                <div class="box-footer">
+                                    <h3> groco <i class="fas fa-shopping-basket"></i> </h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
+                                    <div class="share">
+                                        <a href="#" class="fab fa-facebook-f"></a>
+                                        <a href="#" class="fab fa-twitter"></a>
+                                        <a href="#" class="fab fa-instagram"></a>
+                                        <a href="#" class="fab fa-linkedin"></a>
+                                    </div>
+                                </div>
+
+                                <div class="box-footer">
+                                    <h3>contact info</h3>
+                                    <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                                    <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                                    <a href="#" class="links"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
+                                    <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> mumbai, india - 400104 </a>
+
+                                </div>
+
+                                <div class="box-footer">
+                                    <h3>quick links</h3>
+                                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+                                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+                                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+                                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+                                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+                                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+                                </div>
+
+                                <div class="box-footer">
+                                    <h3>newsletter</h3>
+                                    <p>subscribe for latest updates</p>
+                                    <input type="email" placeholder="your email" class="email">
+                                    <input type="submit" value="subscribe" class="btn">
+                                    <img src="image/payment.png" class="payment-img" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
+                    <!-- jquer -->
+                    <script src="https://code.jquery.com/jquery-3.6.1.js"
+                    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+                    <!-- slick -->
+
+
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+                    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                    <!-- slick js -->
+
+                    <!-- animated js aos -->
+                    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+                    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+                    <script src="./js/aos.js"></script>
+
+                    <script>
+
+                        $('.slider').slick({
+            // dots: true,
+            // infinite: true,
+                            loop: true,
+                            speed: 1000,
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+            // autoplay: true,
+                            autoplay: {
+                                delay: 2000
+                            },
+                            arrows: true,
+                            responsive: [
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 2,
+                                    infinite: true,
+                                    dots: true
+                                }
+                            },
+                            {
+                                breakpoint: 600,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1
+                                }
+                            },
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1
+                                }
+                            }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+                            ]
+                        });
+
+                        $('.slider2').slick({
+                            dots: true,
+                            infinite: true,
+                            speed: 1500,
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+            // autoplay: true,
+                            autoplay: {
+                                delay: 2000
+                            },
+                            arrows: false,
+                            responsive: [
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 2,
+                                    infinite: true,
+                                    dots: true
+                                }
+                            },
+                            {
+                                breakpoint: 600,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1
+                                }
+                            },
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1
+                                }
+                            }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+                            ]
+                        });
+
+                        $('.multiple-items').slick({
+            // infinite: true,
+                            loop: true,
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            speed: 800,
+            // autoplay: true,
+                            autoplay: {
+                                delay: 2000
+                            },
+                            responsive: [
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 2,
+                                    infinite: true,
+                                    dots: true
+                                }
+                            },
+                            {
+                                breakpoint: 600,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1
+                                }
+                            },
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1
+                                }
+                            }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+                            ]
+                        });
+
+                        $('.one-time').slick({
+                            dots: false,
+                            infinite: true,
+                            speed: 800,
+                            slidesToShow: 1,
+                            adaptiveHeight: true,
+                            arrows: false
+                        });
+                    </script>
+                    <!-- <script src="./js/slick.min.js"></script> -->
+                    <script src="./js/indexJs.js"></script>
+                </body>
+
+                </html>
+
+                

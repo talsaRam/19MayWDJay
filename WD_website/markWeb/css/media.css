@@ -1,0 +1,179 @@
+@media (max-width:1299px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 .8rem;
+    }
+
+}
+
+@media (max-width:999px) {
+    .icons {
+        display: block;
+    }
+
+    header {
+        padding: 0 .5em;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .seacrh {
+        display: none;
+    }
+
+    .nav {
+        position: fixed;
+        top: 55px;
+        z-index: 1001;
+        width: 35%;
+        background: #222;
+        left: -100%;
+        transition: all .5s;
+
+    }
+
+    .nav .ul-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav .ul-item li {
+        display: block;
+        margin: 15px 10px;
+    }
+
+
+    .nav.active {
+        left: 0;
+    }
+}
+
+@media (max-width: 868px) {
+    .carousel-caption {
+        padding: 10em 0rem;
+        width: 90%;
+    }
+
+    .pos-abs-top {
+        top: 450px;
+    }
+
+    .news .col-50 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .content-text h4{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width:768px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .carousel-caption h2,
+    .carousel-caption h3 {
+        font-size: 2.5em;
+    }
+
+    .col-33 {
+        width: 100%;
+    }
+
+    .col-66 {
+        width: 100%;
+    }
+
+    .col-25 {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .news {
+        margin-top: 25rem;
+    }
+}
+
+@media (max-width:568px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .col-50 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .col-33 {
+        width: 100%;
+    }
+
+    .col-66 .col-50 {
+        margin-bottom: 30px;
+    }
+
+   
+
+    .imgBox-title {
+        padding-left: 0;
+    }
+
+    .col-25 {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .subcribe .subcribe-form{
+        width: 100%;
+    }
+
+    .news{
+        margin-top: 50rem;
+    }
+}
+
+@media (max-width:380px) {
+    .subcribe-form input[type="email"]{
+        width: 70%;
+    }
+
+    .subcribe-form input[type="submit"]{
+        width: 30%;
+    }
+
+    .col-25 {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .carousel-caption h2, .carousel-caption h3{
+        font-size: 1.8em;
+    }
+    .news{
+        margin-top: 65em;
+    }
+
+    /* .content-left h1, .content-right-content h3, .content-text h5{
+        font-size: 1.5em;
+    } */
+    .news-title h3, .title-our h3, .title-testimonials h3{
+        font-size: 1.5em;
+
+    }
+    .subcribe .subcribe-form{
+        width: 100%;
+    }
+
+    .col-50{
+        width: 100%;
+    }
+
+    /* .content-text a{
+        padding: 5px 1px;
+    } */
+}

@@ -11,7 +11,7 @@
     scroll-behavior: smooth;
 }
 
-p::selection{
+p::selection {
     background-color: teal;
     color: #fff;
 }
@@ -24,6 +24,9 @@ body {
     justify-content: space-between;
 }
 
+.py-3 {
+    padding: 30px 0;
+}
 
 .align {
     /* align-items: flex-end; */
@@ -234,7 +237,8 @@ section.bg-color {
 }
 
 
-.bg-color .content .btn-outline {
+.bg-color .content .btn-outline,
+.bg-img-down .box-awesome-title a {
     padding: 10px 25px;
     border-radius: 5px;
     color: #fff;
@@ -246,7 +250,8 @@ section.bg-color {
 
 
 
-.bg-color .content .btn-outline:hover {
+.bg-color .content .btn-outline:hover,
+.bg-img-down .box-awesome-title a:hover {
     background-color: orange;
 }
 
@@ -304,7 +309,7 @@ section.bg-color {
     color: #fff;
 }
 
-.card .card-footer:hover {
+.card .card-footer:hover{
     background-color: #28a745;
 }
 
@@ -315,7 +320,7 @@ section.bg-color {
 
 .me-auto {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -347,7 +352,7 @@ section.bg-color {
 
 .social-icon-section .col-1 .icon-social-media i {
     font-size: 48px;
-    color: #cccccc;
+    color: #8d8a8a;
     cursor: pointer;
 }
 
@@ -439,7 +444,8 @@ img {
     /* box-shadow: 10px 10px 10px 10px rgba(23, 23, 23, 0.8); */
 }
 
-.bg-first-img-section2{
+.bg-first-img-section2,
+.pricing-option {
     background-color: #ddd;
 }
 
@@ -509,6 +515,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .5s;
 }
 
 .bg-first-img-section .title .title-div p {
@@ -517,14 +524,15 @@ img {
     line-height: 20px;
     color: #86878b;
     font-weight: 400;
-    font-family: "Open Sans";
+    font-family: "Open" sans-serif;
 }
 
 
 /* ------------awesome-section----------- */
 
-.awesome-section {
-    padding: 2rem 0 2rem;
+.awesome-section,
+.pricing-option {
+    padding: 5rem 0 2rem;
 }
 
 .awesome-section .box-awesome-title h2 {
@@ -563,7 +571,8 @@ img {
     transition: all .5s;
 }
 
-.col-30:hover .icon-awesome i{
+.col-30:hover .icon-awesome i,
+.bg-first-img-section .title .title-div:hover i {
     background-color: orange;
     color: #fff;
 }
@@ -580,4 +589,145 @@ img {
     font-weight: 400;
     text-align: center;
     padding: 25px 10px;
+}
+
+
+/* ------pricing-option---------- */
+
+.pricing-option .header,
+.pricing-option .body {
+    background-color: #212121;
+    padding: 15px;
+    margin-bottom: 1px;
+}
+
+.pricing-option .header h5 {
+    color: #fff;
+    font-size: 16px;
+}
+
+.pricing-option .body {
+    padding: 25px 0;
+}
+
+.pricing-option .body span {
+    font-size: 50px;
+    margin-left: 5px;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+}
+
+.pricing-option .body p {
+    font-size: 30px;
+    color: #fff;
+}
+
+.pricing-option .body em {
+    font-size: 12px;
+    color: #ddd;
+    font-family: "Open" sans-serif;
+    padding-top: 20px;
+}
+
+.pricing-option .card2Footer {
+    background-color: orange;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.pricing-option .card1Footer,
+.pricing-option .card3Footer {
+    padding: 3px 0;
+    background-color: orange;
+}
+
+.gap {
+    gap: 20px;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pricing-option .pos-abs {
+    margin-top: 35px;
+}
+
+.pricing-option .list-itme {
+    background-color: #fff;
+}
+
+.pricing-option .list-itme ul li {
+    color: #86878b;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 8px 0;
+    border-bottom: 1px solid #aaa;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.pricing-option .list-itme ul li:hover {
+    background-color: #86878b;
+    color: #fff;
+}
+
+.pricing-option .buy-now {
+    background-color: #28a745;
+    padding: 5px 0;
+}
+
+.pricing-option .buy-now a {
+    font-weight: 800;
+    transition: all .3s;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* /------------customer-section------------- */
+.customer-section .box-awesome-title h2,
+.awesome-section .box-awesome-title h2 {
+    color: #212121;
+}
+.paragraph-section .para{
+    background-color: #aaa;
+    padding:15px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.paragraph-section .cust-img{
+    width: 100px;
+    height: 100px;
+    margin-right:50px;
+}
+
+.paragraph-section .img-cust{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    /* justify-content: center; */
+}
+
+.paragraph-section .img-cust .cus-name{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.paragraph-section .img-cust .qualis{
+    color: #8d8a8a;
+    font-size: 14px;
+}
+
+
+
+/* ------------bg-img-down------------- */
+.bg-img-down {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/bg-bag.png');   
+    padding: 50px 0;
+}
+
+.bg-img-down .box-awesome-title h2 ,.bg-img-down .box-awesome-title p{
+    color: #fff;
+    font-size: 600;
 }

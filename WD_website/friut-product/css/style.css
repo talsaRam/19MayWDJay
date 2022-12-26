@@ -10,6 +10,13 @@
     text-decoration: none;
 }
 
+/* 
+.slick-prev {
+    background: #ddd !important;
+}
+.slick-next {
+    background: #ddd !important;
+} */
 :root {
     --orange: #ff7800;
     --black: #000;
@@ -329,7 +336,7 @@ section {
 /*--------------------- second Section------------------------------- */
 .col-33 {
     width: 33.33%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .col-25 {

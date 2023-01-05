@@ -104,6 +104,8 @@ section {
     top: 22px;
     background: #ff7800;
     transition: all .3s; */
+
+
     position: absolute;
     content: "";
     left: 0;
@@ -113,12 +115,16 @@ section {
     background-color: #ff7800;
     transform: scaleX(0);
     transition: all .5s ease;
+
+
+
 }
 
 .header .navbar a:hover::after {
     /* width: 100%; */
     transform: scaleX(1);
-
+    box-shadow: 0 0 0 4px  #333
+    0 0 0 4px  #333;
 }
 
 .header .navbar a:hover {

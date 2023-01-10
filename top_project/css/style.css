@@ -7,6 +7,7 @@
     outline: none;
     border: none;
     text-decoration: none;
+    color: black;
 }
 
 p{
@@ -158,10 +159,9 @@ img {
 
 .middel-navbar li .hover{
     position:absolute;
-    bottom: -300px;
+    bottom: -252px;
     left: 0 ;
     right: 0;
-    width: fit-content;
     /* box-shadow: rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.05) -25px 25px; */
     /* box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; */
     background-color: #9FA6B2;
@@ -178,10 +178,10 @@ img {
 
 .middel-navbar li .hovers{
     position:absolute;
-    bottom: -300px;
+    bottom: -252px;
     left: 0 ;
     right: 0;
-    width: fit-content;
+    /* width: fit-content; */
     /* box-shadow: rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.05) -25px 25px; */
     /* box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; */
     background-color: #9FA6B2;
@@ -222,7 +222,7 @@ z-index: 5;
 }
 
 .col-1{
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     border-radius: 10px;
     width: 35%;
 }
@@ -230,7 +230,7 @@ z-index: 5;
 
 .col-2{
     width: 55%;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
 }
 
 ul li.anchor-list a {
@@ -265,21 +265,24 @@ ul li.anchor-list a {
 
 .bg-gray{
     background-color: #ddd;
+    padding: 25px 0;
 }
 
 .col-30{
     width: 30%;
 }
 .mt-10{
-    padding: 18.5em 0;
+    padding: 15.5em 0 0rem;
 }
 .img-col img{
     width: 100%;
 }
 
-.section-box,
+.section-box{
+    padding: 20px 15px 0px 0px;
+}
 .py-50{
-    padding: 20px;
+    padding: 20px 15px 0px 10px;
 }
 .section-box .heading{
     font-size: 25px;
@@ -318,4 +321,24 @@ ul li.anchor-list a {
 .head-box .img-col-2{
     margin: 0 auto;
     margin-top: 20px;
+}
+/* .------------------------footer------------------ */
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.712);
+    padding: 25px 0;
+}
+
+
+.ul-footer{
+    text-align: center;
+}
+
+.ul-footer-1 li a {
+    color: #9FA6B2;
+}
+
+.ul-footer p{
+    padding-top: 10px;
+    color: aliceblue;
 }

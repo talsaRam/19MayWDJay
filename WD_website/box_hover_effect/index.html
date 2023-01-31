@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Hover</title>
+    <style>
+        * {
+            padding: 0;
+            box-sizing: border-box;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .container .box {
+            width: 350px;
+            background-color: #fff;
+            padding: 40px;
+            position: relative;
+            box-shadow: 0px 0px 15px rgb(0, 0, 0,.1);
+            border-radius: 10px;
+            margin: 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        @keyframes animation {
+            0%{
+                filter: hue-rotate(0deg);
+            }
+
+            100%{
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        .container .box .icon {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 30px;
+            font-weight: 700;
+            transition: all .7s;
+            animation:  animation 1s linear infinite;
+        }
+
+        .container .box:nth-child(1) .icon {
+            background-color: #e91e63;
+            box-shadow: 0 0 0 #e91e63;
+            animation-delay: 0.2s;
+        }
+
+        .container .box:nth-child(1):hover .icon {
+            box-shadow: 0 0 0 400px #e91e63;
+        }
+
+        .container .box:nth-child(2) .icon {
+            background-color: #e9941e;
+            box-shadow: 0 0 0 #e9941e;
+            animation-delay: 0.4s;
+        }
+
+        .container .box:nth-child(2):hover .icon {
+            box-shadow: 0 0 0 400px #e9941e;
+        }
+
+        .container .box:nth-child(3) .icon {
+            background-color: #1ee9e9;
+            box-shadow: 0 0 0 #1ee9e9;
+        }
+
+        .container .box:nth-child(3):hover .icon {
+            box-shadow: 0 0 0 400px #1ee9e9;
+        }
+
+        .container .box .conten {
+            z-index: 1;
+            position: relative;
+            transition: all 0.5s;
+        }
+
+        .container .box::before {
+            content: "";
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgb(255, 255, 255, 0.2);
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .container .box:hover .conten {
+            color: #fff;
+        }
+
+        .container .box .conten h3 {
+            margin: 10px 0;
+            padding: 0;
+            font-size: 25px;
+        }
+
+        .container .box .conten p {
+            margin-bottom: 25px;
+
+        }
+
+        .container .box .conten a {
+            display: inline;
+            padding: 10px 20px;
+            background-color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            color: #000;
+            font-weight: 500;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="icon">01</div>
+            <div class="conten">
+                <h3>Service Name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia natus, maiores repellendus suscipit
+                    omnis aliquid animi modi libero? Fugit quibusdam et nobis debitis praesentium error totam aliquam
+                    eius voluptate labore.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icon">02</div>
+            <div class="conten">
+                <h3>Service Name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia natus, maiores repellendus suscipit
+                    omnis aliquid animi modi libero? Fugit quibusdam et nobis debitis praesentium error totam aliquam
+                    eius voluptate labore.</p>
+                <a href="" class="btn">Read More</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icon">03</div>
+            <div class="conten">
+                <h3>Service Name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia natus, maiores repellendus suscipit
+                    omnis aliquid animi modi libero? Fugit quibusdam et nobis debitis praesentium error totam aliquam
+                    eius voluptate labore.</p>
+                <a href="" class="btn">Read More</a>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

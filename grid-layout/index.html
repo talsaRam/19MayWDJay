@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./res-media-query.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* html{
+            font-size: 22px;
+        }
+
+        body{
+            padding: 1rem;
+        } */
+
+
+        .container {
+            max-width: 1250px;
+            margin: 0 auto;
+            display: grid;
+            gap: 1rem;
+        }
+
+        .card {
+            background-color: teal;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin: 0.5rem;
+            font-size: 25px;
+        }
+
+        .card-section {
+            margin: 5px;
+            padding: 1rem;
+            color: black;
+            background: #fff;
+        }
+
+        .color-back{
+            background: orange;
+        }
+
+        .box{
+            width: 80%;
+            background: #494949;
+            margin: auto;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">1</div>
+        <div class="card">2</div>
+        <div class="card">3</div>
+        <div class="card">4</div>
+        <div class="card">5</div>
+        <div class="card">6</div>
+        <div class="card">7</div>
+        <div class="card">8</div>
+        <div class="card">9</div>
+    </div>
+
+
+    <section>
+        <div class="container">
+            <div class="card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore in nihil dolorem veritatis quia
+                    impedit, commodi fugiat repellat consectetur qui incidunt voluptatem fuga! Impedit eveniet assumenda
+                    voluptate eligendi exercitationem fugiat?</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="color-back">
+        <div class="container">
+            <div class="card-section">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore in nihil dolorem veritatis quia
+                    impedit, commodi fugiat repellat consectetur qui incidunt voluptatem fuga! Impedit eveniet assumenda
+                    voluptate eligendi exercitationem fugiat?</p>
+            </div>
+
+            <div class="card-section">
+                <div class="box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore in nihil dolorem veritatis quia
+                        impedit, commodi fugiat repellat consectetur qui incidunt voluptatem fuga! Impedit eveniet assumenda
+                        voluptate eligendi exercitationem fugiat?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

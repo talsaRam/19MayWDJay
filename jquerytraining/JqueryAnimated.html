@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Animated</title>
+    <style>
+        #animated{
+            padding: 15px;
+            background-color: rgba(238, 130, 238, 0.542);
+            border: 1px solid black;
+            position: relative;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated" id="animated">
+        <h1>Window Event</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, totam?</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti necessitatibus sequi autem! Veniam, atque reprehenderit!</p>
+
+    <button id=BtnAnimated>Animated</button>
+    
+
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script>
+       $(document).ready(function(){
+        $("#BtnAnimated").click(function(){
+            $("#animated").animate({left: '150px'});
+            $("#animated").animate({top: '150px'});
+        })
+       
+       })
+
+      
+    </script>
+</body>
+</html>

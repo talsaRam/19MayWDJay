@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Css Intro</title>
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+
+
+		.box{
+            font-size: 20px;
+            background-color: aquamarine;
+            color: white;
+        }
+
+        @media only screen and (max-width:300px){
+            #box-1{
+                background-color: cyan;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            #box-2{
+                background-color: blueviolet;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            #box-3{
+                color: black;
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width:1050PX) {
+            #box-4{
+                background-color: green;
+            }
+        }
+
+
+        @media (min-width: 1050px) {
+            #box-4{
+                background-color: teal;
+            }
+        }
+
+	</style>
+</head>
+<body>
+	<div class="box" id="box-1">
+		<ul id="ul_id" class="ulId" >
+		<h2>Css Introduction</h2>
+		<li>Css cascading style sheets.</li>
+		<li>Css Saved lot of work.</li>
+		<li>External style sheet are store in css file/folder</li>
+		<li></li>
+	</ul>
+	</div>
+
+	<div class="box" id="box-2">
+		<ul>
+		<h2>CSS can be added to HTML documents in 3 ways:</h2>
+		<li>Inline - by using the style attribute inside HTML elements.</li>
+		<li>Internal - by using a &lt; style &gt; element in the <head> section.</li>
+		<li>External - by using a &lt; link &gt; element to link to an external CSS file</li>.
+	</ul>
+	</div>
+
+
+		<ul>
+			<h2>Adjacent Sibling Selector div (+) p</h2>
+			<style type="text/css">
+				div + p{
+/*				color: green;*/
+}
+</style>
+<div>
+	<p>inside the div tag</p>
+	<p>inside the div tag</p>
+</div>
+
+<p>After Just div p tag Adjacent Sibling Selector div (+) p</p>
+<span>Span</span>
+<p>After div p tag</p>
+
+<div>
+	<p>inside the div tag</p>
+	<p>inside the div tag</p>
+</div>
+
+<p>After Just div p tag Adjacent Sibling Selector div (+) p</p>
+<span>Span</span>
+<p>After div p tag</p>
+
+</ul>
+
+<div class="box" id="box-3">
+	<ul>
+	<style type="text/css">
+		div ~ p{
+			color: red;
+		}
+	</style>
+	<h2>General Sibling Selector div ~ p</h2>
+	<div>
+		<p>inside the div tag</p>
+		<p>inside the div tag</p>
+	</div>
+
+	<p>After Just div p tag Adjacent Sibling Selector div (+) p</p>
+	<span>Span</span>
+	<p>After div p tag</p>
+
+	<div>
+		<p>inside the div tag</p>
+		<p>inside the div tag</p>
+	</div>
+
+	<p>After Just div p tag General Sibling Selector div ~ p , Adjacent Sibling Selector div (+) p</p>
+	<span>Span</span>
+	<p>After div p tag General Sibling Selector div ~ p</p>
+</ul>
+</div>
+
+<div class="box" id="box-4">
+	<ol>
+	<h2>Writing Media Rules for Mobiles, Tabs & Other Devices</h2>
+	<li><b>Mobile</b> (Smartphone) max-width: <b>320px — 480px</b></li>
+	<li><b>iPads, Tablets</b> Resolution max-width: <b>481px — 768px:</b></li>
+	<li><b>Tablets Ipads</b>  portrait mode max-width:<b>769px — 1024px:</b> Small screens, laptops</li>
+	<li><b>Desktops</b> max-width:<b>1025px — 1200px:</b> Desktops, large screens</li>
+	<li><b>Huge (Larger screen)</b> size  max-width: <b>1201px and more — </b> Extra large screens, TV</li>
+	</ol>
+</div>
+
+<div>
+	<h2>Pseudo classes</h2>
+	<ol>
+		<li>:first-child</li>
+		<li>:last-child</li>
+		<li>:nth-child()</li>
+		<li>:nth-last-child()</li>
+		<li>:nth-last-of-type()</li>
+		<li>:nth-of-type()</li>
+		<li>:only-child</li>
+		<li>:only-of-type</li>
+		<li>:first-of-type</li>
+		<li>:last-of-type</li>
+		<li>:empty</li>
+		<li>:not()</li>
+	</ol>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetElementByClassName</title>
+</head>
+
+<body>
+    <ul>
+        <li class="list-item">Home</li>
+        <li class="list-item">About</li>
+        <li class="list-item">Product</li>
+        <li class="list-item">Contact</li>
+    </ul>
+
+    <script>
+        var list_itme = document.getElementsByClassName("list-item");
+        // console.log(list_itme[2]);
+        list_itme[0].textContent = "Web Deleloper"      //change list item text 
+        list_itme[1].textContent = "Frontent Developer" //change list item text 
+        list_itme[2].textContent = "Php Developer"      //change list item text 
+        list_itme[3].textContent = "Backend Developer"  //change list item text 
+
+        list_itme[1].style.fontWeight = 'bold';
+        list_itme[3].style.color = 'purple';
+        list_itme[0].style.backgroundColor = 'yellow';
+
+        for (let i = 0; i < list_itme.length; i++) {
+            list_itme[i].style.backgroundColor = 'teal';
+            list_itme[i].style.padding = '10px 10px';
+            list_itme[i].style.listStyle = 'none';
+            list_itme[i].style.color = '#fff';
+            list_itme[i].style.borderBottom = '1px solid gray';
+            list_itme[i].style.borderTop = '1px solid gray';
+            
+        }
+    </script>
+
+</body>
+
+</html>

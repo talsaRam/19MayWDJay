@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            margin-top: 40px;
+            background-color: pink;
+            padding: 5px 0;
+            height: 25PX;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Form Event</h1>
+    <form action="" id="sForm">
+        <label for="">Name</label>
+        <input type="text" id="sname" required>
+        <br>
+        <br>
+
+        <label for="">L Name</label>
+        <input type="text" id="lname">
+        <br>
+        <br>
+
+        <label for="">Counrty</label>
+        <select name="" id="country">
+            <option value="india">India</option>
+            <option value="nepal">Nepal</option>
+            <option value="bangladesh">Bangladesh</option>
+            <option value="franch">Franch</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="box" id="box"></div>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#sname,#lname,#country").focus(function () {
+                $(this).css("background-color", 'teal')
+            })
+
+
+            $("#sname,#lname,#country").blur(function () {
+                $(this).css("background-color", '')
+            })
+
+            $("#sname,#lname").select(function () {  // only select input select elemwnt
+                $(this).css("background-color", '#87CEEB')
+            })
+
+            $("#country").change(function () { //only worl in select element
+                $(this).css("background-color", 'orange')
+                var a = $(this).val ();
+                $("#box").html(a);
+            })
+
+            $('#sForm').submit(function() {
+                // document.write("form submited")
+                // console.log("form submited");
+                alert("form submited");
+            })
+        })
+    </script>
+</body>
+</html>

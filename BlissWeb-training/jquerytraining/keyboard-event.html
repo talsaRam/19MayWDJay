@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keybaord Event</title>
+    <style>
+        #box{
+            padding: 15px;
+            background-color: rgba(238, 130, 238, 0.542);
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box" id="box">
+        <h1>keyboard Event</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, totam?</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti necessitatibus sequi autem! Veniam, atque reprehenderit!</p>
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("body").keypress(function(){
+            $(this).css('background-color', ' teal')
+        })
+
+        $("body").keyup(function(){
+            $(this).css('background-color', 'orange')
+        })
+
+
+        $("body").keydown(function(){
+            $(this).css('background-color', ' purple')
+        })
+    })
+    </script>
+    
+</body>
+</html>

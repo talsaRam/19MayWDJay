@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Elements</title>
+    <style>
+        body{
+            padding: 0 50px;
+        }
+        li{
+            list-style: none;
+            position: relative;
+            margin-bottom: 10px;
+            font-family: sans-serif;
+        }
+
+        ::selection{
+            background-color: teal;
+            color: aliceblue;
+        }
+        li::before {
+            position: absolute;
+            left: -45px;
+            content: '';
+            top: -10px;
+            height: 35px;
+            width: 35px;
+            background-image: url(../images/thumb.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="ul-list">
+        <li>getElementById("")</li>
+        <li>getElementByClassName("")</li>
+        <li>getElementByTagName("")</li>
+        <li>Dom represent the content of xml or html document as tree structure can easily read, access, update the content of the document is a programming interface (API) </li>
+        <li>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</li>
+    </ul>
+    <h1>Dom Elements</h1>
+    <p>Click to go to form event</p>
+    <p id="demo"></p>
+    <button><a class="google" accesskey="t" target="_blank" id="google" href="form-event.html">Form Event</a></button>
+    <button id="addeventMthod">Method</button>
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script>
+        var ullist = document.querySelector(".ul-list");
+
+        ullist.style.borderTop = '5px solid #000';
+        ullist.style.borderBottom = '5px solid #000';
+        ullist.style.padding = '15px';
+        ullist.style.color = '#fff';
+        document.getElementById("google"). accessKey = "w";                              
+
+        // let key = document.getElementById("google").accessKey;
+        // document.getElementById("demo").innerHTML = key;
+                                        
+        const element = document.getElementById("addeventMthod");
+        element.addEventListener("click", function(){
+            document.getElementById("demo").innerHTML = "Hello World I am addEventListener";
+        });
+
+        var url = document.URL;
+        document.getElementById("demo").innerHTML = "www.google.com";
+
+        $("body").keypress(function(){
+            $(this).css('background-color','teal');
+            $(this).css('color','White');
+        })
+
+         $("body").keydown(function(){
+            $(this).css('background-color', 'orange')
+        })
+
+
+        $("body").keyup(function(){
+            $(this).css('background-color','purple')
+        })
+
+
+    </script>
+</body>
+
+</html>

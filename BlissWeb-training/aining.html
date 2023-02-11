@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 35px;
+        }
+
+        .col-33 {
+            background-color: #ddd;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1450px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ol>
+        <h2>Namespaces</h2>
+        <li>XML Namespace is used to avoid element name conflict in XML document.</li>
+        <li>This attribute name must be started with "xmlns".</li>
+        <li> <strong>Let's see the XML namespace syntax: </strong> &lt;element xmlns:name = &quot;URL&quot;&gt;</li>
+        <li><i>Uniform Resource Identifier</i> is used to identify the internet resource. It is a string of characters.
+        </li>
+        <li>The most common URI is URL <i>(Uniform Resource Locator)</i> which identifies an internet domain address.
+        </li>
+    </ol>
+
+    <ol>
+        <h2>Differences between &lt;div&gt; and &lt;span&gt; tag: </h2>
+        <table>
+            <tr>
+                <th>Div</th>
+                <th>Span</th>
+            </tr>
+
+            <tr>
+                <td>The &lt;div&gt; tag is a block level element.</td>
+                <td>The &lt;span&gt; tag is an inline element.</td>
+            </tr>
+
+            <tr>
+                <td>It is best to attach it to a section of a web page.</td>
+                <td>It is best to attach a CSS to a small section of a line in a web page.</td>
+            </tr>
+            <tr>
+                <td>It accepts align attribute.</td>
+                <td>It does not accept align attribute.</td>
+            </tr>
+        </table>
+    </ol>
+
+    <ol>
+        <h2>Html Images</h2>
+        <li>Images can improve the design on the web page.</li>
+        <li>The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag.</li>
+        <li>The &lt;img&gt; tag has two required attributes:
+            <ol type="A">
+                <li><Strong>src</Strong> - Specifies the path to the image</li>
+                <li><strong>alt</strong> - Specifies an alternate text for the image</li>
+                <li><strong>syntax:</strong> &lt;img src="url" alt="alternatetext" &gt;</li>
+            </ol>
+        </li>
+    </ol>
+
+    <ol>
+        <h2>HTML-Hyperlink</h2>
+        <li>Html Links are Hyperlinks.</li>
+        <li>You can click on link and jump to another page.</li>
+        <li>When you move the mouse over a link, the mouse arrow will trun into a little hand. </li>
+    </ol>
+
+    <ol>
+        <h2>Display Grid</h2>
+        <li>We can handle two dimensional grid system</li>
+        <li>Two dimensional means we can handle two in one grid system</li>
+        <li>fast clean code</li>
+    </ol>
+
+    <ol>
+        <h2>Html Table</h2>
+        <table>
+            <caption>Structure</caption>
+            <col span="2" style="background-color: aquamarine;">
+            <col span="1" style="background-color: #fff;">
+            <col span="4" style="background-color: rebeccapurple;">
+            <tr>
+                <th>Sr. No.</th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Marks</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Ram</td>
+                <td>Kumar</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Same</td>
+                <td>Seeta</td>
+                <td>Roye</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>Kishore</td>
+                <td>Kumar</td>
+                <td>20</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Sum</td>
+                    <td>40</td>
+                </tr>
+            </tfoot>
+        </table>
+    </ol>
+    <iframe src="BlissWeb-taining.html" height="500" width="100%" name="iFrame" title="Iframe Example"></iframe>
+    <iframe height="100px" width="250px" name="iFrame" title="Iframe Example" srcdoc="<h2>Nice Frame</h2>"></iframe>
+
+    <p><a href="../practise/index.html" target="iFrame">W3Schools.com</a></p>
+
+    <div class="container">
+        <div class="grid">
+            <div class="col-33">
+                <div class="box">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nesciunt libero nulla,
+                        necessitatibus reprehenderit dolores laudantium voluptatibus ullam deleniti debitis consequuntur
+                        praesentium tenetur temporibus, enim minima perferendis sunt facere eveniet non sint tempore
+                        harum. Placeat sequi optio quisquam vero magnam similique ea eligendi ipsum, beatae deserunt
+                        dolorum quidem assumenda consequuntur earum officiis aliquid velit, ut nobis ratione minus
+                        facilis cum! Adipisci quibusdam reiciendis quas pariatur quasi sit dolore sed libero consectetur
+                        est minus quia obcaecati natus earum id quod corrupti exercitationem error inventore provident
+                        saepe, vero doloremque. Neque praesentium, corrupti assumenda laborum ab hic dicta nulla
+                        perspiciatis nihil quas, officiis quam exercitationem unde. Temporibus voluptatum tempora minima
+                        numquam placeat cupiditate, labore unde assumenda recusandae, culpa quos obcaecati laudantium
+                        sunt qui voluptates ea. Dolorem quis, reprehenderit nam sint perferendis non voluptatibus
+                        temporibus praesentium, optio esse fugit inventore ex, ducimus totam sed error doloribus quaerat
+                        quos? Ratione mollitia possimus nihil! Voluptate, necessitatibus!</p>
+                </div>
+            </div>
+            <div class="col-33">
+                <div class="box">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nesciunt libero nulla,
+                        necessitatibus reprehenderit dolores laudantium voluptatibus ullam deleniti debitis consequuntur
+                        praesentium tenetur temporibus, enim minima perferendis sunt facere eveniet non sint tempore
+                        harum. Placeat sequi optio quisquam vero magnam similique ea eligendi ipsum, beatae deserunt
+                        dolorum quidem assumenda consequuntur earum officiis aliquid velit, ut nobis ratione minus
+                        facilis cum! Adipisci quibusdam reiciendis quas pariatur quasi sit dolore sed libero consectetur
+                        est minus quia obcaecati natus earum id quod corrupti exercitationem error inventore provident
+                        saepe, vero doloremque. Neque praesentium, corrupti assumenda laborum ab hic dicta nulla
+                        perspiciatis nihil quas, officiis quam exercitationem unde. Temporibus voluptatum tempora minima
+                        numquam placeat cupiditate, labore unde assumenda recusandae, culpa quos obcaecati laudantium
+                        sunt qui voluptates ea. Dolorem quis, reprehenderit nam sint perferendis non voluptatibus
+                        temporibus praesentium, optio esse fugit inventore ex, ducimus totam sed error doloribus quaerat
+                        quos? Ratione mollitia possimus nihil! Voluptate, necessitatibus!</p>
+                </div>
+            </div>
+            <div class="col-33">
+                <div class="box">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nesciunt libero nulla,
+                        necessitatibus reprehenderit dolores laudantium voluptatibus ullam deleniti debitis consequuntur
+                        praesentium tenetur temporibus, enim minima perferendis sunt facere eveniet non sint tempore
+                        harum. Placeat sequi optio quisquam vero magnam similique ea eligendi ipsum, beatae deserunt
+                        dolorum quidem assumenda consequuntur earum officiis aliquid velit, ut nobis ratione minus
+                        facilis cum! Adipisci quibusdam reiciendis quas pariatur quasi sit dolore sed libero consectetur
+                        est minus quia obcaecati natus earum id quod corrupti exercitationem error inventore provident
+                        saepe, vero doloremque. Neque praesentium, corrupti assumenda laborum ab hic dicta nulla
+                        perspiciatis nihil quas, officiis quam exercitationem unde. Temporibus voluptatum tempora minima
+                        numquam placeat cupiditate, labore unde assumenda recusandae, culpa quos obcaecati laudantium
+                        sunt qui voluptates ea. Dolorem quis, reprehenderit nam sint perferendis non voluptatibus
+                        temporibus praesentium, optio esse fugit inventore ex, ducimus totam sed error doloribus quaerat
+                        quos? Ratione mollitia possimus nihil! Voluptate, necessitatibus!</p>
+                </div>
+            </div>
+            <div class="col-33">
+                <div class="box">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nesciunt libero nulla,
+                        necessitatibus reprehenderit dolores laudantium voluptatibus ullam deleniti debitis consequuntur
+                        praesentium tenetur temporibus, enim minima perferendis sunt facere eveniet non sint tempore
+                        harum. Placeat sequi optio quisquam vero magnam similique ea eligendi ipsum, beatae deserunt
+                        dolorum quidem assumenda consequuntur earum officiis aliquid velit, ut nobis ratione minus
+                        facilis cum! Adipisci quibusdam reiciendis quas pariatur quasi sit dolore sed libero consectetur
+                        est minus quia obcaecati natus earum id quod corrupti exercitationem error inventore provident
+                        saepe, vero doloremque. Neque praesentium, corrupti assumenda laborum ab hic dicta nulla
+                        perspiciatis nihil quas, officiis quam exercitationem unde. Temporibus voluptatum tempora minima
+                        numquam placeat cupiditate, labore unde assumenda recusandae, culpa quos obcaecati laudantium
+                        sunt qui voluptates ea. Dolorem quis, reprehenderit nam sint perferendis non voluptatibus
+                        temporibus praesentium, optio esse fugit inventore ex, ducimus totam sed error doloribus quaerat
+                        quos? Ratione mollitia possimus nihil! Voluptate, necessitatibus!</p>
+                </div>
+            </div>
+
+            <div class="col-33">
+                <div class="box">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nesciunt libero nulla,
+                        necessitatibus reprehenderit dolores laudantium voluptatibus ullam deleniti debitis consequuntur
+                        praesentium tenetur temporibus, enim minima perferendis sunt facere eveniet non sint tempore
+                        harum. Placeat sequi optio quisquam vero magnam similique ea eligendi ipsum, beatae deserunt
+                        dolorum quidem assumenda consequuntur earum officiis aliquid velit, ut nobis ratione minus
+                        facilis cum! Adipisci quibusdam reiciendis quas pariatur quasi sit dolore sed libero consectetur
+                        est minus quia obcaecati natus earum id quod corrupti exercitationem error inventore provident
+                        saepe, vero doloremque. Neque praesentium, corrupti assumenda laborum ab hic dicta nulla
+                        perspiciatis nihil quas, officiis quam exercitationem unde. Temporibus voluptatum tempora minima
+                        numquam placeat cupiditate, labore unde assumenda recusandae, culpa quos obcaecati laudantium
+                        sunt qui voluptates ea. Dolorem quis, reprehenderit nam sint perferendis non voluptatibus
+                        temporibus praesentium, optio esse fugit inventore ex, ducimus totam sed error doloribus quaerat
+                        quos? Ratione mollitia possimus nihil! Voluptate, necessitatibus!</p>
+                </div>
+            </div>
+
+            <div class="col-33">
+                <div class="box">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nesciunt libero nulla,
+                        necessitatibus reprehenderit dolores laudantium voluptatibus ullam deleniti debitis consequuntur
+                        praesentium tenetur temporibus, enim minima perferendis sunt facere eveniet non sint tempore
+                        harum. Placeat sequi optio quisquam vero magnam similique ea eligendi ipsum, beatae deserunt
+                        dolorum quidem assumenda consequuntur earum officiis aliquid velit, ut nobis ratione minus
+                        facilis cum! Adipisci quibusdam reiciendis quas pariatur quasi sit dolore sed libero consectetur
+                        est minus quia obcaecati natus earum id quod corrupti exercitationem error inventore provident
+                        saepe, vero doloremque. Neque praesentium, corrupti assumenda laborum ab hic dicta nulla
+                        perspiciatis nihil quas, officiis quam exercitationem unde. Temporibus voluptatum tempora minima
+                        numquam placeat cupiditate, labore unde assumenda recusandae, culpa quos obcaecati laudantium
+                        sunt qui voluptates ea. Dolorem quis, reprehenderit nam sint perferendis non voluptatibus
+                        temporibus praesentium, optio esse fugit inventore ex, ducimus totam sed error doloribus quaerat
+                        quos? Ratione mollitia possimus nihil! Voluptate, necessitatibus!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <ol>
+        <h2>HTML-Form</h2>
+        <li>An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+        </li>
+        <li><strong>Get:</strong>
+            <ol>
+                <li>The length of a URL is limited (2048 characters)</li>
+                <li>Useful for form submissions where a user wants to bookmark the result</li>
+                <li>GET is good for non-secure data, like query strings in Google</li>
+            </ol>
+        </li>
+
+        <ol>
+            <li><strong>Post:</strong>
+                <ol>
+                    <li>the submitted form data is not shown in the URL</li>
+                    <li>POST has no size limitations, and can be used to send large amounts of data.</li>
+                    <li>Form submissions with POST cannot be bookmarked</li>
+                </ol>
+            </li>
+        </ol>
+    </ol>
+
+    <style>
+        input.css::placeholder {
+            color: red;
+        }
+
+        input.css {
+            color: rgba(95, 95, 235, 0.837);
+        }
+    </style>
+
+    <input class="css" type="text" placeholder="Hello">
+
+    <input type="text" placeholder="Hello">
+
+
+
+    <ol>
+        <h2>Html-Header</h2>
+        <li>Html Title tag:
+            <ol>
+                <li>The title tag define in the title of the document. The title must be text-only, and it is shown in
+                    the browser's title bar or in the page's tab.</li>
+                <li>The title tag is required in html document</li>
+                <li>The contents of a page title is very important for search engine optimization (SEO)!</li>
+            </ol>
+        </li>
+    </ol>
+
+    <ol>
+        <h2>Html Base:</h2>
+        <li>The &lt;base&gt; tag specifies the base URL and/or target for all relative URLs in a document.</li>
+        <li>There can only be one single <bdi>&lt;base&gt;</bdi> element in a document, and it must be inside the
+            &lt;head&gt; element.
+        </li>
+    </ol>
+
+    <ol>
+        <h2>Html Meta tag</h2>
+        <li>Metadata will not be displayed on the page</li>
+        <li>Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other
+            web services.</li>
+        <li>The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a
+            mobile phone than on a computer screen.</li>
+        <li>
+            This gives the browser instructions on how to control the page'
+        </li>
+    </ol>
+
+
+
+    <ol>
+        <h2>Embeb Example</h2>
+        <li>
+            <embed src="BlissWeb-taining.html" width="250" height="100" type="" />
+        </li>
+    </ol>
+
+    <ol>
+        <h2>Iframe Example</h2>
+        <li>
+            <iframe src="BlissWeb-taining.html" name="iFrame" title="Iframe Example"></iframe>
+        </li>
+    </ol>
+
+    <ol>
+        <h2>Hmtl MultiMedia</h2>
+        <li>MultiMedia comes in many different formats. It can be almost anything you can hear to see, like,
+            music,sound, video, records,film,animation and more.</li>
+        <li>Web pages often contains MultiMedia element of different type of formats</li>
+
+        <li><strong>MultiMedia formats</strong>
+            <ol>
+                <li>Multimedia elements (like audio or video) are stored in media files.</li>
+                <li>Multimedia files have formats and different extensions like: <u>.wav, .mp3, .mp4, .mpg, .wmv, and
+                        .avi.</u></li>
+                <li>The MP4, WebM, and Ogg formats are supported by HTML.</li>
+                <li>The MP4 format is recommended by YouTube.
+                </li>
+            </ol>
+        </li>
+    </ol>
+
+
+
+    <ol>
+
+        <svg width="100" height="100" style="border: 1px solid green;">
+            <circle cx="50" cy="50" r="40" fill="yellow" stroke="red" stroke-width="5"></circle>
+        </svg>
+    </ol>
+
+    <ol>
+
+        <svg width="100" height="100" style="border: 1px solid green;">
+            <rect x="10" y="10" rx="10" width="80" height="80" fill="yellow" stroke="red" stroke-width="5">
+            </rect>
+        </svg>
+    </ol>
+    <ol>
+        <h2>img title/ img alt</h2>
+        <figure style="width: 500px;">
+            <figcaption style="text-align: center;"><b>AutoDesck</b></figcaption>
+            <img src="../practise/images/autodesk.png" width="100%" alt="autodesk">
+            <img src="../practise/images/autodes.png" width="100%" alt="autodesk">
+            <figcaption style="text-align: center;">AutoDesck</figcaption>
+        </figure>
+    </ol>
+
+
+
+
+
+</body>
+
+</html>

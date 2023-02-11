@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetElementByTagName</title>
+</head>
+
+<body>
+    <ul>
+        <li class="list-item">Home</li>
+        <li class="list-item">About</li>
+        <li class="list-item">Product</li>
+        <li class="list-item">Contact</li>
+    </ul>
+    <script>
+        var li = document.getElementsByTagName("li");
+        // console.log(list_itme[2]);
+        li[0].textContent = "Web Deleloper"      //change list item text 
+        li[1].textContent = "Frontent Developer" //change list item text 
+        li[2].textContent = "Php Developer"      //change list item text 
+        li[3].textContent = "Backend Developer"  //change list item text 
+
+        li[1].style.fontWeight = 'bold';
+        li[3].style.color = 'purple';
+        li[0].style.backgroundColor = 'yellow';
+
+        for (let i = 0; i < li.length; i++) {
+            li[i].style.backgroundColor = 'teal';
+            li[i].style.padding = '10px 10px';
+            li[i].style.listStyle = 'none';
+            li[i].style.color = '#fff';
+            li[i].style.borderBottom = '1px solid gray';
+            li[i].style.borderTop = '1px solid gray';
+            
+        }
+    </script>
+
+</body>
+
+</html>

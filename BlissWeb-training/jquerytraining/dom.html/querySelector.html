@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelector</title>
+</head>
+
+<body>
+    <ul >
+        <li class="list-item">Home</li>
+        <li class="list-item">About</li>
+        <li class="list-item">Product</li>
+        <li class="list-item">Contact</li>
+    </ul>
+
+    <p id="selector" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quasi officiis soluta iste dolorem ipsam minima, nesciunt amet tempora labore iure doloremque a facere, quas mollitia deserunt ad. Distinctio, similique.</p>
+
+    <div class="list-item" id="">
+        <p id="" class="list-item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, excepturi.
+        </p>
+        <p id="item" class="list-item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, excepturi.
+        </p>
+        <p id="list" class="list-item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, excepturi.
+        </p>
+        <p id="l" class="list-item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, excepturi.
+        </p>
+    </div>
+    <script src="../js/jquery-3.6.3.min.js"></script>
+    <script>
+        var item = document.querySelectorAll("li");
+        // console.log(item);
+        item[1].style.color = "#fff";
+        item[2].style.backgroundColor = "teal";
+       
+            
+        var odd = document.querySelectorAll("li:nth-child(odd)");
+        for (let i = 0; i < odd.length; i++) {
+            odd[i].style.background = 'red';
+            
+        }
+
+        var even = document.querySelectorAll("li:nth-child(even)");
+        
+        for (let i = 0; i < even.length; i++) {
+            even[i].style.background = 'teal';
+            
+        }
+    
+    </script>
+
+</body>
+
+</html>

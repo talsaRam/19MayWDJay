@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery slide Down SlideUP Slide Toggle</title>
+    <style>
+        #box{
+            padding: 15px;
+            background-color: rgba(238, 130, 238, 0.542);
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body onload="alert('Welcome to my home page!');">
+    <div class="box" id="box">
+        <h1>Slide Method</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, totam?</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti necessitatibus sequi autem! Veniam, atque reprehenderit!</p>
+
+    <button id=slideUpBtn>slide Up Botton</button>
+    <button id=slideDownBtn>slide Down Botton</button>
+    <button id=slideToggleBtn>Slide Toggle</button>
+    
+
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script>
+       $(document).ready(function(){
+        $("#slideUpBtn").click(function(){
+            $("#box").slideUp("slow",function(){
+                console.log("When Slide up box will be hidden");
+            });
+        })
+
+        $("#slideDownBtn").click(function(){
+            $(".box").slideDown("slow",function(){
+                console.log("Slide Up");
+            });
+        })
+
+        $("#slideToggleBtn").click(function(){
+            $(".box").slideToggle(1000,function(){
+                console.log("opacity and hiden")
+            });
+        })
+       })
+    </script>
+</body>
+</html>

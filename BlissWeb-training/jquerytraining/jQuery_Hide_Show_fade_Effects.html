@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Hide/Show Fade Effects</title>
+    <style>
+        #box {
+            padding: 15px;
+            background-color: rgba(238, 130, 238, 0.542);
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box">
+        <h1>Window Event</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, totam?</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti necessitatibus sequi autem! Veniam, atque
+        reprehenderit!</p>
+
+
+    <button id=fadeOutbtn>Fade Out</button>
+    <button id=fadeinbtn>Fade In</button>
+    <button id=fadetogglebtn>Fade Toggle</button>
+    <button id=fadeTobtn>Fade to Toggle</button>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#fadeOutbtn").click(function () {
+                $(".box").fadeOut("slow", function () {
+                    console.log("now it is hidden")
+                });
+            })
+        });
+
+        $(document).ready(function () {
+            $("#fadeinbtn").click(function () {
+                $(".box").fadeIn("slow", function () {
+                    console.log("now it is show")
+                });
+            })
+        });
+
+        $(document).ready(function () {
+            $("#fadetogglebtn").click(function () {
+                $(".box").fadeToggle("slow");
+            })
+        });
+
+        $(document).ready(function () {
+            $("#fadeTobtn").click(function () {
+                $(".box").fadeTo(2000, 0.5, function () {
+                    console.log("ITs opacity slow");
+                });
+            })
+        });
+
+        $(document).ready(function () {
+            $("#hide").click(function(){
+                $("p").hide();
+            })
+        });
+
+        $(document).ready(function () {
+            $("#show").click(function(){
+                $("p").show();
+            })
+        });
+    </script>
+</body>
+
+</html>

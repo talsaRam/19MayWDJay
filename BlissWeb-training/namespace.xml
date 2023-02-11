@@ -1,0 +1,16 @@
+<table xmlns:f="http://furniture.com/home" xmlns:a="http://fruits.com/home" xmlns:c="http://school.com/home">
+    <tr id="f1">
+        <f:th>Table</f:th>
+        <f:th>Table</f:th>
+    </tr>
+    <tr id="t2">
+        <a:th>Banana</a:th>
+        <a:th>Onion</a:th>
+    </tr>
+    <tr id="t2">
+        <c:th>Ram</c:th>
+        <c:th>Grad A</c:th>
+        <c:th>ram@gmail.com</c:th>
+    </tr>
+</table>
+

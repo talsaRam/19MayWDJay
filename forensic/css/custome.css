@@ -54,10 +54,6 @@ body{
     src: url(../font/Inter-Regular.otf);
 }
 
-.col-50{
-    width: 50%;
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -123,6 +119,7 @@ body{
 
 .bar-icon img {
     width: 20px;
+    cursor: pointer;
 }
 
 /* top hader end */
@@ -184,6 +181,8 @@ body{
     width: 100%;
     top: 60px;
     position: relative;
+    margin-bottom: 65px;
+    display: block;
 }
 
 .slide {
@@ -196,11 +195,9 @@ body{
 
 .slide-1{
     background-image: url(../images/Layer\ 15.png);
-
 }
 
 .slide-2{
-
     background-image: url(../images/Layer\ 15.png);
 }
 
@@ -227,7 +224,6 @@ body{
 .container-slider{
     display: inline-block;
 }
-
 
 .slide-content h1 {
     font-size: 55px;
@@ -266,10 +262,11 @@ body{
     right: 0;
     width: 100%;
     max-width: 670px;
+    /* width: calc(50% - 25px); */
     height: 500px;
     z-index: 70;
     background-color: var(--bg-white);
-    transform: translate(-7.5% , -5%);
+    transform: translate(-5.5% , -5%);
 }
 
 .box-bg-white h3 {
@@ -315,6 +312,7 @@ body{
     color: #000;
     font-size: 15px;
     margin-bottom: 40px;
+    font-family: var(--font-family-regular);
 }
 
 .form-button {
@@ -330,4 +328,32 @@ body{
     transition: all .5s;
     border: 1px solid #8cc63f;
     cursor: pointer;
+}
+
+.col-50{
+    /* width: 50%; */
+}
+
+.col-33{
+    width: 32%;
+}
+
+.col-25{
+    width: 25%;
+}
+
+.col-75{
+    width: 75%;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+/* service se section */
+#service{
+    margin-top: 100px;
+    position: relative;
+    z-index: 50;
 }

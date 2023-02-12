@@ -26,7 +26,7 @@ $('.owl-carousel').owlCarousel({
     loop: true,
     nav: true,
     dots: false,
-    autoplay: false,
+    // autoplay: true,
     autoplaySpeed: 1000,
     smartSpeed: 1500,
     responsive: {

@@ -9,9 +9,15 @@
     <link rel="shortcut icon" href="images/newlogo.png" type="image/x-icon">
     <!-- css -->
     <link rel="stylesheet" href="css/custome.css">
-    <link rel="stylesheet" href="css/MediaResponsive.css">
+    <link rel="stylesheet" href="css/customMedia.css">
+
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="slick/slick-theme.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+
+    <link rel="stylesheet" href="css/InterFontcss2.css">
 </head>
 
 <body>
@@ -120,7 +126,9 @@
 
                                 <div class="form-row">
                                     <div class="form-control">
-                                        <input type="text" placeholder="Your Telephone" required>
+                                        <input type="text" maxlength="10"
+                                            onkeypress="return event.charCode >= 48 &amp&amp; event.charCode <= 57"
+                                            placeholder="Phone Number" required="">
                                     </div>
                                     <div class="form-control">
                                         <input type="text" placeholder="Best Time to Call" required>
@@ -154,7 +162,7 @@
         <!-- Service section -->
         <section class="service" id="service">
             <div class="container">
-                <div class="row">
+                <div class="row jsw-containt">
                     <div class="col-25">
                         <div class="box-service-container">
                             <div class="box-title">
@@ -162,23 +170,31 @@
                                     <span>SERVICE</span>
                                     <h2>Our Professional Service</h2>
                                     <p>The service wich we offer cover a wide
-                                        range of areas. Therefore, the skill and 
+                                        range of areas. Therefore, the skill and
                                         qualification which are required to manage
                                         forensic Cleaning to a high standard are
-                                        very specialist. 
+                                        very specialist.
                                     </p>
-                                    <a href="">View All Service</a>
+                                    <div class="view-service-box">
+                                        <a href="#" class="view_service">View All Service</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-75">
                         <div class="slider-containt">
-                            <div class="row">
+                            <div class="row carousel-slider center gap">
                                 <div class="col-33">
                                     <div class="bg-slider">
                                         <div class="bg-image">
                                             <img src="images/layer2.jpg" alt="">
+                                        </div>
+                                        <div class="bg-containt">
+                                            <h6>Crime Scene Cleaning</h6>
+                                            <p>Our team provide a nationwide service and<br>are used on a regular
+                                                basis...</p>
+                                            <a href="#" class="read-more">READ MORE</a>
                                         </div>
                                     </div>
                                 </div>
@@ -186,6 +202,12 @@
                                     <div class="bg-slider">
                                         <div class="bg-image">
                                             <img src="images/layer2.jpg" alt="">
+                                        </div>
+                                        <div class="bg-containt">
+                                            <h6>Fire and Smoke Damage</h6>
+                                            <p>Forensic Cleaning Service Ireland <br> provides Fire Damage
+                                                Restoration...</p>
+                                            <a href="#" class="read-more">READ MORE</a>
                                         </div>
                                     </div>
                                 </div>
@@ -193,6 +215,26 @@
                                     <div class="bg-slider">
                                         <div class="bg-image">
                                             <img src="images/layer3.jpg" alt="">
+                                        </div>
+                                        <div class="bg-containt">
+                                            <h6>Property Cleaning</h6>
+                                            <p>Propert Cleaning can become <br> necessary when an individual has been...
+                                            </p>
+                                            <a href="#" class="read-more">READ MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-33">
+                                    <div class="bg-slider">
+                                        <div class="bg-image">
+                                            <img src="images/layer3.jpg" alt="">
+                                        </div>
+                                        <div class="bg-containt">
+                                            <h6>Property Cleaning</h6>
+                                            <p>Propert Cleaning can become <br> necessary when an individual has been...
+                                            </p>
+                                            <a href="#" class="read-more">READ MORE</a>
                                         </div>
                                     </div>
                                 </div>
@@ -204,11 +246,237 @@
         </section>
 
 
+        <!-- other Service -->
+        <section class="other-service">
+            <div class="container">
+                <div class="row center">
+                    <div class="col-33 align-center">
+                        <div class="box-service-container">
+                            <div class="box-title">
+                                <div class="contain">
+                                    <span>why choose us</span>
+                                    <h2>24/7 Emergency Call Out Service</h2>
+                                    <p>FCSI offer a nationwide 24/7 emergency call-out service. They work with diverse
+                                        business services from the garda’s forensics team to local authorities,
+                                        insurance companies to landlords.
+                                    </p>
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-65">
+                        <div class="row center">
+                            <div class="col-45">
+                                <div class="services-box">
+                                    <div class="special-service">
+                                        <img src="images/repair-tool(2).png" alt="repair tool">
+                                    </div>
+                                    <div class="special-service-title">
+                                        <h6>Specialist Service</h6>
+                                        <p>We provide nationwide specialist services which are very rare to find,
+                                            including: Fire & Flood Restoration, Bio-hazardous Cleaning, Sanitisation
+                                            and more.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-45">
+                                <div class="services-box">
+                                    <div class="special-service">
+                                        <img src="images/badge(6).png" alt="badge tool">
+                                    </div>
+                                    <div class="special-service-title">
+                                        <h6>Industry Qualifications</h6>
+                                        <p>The staff at FCSI have completed extensive courses at the National Academy of
+                                            Crime Scene Cleaners, including the National Academy of Crime Scene Cleaners
+                                            and hold Qualifications in Service Quality.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-45">
+                                <div class="services-box">
+                                    <div class="special-service">
+                                        <img src="images/team.png" alt="team service">
+                                    </div>
+                                    <div class="special-service-title">
+                                        <h6>First Class Testimonials</h6>
+                                        <p>5 Star Rating on Google, Facebook and other social media platforms. Our
+                                            customer service and workmanship is second to none!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-45">
+                                <div class="services-box">
+                                    <div class="special-service">
+                                        <img src="images/global-network.png" alt="Global tool">
+                                    </div>
+                                    <div class="special-service-title">
+                                        <h6>Nationwide Services</h6>
+                                        <p>We provide a Emergency Call Out Service Available, operate 24 hours a day, 7
+                                            days a week, through Ireland.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Client Section -->
+        <section class="client-section">
+            <div class="container">
+                <div class="client-title">
+                    <span>our Client</span>
+                    <h2>Take a look at our Clients</h2>
+                </div>
+                <div class="row jsw-containt slick-carousel-client">
+                    <div class="col-20 client-border grid-center">
+                        <div class="bg-client-slider">
+                            <img src="images/Layer 4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-20 client-border grid-center">
+                        <div class="bg-client-slider">
+                            <img src="images/HSE-Logo-300x175.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-20 client-border grid-center">
+                        <div class="bg-client-slider">
+                            <img src="images/Layer 4.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-20 client-border grid-center ml-10">
+                        <div class="bg-client-slider">
+                            <img src="images/Layer 4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-20 client-border grid-center">
+                        <div class="bg-client-slider">
+                            <img src="images/HSE-Logo-300x175.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimotional -->
+        <section class="testimonial-section">
+            <div class="client-title">
+                <span>Testimonials</span>
+                <h2>What Client say</h2>
+            </div>
+
+            <div class="testimonials">
+                <div class="testimonials-slider">
+                    <div class="boxer-slider">
+                        <div class="fist-slider">
+                            <p>The services which we offer cover a wide range of areas. Therefore, the skills and qualificatiovns which are required to manage forensic cleaning to a high standard are very specialist ones.</p>
+                            <span>Glenn Gaylord</span>
+                            <p>Ceo</p>
+                        </div>
+                    </div>
+
+                    <div class="boxer-slider">
+                        <div class="fist-slider">
+                            <p>The services which we offer cover a wide range of areas. Therefore, the skills and qualificatiovns which are required to manage forensic cleaning to a high standard are very specialist ones.</p>
+                            <span>Glenn Gaylord</span>
+                            <p>Ceo</p>
+                        </div>
+                    </div>
+
+                    <div class="boxer-slider">
+                        <div class="fist-slider">
+                            <p>The services which we offer cover a wide range of areas. Therefore, the skills and qualificatiovns which are required to manage forensic cleaning to a high standard are very specialist ones.</p>
+                            <span>Glenn Gaylord</span>
+                            <p>Ceo</p>
+                        </div>
+                    </div>
+
+                    <div class="boxer-slider">
+                        <div class="fist-slider">
+                            <p>The services which we offer cover a wide range of areas. Therefore, the skills and qualificatiovns which are required to manage forensic cleaning to a high standard are very specialist ones.</p>
+                            <span>Glenn Gaylord</span>
+                            <p>Ceo</p>
+                        </div>
+                    </div>
+
+                    <div class="boxer-slider">
+                        <div class="fist-slider">
+                            <p>The services which we offer cover a wide range of areas. Therefore, the skills and qualificatiovns which are required to manage forensic cleaning to a high standard are very specialist ones.</p>
+                            <span>Glenn Gaylord</span>
+                            <p>Ceo</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="news-section">
+            <div class="client-title">
+                <span>latest News & Resources</span>
+                <h2>Fsci News Feed</h2>
+            </div>
+
+            <div class="container">
+                <div class="col-100">
+                    <div class="slider-containt">
+                        <div class="row center gap">
+                            <div class="col-33">
+                                <div class="bg-slider">
+                                    <div class="bg-image">
+                                        <img src="images/layer2.jpg" alt="">
+                                    </div>
+                                    <div class="bg-containt">
+                                        <h6>Crime Scene Cleaning</h6>
+                                        <p>Our team provide a nationwide service and<br>are used on a regular
+                                            basis...</p>
+                                        <a href="#" class="read-more">READ MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <div class="bg-slider">
+                                    <div class="bg-image">
+                                        <img src="images/layer2.jpg" alt="">
+                                    </div>
+                                    <div class="bg-containt">
+                                        <h6>Fire and Smoke Damage</h6>
+                                        <p>Forensic Cleaning Service Ireland <br> provides Fire Damage
+                                            Restoration...</p>
+                                        <a href="#" class="read-more">READ MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <div class="bg-slider">
+                                    <div class="bg-image">
+                                        <img src="images/layer3.jpg" alt="">
+                                    </div>
+                                    <div class="bg-containt">
+                                        <h6>Property Cleaning</h6>
+                                        <p>Propert Cleaning can become <br> necessary when an individual has been...
+                                        </p>
+                                        <a href="#" class="read-more">READ MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </div>
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="slick/slick.min.js"></script>
     <script src="js/custome.js"></script>
 </body>
 

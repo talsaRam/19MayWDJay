@@ -15,6 +15,7 @@ function changeImages() {
     }
 }
 
+
 $(window).scroll(function () {
     var secondHeader = document.querySelector(".second-header-bg-white");
     secondHeader.classList.toggle("sticky", window.scrollY > 0);
@@ -174,3 +175,12 @@ $('.testimonials-slider').slick({
 });
 
 
+
+function hover(img)
+{
+    img.src = "images/whatsapp-png-color.png"
+}
+
+function hoverOut(img){
+    img.src = "images/RecentWhatpps.png"
+}

@@ -9,7 +9,7 @@
     .slide-1,
     .slide-2,
     .slide-3 {
-        height: 150vh;
+        height: 130vh;
     }
 
     .container-slider {
@@ -21,12 +21,12 @@
     .form-section {
         top: 55%;
         left: 0;
-        transform: translate(2%, -5%);
+        transform: translate(5%, -15%);
         max-width: 90%;
     }
 
     #service {
-        margin-top: 450px;
+        margin-top: 350px;
     }
 
 }
@@ -40,6 +40,15 @@
         display: block;
         position: relative;
         z-index: 1000;
+    }
+
+    .fire_demo .slide-1,
+    .fire_demo .slide-2,
+    .fire_demo .slide-3{
+        height: 300px;
+    }
+    .slide-content{
+        top: 30%;
     }
 
     .header-contact {
@@ -91,7 +100,7 @@
         height: 100%;
         width: 100%;
         line-height: 15px;
-        color: #fff;
+        color: #fff !important;
         font-size: 15px;
         padding-left: 10px;
         box-sizing: border-box;
@@ -125,6 +134,11 @@
     .other-service {
         padding: 50px 0;
     }
+
+    
+    .fooer-titgl{
+        width: 30%;
+    }
 }
 
 @media (max-width: 868px) {
@@ -134,33 +148,68 @@
         display: block;
     }
 
+    .slide-content h1,
+    .fire_text h2,
+    .box-title .contain h2 {
+        font-size: 25px;
+    }
+
     .header-contact .call,
     .header-contact .mail {
         display: none;
     }
 
-    .box-title .contain p {
+    .box-title .contain p,
+    .services-box p {
         padding: 0;
+        text-align: justify;
     }
 
     .col-45 {
         width: 80%;
         margin-bottom: 25px;
     }
+
+    .order-list h5{
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 768px) {
-    .slide-content h1 {
+    .slide-content-1 h1 {
         font-size: 40px;
     }
 
-    .slide-content p,
-    .free-quatos .btn-outline {
+    .col-65,
+    .firesection .col-33{
+        width: 100%;
+    }
+
+    .fire_text{
+        margin-top: 30px;
+    }
+
+    .slide-content-1 p,
+    .free-quatos .btn-outline,
+    .fist-slider p,
+    .slider-containt .bg-slider .bg-containt p{
         font-size: 13px;
     }
 
     .box-title .contain .view_service {
         padding: 10px 10px;
+    }
+    .client-section, .news-section{
+        margin: 50px 0;
+    }
+
+
+    .col-33 {
+        width: 48%;
+    }
+
+    .fooer-titgl{
+        width: 45%;
     }
 
 }
@@ -170,11 +219,15 @@
         max-width: 100%;
         width: 100%;
         top: 45%;
+        margin-bottom: 10px;
+    }
+    .col-33 {
+        width: 100%;
     }
 
     .form-section {
         top: 50%;
-        height: 100%;
+        height: 90%;
     }
 
     .textarea textarea {
@@ -183,45 +236,96 @@
     }
 
     .box-title .contain h2,
-    .client-title h2 {
-        font-size: 25px;
+    .client-title h2,
+    .slide-content h1,
+    .services-box h6
+     {
+        font-size: 20px;
+        margin: 1px 0;
     }
 
-    .services-box {
+    .services-box,
+    .box-service-container .contain{
         flex-direction: column;
         text-align: center;
     }
 
     .special-service {
         margin: 15px auto;
-
     }
 
-    .col-45 {
+    .fist-slider p:nth-child(1)::before {
+        font-size: 80px;
+        top: 5px;
+    }
+
+    .col-45{
         width: 100%;
     }
+    .fooer-titgl{
+        width: 100%;
+    }
+    .visa-section{
+        flex-direction: column;
+        gap: 15px;
+    }
+
 }
 
 @media (max-width: 480px) {
     .container-slider {
-        transform: translate(2.5%, -70%);
+        transform: translate(2.5%, -120%);
+    }
+    .form-section {
+        transform: translate(5%, -18%);
+    }
+    .slide-1, .slide-2, .slide-3{
+        height: 125vh;
+    }
+    #service{
+        margin-top: 280px;
+    }
+    .form-section{
+        top: 40%;
+    }
+    .form-control input{
+        padding: 12px 25px;
+    }
+    
+    .bg-containt .read-more{
+        font-size: 14px;
+    }
+
+    .fist-slider p {
+        font-size: 10px !important;
     }
 
     .center {
         justify-content: none;
     }
 
-    .form-section {
-        transform: translate(2%, -15%);
+    .fist-slider {
+        padding: 25px 0;
+    }
+    .box-title .contain .view_service, .new-read-box .read-more-text{
+        padding: 10px 15px;
     }
 
-    .slide-content h1,
+    .slide-content-1 h1,
     .services-box h6 {
         font-size: 20px;
     }
-
-    .slide-content p {
-        font-size: 8px;
+    .slide-content-1 p{
+        font-size: 9px;
+        letter-spacing: 1px;
+        margin: 5px 0;
+        line-height: 15px;
+    }
+    .slider-containt .bg-slider .bg-containt p {
+        font-size: 10px;
+    }
+    .form-button{
+        margin: 20px 0;
     }
 }
 
@@ -230,6 +334,15 @@
     .box-bg-white h3,
     .services-box h6 {
         font-size: 20px;
+    }
+    .footer h3{
+        font-size: 18px;
+    }
+    .slide-content-1 p{
+        font-size: 6px;
+    }
+    .footer ul li{
+        font-size: 12px;
     }
 
     .free-quatos {

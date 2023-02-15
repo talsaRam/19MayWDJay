@@ -53,6 +53,8 @@ $('.carousel-slider').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
+    focusOnSelect: true,
+    pauseOnHover: false,
     dots: false,
     responsive: [{
         breakpoint: 1024,
@@ -85,6 +87,8 @@ $('.slick-carousel-client').slick({
     autoplay: true,
     autoplaySpeed: 1500,
     dots: false,
+    focusOnSelect: true,
+    pauseOnHover: false,
     responsive: [{
         breakpoint: 1024,
         settings: {
@@ -129,7 +133,11 @@ $('.slick-carousel-client').slick({
 $('.testimonials-slider').slick({
     centerMode: true,
     centerPadding: '60px',
+    speed: 1000,
     dots: true,
+    autoplay:true,
+    focusOnSelect: true,
+    pauseOnHover: false,
     slidesToShow: 3,
     responsive: [
         {

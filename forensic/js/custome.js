@@ -136,7 +136,7 @@ $('.testimonials-slider').slick({
     centerPadding: '60px',
     speed: 1000,
     dots: true,
-    autoplay:true,
+    autoplay: true,
     focusOnSelect: true,
     pauseOnHover: false,
     slidesToShow: 3,
@@ -173,14 +173,3 @@ $('.testimonials-slider').slick({
         }
     ]
 });
-
-
-
-function hover(img)
-{
-    img.src = "images/whatsapp-png-color.png"
-}
-
-function hoverOut(img){
-    img.src = "images/RecentWhatpps.png"
-}

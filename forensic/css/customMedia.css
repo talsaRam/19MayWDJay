@@ -130,6 +130,10 @@
         width: 75%;
     }
 
+    .category .post1 p{
+        line-height: 20px;
+    }
+
     .col-75,
     .other-service .col-33,
     .service .col-25 {

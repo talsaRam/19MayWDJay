@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(".bar-icon").click(function () {
-        $(".second-header").toggleClass("showing");
+        $(".second-header-list").toggleClass("showing");
         $("body").toggleClass("show");
     })
 })

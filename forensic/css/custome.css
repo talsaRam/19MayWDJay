@@ -11,7 +11,7 @@
         background-color: var(--selection-color);
         color: var(--color-white);
     }
-
+ 
 
     li {
         list-style: none;
@@ -102,10 +102,10 @@
 
     .second-header-bg-white {
         transition: all .5s;
-        background-color: var(--bg-white);
     }
 
     .second-header-bg-white.sticky {
+        background-color: var(--bg-white);
         position: absolute;
         top: 0px;
         width: 100%;
@@ -115,8 +115,11 @@
         display: flex;
     }
 
-    .second-header-bg-white.sticky a {
+    .second-header-bg-white.sticky .second-header ul li a{
         color: var(--color-black);
+    }
+    .second-header-bg-white .second-header ul li a{
+        color: var(--color-white);
     }
 
     .second-header-bg-white.sticky .second-header {

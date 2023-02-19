@@ -71,6 +71,7 @@
         font-family: 'inter-regular';
         src: url(../font/Inter-Regular.otf);
     }
+
     .container {
         width: 1450px;
         margin: 0 auto;
@@ -225,6 +226,60 @@
         cursor: pointer;
     }
 
+    /* dropdown */
+    .second-header-list li {
+        position: relative;
+    }
+    
+    .second-header-list .dropdown-menu ul.menu-item {
+    width: 785px;
+    position: absolute;
+    z-index: 999;
+    top: 40px;
+    text-align: left;
+    left: unset;
+    right: -263px;
+    background: #fff;
+    box-shadow: 0 0 5px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 30px;
+    column-gap: 20px;
+    opacity: 1;
+    /* visibility: hidden; */
+    transition: all .3s;
+    overflow: auto;
+    }
+    
+    .second-header-list .dropdown-menu ul.menu-item li{
+        padding: 10px 0;
+        transition: all .5s;
+    }
+
+    .second-header-list .dropdown-menu ul.menu-item li a {
+        word-wrap: break-word;
+        color: var(--color-black);
+        padding: 10px 10px;
+        line-height: 28px;
+        transition: all .3s;
+    }
+
+    .second-header-list .dropdown-menu ul.menu-item li:hover a{
+        color: var(--color-white);
+    }
+
+    .second-header-list .dropdown-menu ul.menu-item li:hover{
+        background-color: #8cc63f;
+        color: var(--color-white);
+    }
+
+    .second-header-list .dropdown-menu:hover ul.menu-item
+    {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
     /* top hader end */
 
     /* second header */
@@ -361,7 +416,7 @@
         font-family: var(--font-inter-regualar);
     }
 
-   
+
 
     .owl-nav {
         position: absolute;
@@ -376,8 +431,9 @@
     .owl-nav button {
         margin-right: 18px;
     }
+
     .background .owl-nav button,
-    .background .owl-nav button{
+    .background .owl-nav button {
         font-size: 55px !important;
     }
 
@@ -524,9 +580,9 @@
         overflow: hidden;
     }
 
-   .col-33.slick-slide{
-    margin: 0 15px !important;
-   }
+    .col-33.slick-slide {
+        margin: 0 15px !important;
+    }
 
 
     img {
@@ -1190,9 +1246,9 @@
         z-index: 1;
         border-radius: 3px;
         background-color: #386201;
-    } 
+    }
 
-    
+
     .button-submit {
         margin-top: 20px;
         display: inline-flex;

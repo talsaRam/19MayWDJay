@@ -91,35 +91,34 @@ $('.slick-carousel-client').slick({
     focusOnSelect: true,
     pauseOnHover: false,
     responsive: [{
-        breakpoint: 1024,
+        breakpoint: 1124,
         settings: {
             slidesToShow: 4,
             slidesToScroll: 1,
             arrows: false,
             dots: true
-        }
-    },
-    {
-        breakpoint: 700,
-        settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            dots: true,
-            infinite: true,
-            arrows: false
-        }
-    },
-    {
-        breakpoint: 580,
+        }},
+
+        {
+            breakpoint: 950,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: true,
+                infinite: true,
+                arrows: false
+            }},
+        {
+        breakpoint: 776,
         settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
             dots: true,
             infinite: true,
             arrows: false
-        }
-    },
-    {
+        }},
+        
+        {
         breakpoint: 450,
         settings: {
             slidesToShow: 1,
@@ -127,8 +126,8 @@ $('.slick-carousel-client').slick({
             dots: true,
             infinite: true,
             arrows: false
-        }
-    }]
+        }}
+    ]
 });
 
 $('.testimonials-slider').slick({

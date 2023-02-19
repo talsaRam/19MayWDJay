@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,47 +9,55 @@
     <link rel="stylesheet" href="css/custome.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 </head>
+
 <body>
 
     <div class="container">
-       <div class="fancy-box">
-        <div class="box item">
-            <a data-fancybox="gallery" href="images/Automation_Tooling_Systems.png">
-            <img src="images/Automation_Tooling_Systems.png" alt="fancy-box-img"></a>
+        <div class="fancy-box">
+            <div class="box item">
+                <img src="images/Automation_Tooling_Systems.png" alt="fancy-box-img">
+            </div>
+
+            <div class="box item">
+                    <img src="images/CMM_Inspection.png" alt="fancy-box-img">
+            </div>
+
+            <div class="box item">
+                <img src="images/Engineering_Consulting.png" alt="fancy-box-img">
+            </div>
+
+            <div class="box item">
+                <img src="images/Fabrication_&_Machining.png" alt="fancy-box-img">
+            </div>
+
+            <div class="box item">
+                <img src="images/Industrial_Automation_&_Control_System_Installation.png" alt="fancy-box-img">
+            </div>
+            
+            <div class="box item">
+                <img src="images/Mechanical_CAD_Design.png" alt="fancy-box-img">
+            </div>
+
+            <div class="box item">
+                <img src="images/Automation_Tooling_Systems.png" alt="fancy-box-img">
+            </div>
+            
+            <div class="box item">
+                <img src="images/Engineering_Consulting.png" alt="fancy-box-img">
+            </div>
         </div>
-        <div class="box item">
-            <a data-fancybox="gallery" href="images/CMM_Inspection.png">
-            <img src="images/CMM_Inspection.png" alt="fancy-box-img"></a>
-        </div>
-        <div class="box item">
-            <a data-fancybox="gallery" href="images/Engineering_Consulting.png">
-            <img src="images/Engineering_Consulting.png" alt="fancy-box-img"></a>
-        </div>
-        <div class="box item">
-            <a data-fancybox="gallery" href="images/Fabrication_&_Machining.png">
-            <img src="images/Fabrication_&_Machining.png" alt="fancy-box-img"></a>
-        </div>
-        <div class="box item">
-            <a data-fancybox="gallery" href="images/Industrial_Automation_&_Control_System_Installation.png">
-            <img src="images/Industrial_Automation_&_Control_System_Installation.png" alt="fancy-box-img"></a>
-        </div>
-        <div class="box item">
-            <a data-fancybox="gallery" href="images/Mechanical_CAD_Design.png">
-            <img src="images/Mechanical_CAD_Design.png" alt="fancy-box-img"></a>
-        </div>
-        <div class="box item">
-            <a data-fancybox="gallery" href="images/Automation_Tooling_Systems.png">
-            <img src="images/Automation_Tooling_Systems.png" alt="fancy-box-img"></a>
-        </div>
-        <div class="box item">
-            <a data-fancybox="gallery" href="images/Engineering_Consulting.png">
-            <img src="images/Engineering_Consulting.png" alt="fancy-box-img"></a>
-        </div>
-       </div>
     </div>
 
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
-    
+    <script>
+        $("img").each(function () {
+            $(this).wrap($('<a/>', {
+                href: $(this).attr('src')
+            }).attr('data-fancybox', 'gallery'));
+        });
+    </script>   
+
 </body>
+
 </html>

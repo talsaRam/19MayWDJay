@@ -102,7 +102,7 @@
         width: 100%;
     }
 
-    .second-header .second-header-list li a {
+    .second-header-bg-white .second-header ul li a {
         font-size: 14px;
         color: #000;
     }
@@ -110,62 +110,6 @@
     .second-header-list.showing {
         right: -15px;
     }
-
-    /*     
-    .second-header .logo {
-        position: absolute;
-        width: 80px;
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        display: none;
-        left: 25%;
-    }
-
-    .second-header {
-        position: fixed;
-        right: -200px;
-        width: 200px;
-        height: 100%;
-        background-color: #8cc63f;
-        transition: all 0.5s ease;
-        z-index: 500;
-        top: 0;
-        display: flex;
-        align-items: flex-start;
-    }
-
-    .second-header ul {
-        flex-direction: column;
-        width: 100%;
-        margin-top: 40px;
-    }
-
-    .second-header ul li {
-        width: 100%;
-        margin-top: 25px;
-        border-bottom: 1px solid rgb(255, 255, 255, .1);
-    }
-
-    .second-header ul a {
-        display: block;
-        height: 100%;
-        width: 100%;
-        line-height: 15px;
-        color: #fff !important;
-        padding-left: 10px;
-        box-sizing: border-box;
-        transition: all .4s;
-    }
-
-    .second-header ul a,
-    .all-post-section .bg-containt h6 {
-        font-size: 15px;
-    }
-
-    .second-header.showing {
-        right: 0px;
-    } */
 
     .col-75 {
         margin-top: 50px;

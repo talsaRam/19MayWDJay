@@ -2,7 +2,6 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        transition: all 0 .5s;
         font-family: 'Inter', sans-serif;
         scroll-behavior: smooth;
     }
@@ -201,6 +200,7 @@
         height: 100%;
         background: linear-gradient(to right, #2193b0 0%, #6dd5ed 100%);
         left: 0;
+        border-radius: 5px;
         top: 0;
         transition: all 0.5s ease;
         z-index: -1;
@@ -219,6 +219,16 @@
 
     .bar-icon {
         display: none;
+        position: relative;
+    }
+
+    .image-x-icon-bar {
+        position: absolute;
+        top: -103px;
+        display: none;
+        background-color: #fff;
+        border-radius: 50px;
+        left: -35px;
     }
 
     .bar-icon img {
@@ -226,32 +236,65 @@
         cursor: pointer;
     }
 
+    .none {
+        display: none;
+    }
+
+    .image-x-icon-bar.show {
+        display: block;
+    }
+
+    #imagesChange.hidden {
+        display: none;
+    }
+
+    .second-header-bg-white.sticky .second-header-list.showing {
+        top: -3px;
+    }
+
+    .second-header-bg-white.sticky .image-x-icon-bar.show {
+        top: -40px;
+    }
+
     /* dropdown */
     .second-header-list li {
         position: relative;
     }
-    
-    .second-header-list .dropdown-menu ul.menu-item {
-    width: 785px;
-    position: absolute;
-    z-index: 999;
-    top: 40px;
-    text-align: left;
-    left: unset;
-    right: -263px;
-    background: #fff;
-    box-shadow: 0 0 5px 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 20px 30px;
-    column-gap: 20px;
-    opacity: 1;
-    /* visibility: hidden; */
-    transition: all .3s;
-    overflow: auto;
+
+    .second-header-list .dropdown-menu {
+        display: flex;
+        align-items: center;
     }
-    
-    .second-header-list .dropdown-menu ul.menu-item li{
+
+    .second-header-list .dropdown-menu img {
+        width: 8px;
+        margin-left: 10px;
+    }
+
+    .second-header-list .dropdown-menu:hover img {
+        transform: rotate(90deg);
+    }
+
+    .second-header-list .dropdown-menu ul.menu-item {
+        width: 755px;
+        position: absolute;
+        z-index: 400;
+        top: 40px;
+        left: unset;
+        right: -261px;
+        background: #fff;
+        box-shadow: 0 0 5px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        gap: 20px;
+        opacity: 0;
+        visibility: hidden;
+        margin-top: 20px;
+        transition: all .1s;
+    }
+
+    .second-header-list .dropdown-menu ul.menu-item li {
         padding: 10px 0;
         transition: all .5s;
     }
@@ -259,25 +302,26 @@
     .second-header-list .dropdown-menu ul.menu-item li a {
         word-wrap: break-word;
         color: var(--color-black);
-        padding: 10px 10px;
+        padding: 10px 5px;
         line-height: 28px;
         transition: all .3s;
+        text-align: left;
     }
 
-    .second-header-list .dropdown-menu ul.menu-item li:hover a{
+    .second-header-list .dropdown-menu ul.menu-item li:hover a {
         color: var(--color-white);
     }
 
-    .second-header-list .dropdown-menu ul.menu-item li:hover{
+    .second-header-list .dropdown-menu ul.menu-item li:hover {
         background-color: #8cc63f;
         color: var(--color-white);
     }
 
-    .second-header-list .dropdown-menu:hover ul.menu-item
-    {
+    .second-header-list .dropdown-menu:hover ul.menu-item {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
+        margin-top: 0;
     }
 
     /* top hader end */
@@ -500,12 +544,13 @@
         transition: all .5s;
     }
 
+  
 
     .form-button .send {
         background-color: var(--main-color);
         color: var(--bg-white);
         padding: 12px 35px;
-        border-radius: 3px;
+        border-radius: 5px;
         transition: all .5s;
         border: 1px solid #8cc63f;
         cursor: pointer;
@@ -645,8 +690,7 @@
         padding-right: 5px;
     }
 
-    .box-title .contain .view_service,
-    .new-read-box .read-more-text {
+    .box-title .contain .view_service {
         padding: 15px 30px;
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -810,7 +854,6 @@
         transition: all .3s;
     }
 
-    .client-section .bg-client-slider:hover img,
     .fire_text img:hover,
     .bg-image:hover img {
         transform: scale(1.1);
@@ -893,10 +936,21 @@
 
     .new-read-box {
         margin-top: 45px;
-        display: inline-block;
-        padding: 15px 0;
+        display: block;
         text-align: center;
+    }
+
+    .new-read-box .read-more-text {
+        padding: 15px 30px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: all .3s;
+        z-index: 1;
+        display: inline-block;
+        position: relative;
         background-color: var(--main-color);
+        color: #fff;
+        border-radius: 5px;
     }
 
     .pos-rel {
@@ -1067,8 +1121,6 @@
     }
 
     /* Fire and Smoke Damage Restoration*/
-
-
     .fire_demo,
     .news-feed {
         height: 100%;

@@ -52,16 +52,32 @@
                             <a href="index.html" class="brand"><img src="images/newlogo.png" alt="newlogo"></a>
                         </div>
                         <ul class="second-header-list">
+                            <li class="none">Menu</li>
                             <li><a href="#">About</a></li>
                             <li><a href="fire&demo.html">Fire & Smoke Damage</a></li>
                             <li><a href="#">Crime Scene Cleaning</a></li>
                             <li><a href="#">Property Clearance</a></li>
-                            <li><a href="#">All Service</a></li>
+                            <li class="dropdown-menu"><a href="#">All Service</a>
+                                <ul class="menu-item">
+                                    <li class="drop-item-list"><a href="#">Caronavirus Deep Cleaning</a></li>
+                                    <li class="drop-item-list"><a href="#">Fire & Smoke Damage Restoration</a></li>
+                                    <li class="drop-item-list"><a href="#">Garda Cell and Vehicle Cleaning</a></li>
+                                    <li class="drop-item-list"><a href="#">Property Clearance</a></li>
+                                    <li class="drop-item-list"><a href="#">Syringe Clearance</a></li>
+                                    <li class="drop-item-list"><a href="#">Water Damage Restoration</a></li>
+                                    <li class="drop-item-list"><a href="#">Crime Scene Cleaning</a></li>
+                                    <li class="drop-item-list"><a href="#">Flood Damage Restoration</a></li>
+                                    <li class="drop-item-list"><a href="#">Odour Removal</a></li>
+                                    <li class="drop-item-list"><a href="#">Sanitisation</a></li>
+                                    <li class="drop-item-list"><a href="#">Trauma Ckeanup</a></li>
+                                </ul>
+                        </li>
                             <li><a href="#">Qualification</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                         <div class="bar-icon">
-                            <img src="images/menu-bar.png" id="imagesChange" onclick="changeImages();" alt="">
+                            <img src="images/menu-bar.png" id="imagesChange"  alt="Menu Bar">
+                            <img src="images/x-white.png" class="image-x-icon-bar"  alt="x-white">
                         </div>
                     </div>
                 </div>
@@ -169,8 +185,9 @@
                                 <div class="bg-containt">
                                     <span>By Rohan ward</span> &nbsp;<span>may 20, 2022</span>
                                     <h6>FSCI feature in the Irish Independent</h6>
-                                    <p>Forensic firm cleans up from grisly crime scenes Grisly gangland murders, frenzied stabbings and the...</p>
-                                    <a href="#" class="read-more">READ MORE</a>
+                                    <p>Forensic firm cleans up from grisly crime scenes Grisly gangland murders, frenzied stabbings and the...
+                                    </p>
+                                    <a href="#" id="read-more-content" class="read-more">READ MORE</a>
                                 </div>
                             </div>
 
@@ -488,6 +505,7 @@
                 </div>
             </div>
         </footer>
+
 
     </div>
     <script src="js/jquery-3.6.3.min.js"></script>

@@ -2,18 +2,11 @@ $(document).ready(function () {
     $(".bar-icon").click(function () {
         $(".second-header-list").toggleClass("showing");
         $("body").toggleClass("show");
+        $(".image-x-icon-bar").toggleClass("show");
+        $("#imagesChange").toggleClass("hidden");
     })
 })
 
-function changeImages() {
-    var img = document.getElementById("imagesChange");
-    if (img.src.match('images/menu-bar.png')) {
-        img.src = 'images/x-icon.png';
-    }
-    else {
-        img.src = 'images/menu-bar.png';
-    }
-}
 
 
 $(window).scroll(function () {

@@ -7,15 +7,15 @@
 
 @media screen and (max-width: 1369px) {
     .second-header-list li {
-        margin: 0 10px;
+        margin: 0 8px;
     }
 
     .header-contact li {
         margin-right: 35px;
     }
 
-    .background .owl-nav{
-        top: 48%;
+    .background .owl-nav {
+        top: 42%;
         transform: translate(15%, -20%);
     }
 
@@ -51,13 +51,21 @@
 }
 
 @media screen and (max-width: 1199px) {
-    
+
 
     .header-contact li a {
         font-size: 14px;
     }
 
+    .second-header-list .dropdown-menu .white-arrow {
+        display: none;
+    }
 
+    .second-header-list .dropdown-menu .none {
+        display: block;
+        margin-left: auto;
+        width: 20px;
+    }
 
     .fire_demo .slide-1,
     .fire_demo .slide-2,
@@ -83,20 +91,30 @@
     .bar-icon {
         display: block;
         position: relative;
-        z-index: 1000;
+        z-index: 850;
     }
+
+    .second-header-list .dropdown-menu ul.menu-item {
+        opacity: 1;
+        visibility: hidden;
+        display: block;
+        height: auto;
+        margin-top: 20px !important;
+        left: 66px;
+    }
+
 
     .second-header .second-header-list {
         position: absolute;
         right: -150%;
         flex-direction: column;
-        top: 95px;
+        top: -55px;
         width: 100%;
         height: 100vh;
         max-width: 350px;
         background-color: #fff;
         transition: all .5s;
-
+        z-index: 800;
     }
 
     .second-header .second-header-list li {
@@ -104,11 +122,21 @@
         margin: 0;
         padding: 15px 25px;
         width: 100%;
+        position: relative;
+    }
+
+    .second-header-list li.none {
+        display: block;
+        background-color: #8cc63f;
+        color: #fff;
+        width: 100%;
+        text-align: center;
     }
 
     .second-header-bg-white .second-header ul li a {
         font-size: 14px;
         color: #000;
+        padding: 0;
     }
 
     .second-header-list.showing {
@@ -153,7 +181,7 @@
     }
 
     .slide-content-1 p,
-    .fist-slider p{
+    .fist-slider p {
         font-size: 16px;
     }
 
@@ -163,295 +191,299 @@
 }
 
 
-    @media (max-width: 868px) {
+@media (max-width: 868px) {
 
 
 
-        .header-contact li img {
-            width: 15px;
-            margin-right: 12px;
-        }
-
-
-        .slide-content h1,
-        .fire_text h2,
-        .box-title .contain h2 {
-            font-size: 25px;
-        }
-
-
-
-        .box-title .contain p,
-        .services-box p {
-            padding: 0;
-            text-align: justify;
-        }
-
-        .col-45 {
-            width: 80%;
-            margin-bottom: 25px;
-        }
-
-        .order-list h5 {
-            font-size: 15px;
-        }
-
-        .category:nth-child(2) {
-            margin: 0px;
-        }
-
-        .firesection {
-            margin-bottom: 0;
-        }
-
-        .request-call-back-section {
-            width: 100%;
-            margin-bottom: 30px;
-        }
-
-        .all-post-section {
-            width: 100%;
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-        }
-
-        .w25-Post {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            justify-content: space-between;
-        }
-
-        .w25-Post .category {
-            width: 48%;
-        }
+    .header-contact li img {
+        width: 15px;
+        margin-right: 12px;
     }
 
-    @media (max-width: 768px) {
-       
 
-        .header-contact .call-768,
-        .header-contact .mail-768 {
-            display: block;
-            margin-right: 15px;
-        }
-
-        .header-contact .call,
-        .header-contact .mail {
-            display: none;
-        }
-
-        .header-contact .call-768 img,
-        .header-contact .mail-768 img {
-            width: 25px;
-        }
-
-        .post-Heading div,
-        .borderTop-bottom {
-            flex-direction: column;
-            align-items: first baseline;
-        }
-
-        p.social-icon-post {
-            margin: 20px 0 !important;
-        }
-
-        .col-65,
-        .firesection .col-33 {
-            width: 100%;
-        }
-
-        .fire_text {
-            margin-top: 30px;
-        }
-
-        
-        .slider-containt .bg-slider .bg-containt p {
-            font-size: 13px;
-        }
-
-        .box-title .contain .view_service {
-            padding: 15px 10px;
-        }
-
-        .client-section,
-        .news-section {
-            margin: 50px 0;
-        }
-
-
-        .col-33 {
-            width: 48%;
-        }
-
-        .fooer-titgl {
-            width: 45%;
-        }
-
+    .slide-content h1,
+    .fire_text h2,
+    .box-title .contain h2 {
+        font-size: 25px;
     }
 
-    @media (max-width: 576px) {
-        .slide-content-1 p{
-            font-size: 14px;
-        }
-        .form-control {
-            max-width: 100%;
-            width: 100%;
-            top: 45%;
-            margin-bottom: 10px;
-        }
 
-        .post-Heading h2 {
-            font-size: 20px;
-            line-height: 30px;
-        }
 
-        .col-33,
-        .w25-Post .category,
-        .col-50 {
-            width: 100%;
-        }
-
-        .form-section {
-            top: 75%;
-            height: 90%;
-        }
-
-        #service {
-            margin-top: 530px;
-        }
-
-        .w25-Post .category {
-            margin-bottom: 30px;
-        }
-
-        .textarea textarea {
-            margin-bottom: 12px;
-            padding: 15px 25px;
-        }
-
-        .box-title .contain h2,
-        .client-title h2,
-        .slide-content h1,
-        .services-box h6 {
-            font-size: 20px;
-            margin: 1px 0;
-        }
-
-        .services-box,
-        .box-service-container .contain {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .special-service {
-            margin: 15px auto;
-        }
-
-        .fist-slider p:nth-child(1)::before {
-            font-size: 80px;
-            top: 5px;
-        }
-
-        .col-45 {
-            width: 100%;
-        }
-
-        .fooer-titgl {
-            width: 100%;
-        }
-
-        .slide-content-1 h1{
-            font-size: 35px;
-        }
-
-        .visa-section {
-            flex-direction: column;
-            gap: 15px;
-        }
-
+    .box-title .contain p,
+    .services-box p {
+        padding: 0;
+        text-align: justify;
     }
 
-    @media (max-width: 479px) {
-        .header-contact .call-768 img,
-        .header-contact .mail-768 img {
-            width: 20px;
-        }
-        .content-title{
-            padding-right: 25px;
-        }
-
-        .background .owl-nav{
-            top: 48%;
-        }
-
-        .form-control input {
-            padding: 12px 25px;
-        }
-
-        .bg-containt .read-more {
-            font-size: 14px;
-        }
-
-        .all-post-section .bg-containt p,
-        .all-post-section .bg-containt span {
-            font-size: 12px !important;
-        }
-
-        .postByrohan .post-corr p:nth-child(odd) {
-            padding: 15px 15px;
-        }
-
-        .center {
-            justify-content: none;
-        }
-
-        .fist-slider {
-            padding: 25px 0;
-        }
-
-        .box-title .contain .view_service,
-        .new-read-box .read-more-text {
-            padding: 10px 15px;
-        }
-
-        .services-box h6 {
-            font-size: 20px;
-        }
-
-        .slide-content-1 p {
-            letter-spacing: 1px;
-            margin: 5px 0;
-            line-height: 15px;
-        }
-
-        .slider-containt .bg-slider .bg-containt p {
-            font-size: 10px;
-        }
-
-        .form-button {
-            margin: 20px 0;
-        }
+    .col-45 {
+        width: 80%;
+        margin-bottom: 25px;
     }
 
-    @media (max-width: 380px) {
-
-        .box-bg-white h3,
-        .services-box h6 {
-            font-size: 20px;
-        }
-        .container-slider{
-            top: 11%;
-        }
-
-        .footer h3 {
-            font-size: 18px;
-        }
-
-        .footer ul li,
-        .free-quatos .btn-outline {
-            font-size: 12px;
-        }
-
-
+    .order-list h5 {
+        font-size: 15px;
     }
+
+    .category:nth-child(2) {
+        margin: 0px;
+    }
+
+    .firesection {
+        margin-bottom: 0;
+    }
+
+    .request-call-back-section {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .all-post-section {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+
+    .w25-Post {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .w25-Post .category {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    .header-contact .call-768,
+    .header-contact .mail-768 {
+        display: block;
+        margin-right: 15px;
+    }
+
+    .header-contact .call,
+    .header-contact .mail {
+        display: none;
+    }
+
+    .header-contact .call-768 img,
+    .header-contact .mail-768 img {
+        width: 25px;
+    }
+
+    .post-Heading div,
+    .borderTop-bottom {
+        flex-direction: column;
+        align-items: first baseline;
+    }
+
+    p.social-icon-post {
+        margin: 20px 0 !important;
+    }
+
+    .col-65,
+    .firesection .col-33 {
+        width: 100%;
+    }
+
+    .fire_text {
+        margin-top: 30px;
+    }
+
+
+    .slider-containt .bg-slider .bg-containt p {
+        font-size: 13px;
+    }
+
+    .box-title .contain .view_service {
+        padding: 15px 10px;
+    }
+
+    .client-section,
+    .news-section {
+        margin: 50px 0;
+    }
+
+
+    .col-33 {
+        width: 48%;
+    }
+
+    .fooer-titgl {
+        width: 45%;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .slide-content-1 p {
+        font-size: 14px;
+    }
+
+    .form-control {
+        max-width: 100%;
+        width: 100%;
+        top: 45%;
+        margin-bottom: 10px;
+    }
+
+    .post-Heading h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .col-33,
+    .w25-Post .category,
+    .col-50 {
+        width: 100%;
+    }
+
+    .form-section {
+        top: 75%;
+        height: 90%;
+    }
+
+    #service {
+        margin-top: 530px;
+    }
+
+    .w25-Post .category {
+        margin-bottom: 30px;
+    }
+
+    .textarea textarea {
+        margin-bottom: 12px;
+        padding: 15px 25px;
+    }
+
+    .box-title .contain h2,
+    .client-title h2,
+    .slide-content h1,
+    .services-box h6 {
+        font-size: 20px;
+        margin: 1px 0;
+    }
+
+    .services-box,
+    .box-service-container .contain {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .special-service {
+        margin: 15px auto;
+    }
+
+    .fist-slider p:nth-child(1)::before {
+        font-size: 80px;
+        top: 5px;
+    }
+
+    .col-45 {
+        width: 100%;
+    }
+
+    .fooer-titgl {
+        width: 100%;
+    }
+
+    .slide-content-1 h1 {
+        font-size: 35px;
+    }
+
+    .visa-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+
+@media (max-width: 479px) {
+
+    .header-contact .call-768 img,
+    .header-contact .mail-768 img {
+        width: 20px;
+    }
+
+    .content-title {
+        padding-right: 25px;
+    }
+
+    .background .owl-nav {
+        top: 43%;
+    }
+
+    .form-control input {
+        padding: 12px 25px;
+    }
+
+    .bg-containt .read-more {
+        font-size: 14px;
+    }
+
+    .all-post-section .bg-containt p,
+    .all-post-section .bg-containt span {
+        font-size: 12px !important;
+    }
+
+    .postByrohan .post-corr p:nth-child(odd) {
+        padding: 15px 15px;
+    }
+
+    .center {
+        justify-content: none;
+    }
+
+    .fist-slider {
+        padding: 25px 0;
+    }
+
+    .box-title .contain .view_service,
+    .new-read-box .read-more-text {
+        padding: 10px 15px;
+    }
+
+    .services-box h6 {
+        font-size: 20px;
+    }
+
+    .slide-content-1 p {
+        letter-spacing: 1px;
+        margin: 5px 0;
+        line-height: 15px;
+    }
+
+    .slider-containt .bg-slider .bg-containt p {
+        font-size: 10px;
+    }
+
+    .form-button {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .box-bg-white h3,
+    .services-box h6 {
+        font-size: 20px;
+    }
+
+    .container-slider {
+        top: 11%;
+    }
+
+    .footer h3 {
+        font-size: 18px;
+    }
+
+    .footer ul li,
+    .free-quatos .btn-outline {
+        font-size: 12px;
+    }
+
+
+}

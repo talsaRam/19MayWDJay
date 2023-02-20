@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Box</title>
+    <link rel="stylesheet" href="css/custome.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="fancy-box">
+            <div class="box item">
+                <img src="images/Automation_Tooling_Systems.png" alt="fancy-box-img">
+            </div>
+
+            <div class="box item">
+                <a href="images/CMM_Inspection.png"><img src="images/CMM_Inspection.png" alt="fancy-box-img"></a>
+            </div>
+
+            <div class="box item">
+                <a href="images/Engineering_Consulting.png">
+                    <img src="images/Engineering_Consulting.png" alt="fancy-box-img">
+                </a>
+            </div>
+
+            <div class="box item">
+                <img src="images/Fabrication_&_Machining.png" alt="fancy-box-img">
+            </div>
+
+            <div class="box item">
+                <img src="images/Industrial_Automation_&_Control_System_Installation.png" alt="fancy-box-img">
+            </div>
+
+            <div class="box item">
+                <img src="images/Mechanical_CAD_Design.png" alt="fancy-box-img">
+            </div>
+
+            <div class="box item">
+                <img src="images/Automation_Tooling_Systems.png" alt="fancy-box-img">
+            </div>
+
+            <div class="box item">
+
+                <img src="images/Engineering_Consulting.png" alt="fancy-box-img">
+            </div>
+        </div>
+    </div>
+
+    <button class="" type="submit" id="submit">Add Remove</button>
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script>
+        // $("img").each(function () {
+        //     $(this).wrap($('<a/>', {
+        //         href: $(this).attr('src')
+        //     }).attr('data-fancybox', 'gallery'));
+        // });
+
+        // $(".fancy-box a").addClass('show');
+
+        $(document).ready(function () {
+            $("#submit").on('click', function () {
+                $(".fancy-box").toggleClass('add');
+            })
+
+            $("#submit").on('click', function () {
+                $(".fancy-box").removeClass('');
+            })
+            
+        })
+
+    </script>
+
+</body>
+
+</html>

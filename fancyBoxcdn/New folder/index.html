@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 </head>
 
-<body>
+<body id="body" class="">
 
     <div class="container">
         <div class="fancy-box">
@@ -52,6 +52,7 @@
     </div>
 
     <button class="" type="submit" id="submit">Add Remove</button>
+    <button id="btnSend" disabled>Send</button>
 
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
@@ -62,17 +63,26 @@
         //     }).attr('data-fancybox', 'gallery'));
         // });
 
-        // $(".fancy-box a").addClass('show');
+        $(".fancy-box a").attr('data-fancybox', 'gallery');
+        
+        var fancyBoc = document.getElementById("body");
+        let btn = document.querySelector('#btnSend');
+
 
         $(document).ready(function () {
             $("#submit").on('click', function () {
-                $(".fancy-box").toggleClass('add');
+                if (fancyBoc.hasAttribute('id')) {
+                    fancyBoc.removeAttribute('id');
+                } else {
+                    fancyBoc.setAttribute('id', 'demo');
+                }
             })
 
-            $("#submit").on('click', function () {
-                $(".fancy-box").removeClass('');
-            })
-            
+            if (btn) {
+                btn.hasAttribute('disabled');
+                console.log(disabled);
+            }
+
         })
 
     </script>

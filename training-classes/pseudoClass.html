@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO CLASS</title>
+    <style>
+        /* p{
+            padding: 15px;
+        } */
+       p:nth-last-child(1){
+        background-color: paleturquoise;
+       }
+
+        p:first-child{
+            background-color: teal;
+            color:red;
+            padding: 15px;
+        }
+
+        div p:nth-last-child(2n + 3) {
+            background-color: aqua;
+        }
+
+        p::first-letter{
+            color: #fff;
+            font-size: 20px;
+        }
+        p::before{
+            content :"**";
+        }
+
+        p::after{
+            content :"**";
+            color: slateblue;
+        }
+
+        input:valid{
+            background-color: burlywood;
+        }
+
+        input:in-range{
+            background-color: teal;
+            color: #fff;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="psuedoClass">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid at dolorum quaerat id quod eos? Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Odio deleniti velit pariatur porro! Saepe itaque at magni
+            facilis, neque esse, alias aliquam quas consequatur consectetur porro sequi totam nulla autem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid at dolorum quaerat id quod eos? Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Odio deleniti velit pariatur porro! Saepe itaque at magni
+            facilis, neque esse, alias aliquam quas consequatur consectetur porro sequi totam nulla autem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid at dolorum quaerat id quod eos? Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Odio deleniti velit pariatur porro! Saepe itaque at magni
+            facilis, neque esse, alias aliquam quas consequatur consectetur porro sequi totam nulla autem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid at dolorum quaerat id quod eos? Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Odio deleniti velit pariatur porro! Saepe itaque at magni
+            facilis, neque esse, alias aliquam quas consequatur consectetur porro sequi totam nulla autem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid at dolorum quaerat id quod eos? Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Odio deleniti velit pariatur porro! Saepe itaque at magni
+            facilis, neque esse, alias aliquam quas consequatur consectetur porro sequi totam nulla autem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid at dolorum quaerat id quod eos? Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Odio deleniti velit pariatur porro! Saepe itaque at magni
+            facilis, neque esse, alias aliquam quas consequatur consectetur porro sequi totam nulla autem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid at dolorum quaerat id quod eos? Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Odio deleniti velit pariatur porro! Saepe itaque at magni
+            facilis, neque esse, alias aliquam quas consequatur consectetur porro sequi totam nulla autem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid at dolorum quaerat id quod eos? Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Odio deleniti velit pariatur porro! Saepe itaque at magni
+            facilis, neque esse, alias aliquam quas consequatur consectetur porro sequi totam nulla autem?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid at dolorum quaerat id quod eos? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Odio deleniti velit pariatur porro! Saepe itaque at magni
+                facilis, neque esse, alias aliquam quas consequatur consectetur porro sequi totam nulla autem?</p>
+    </div>
+
+    <div>
+        <p>Lorfem</p>
+        <p>Loem</p>
+    </div>
+
+    <input type="email" placeholder="valid Email Address" >
+    <input type="number" min="5" max="15" value="10">
+
+    <p>only Paragraph</p>
+    <p>second Paragraph</p>
+    <a href="">Hello</a>
+</body>
+
+</html>

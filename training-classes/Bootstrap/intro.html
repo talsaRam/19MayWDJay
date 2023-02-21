@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container-fluid bg-dark pt-3 pb-3">
+        <ul class="list-unstyled text-white">
+            <li class="bd-highlight">Bootsrap is part of Html/Css/javaScripts framework. If we can use Bootsrap we build
+                responsive
+                mobile website.</li>
+            <li>Many mobile devices look diffrent responsive layout of Bootsrap.</li>
+        </ul>
+
+        <div class="border mb-2">
+            <div class="bg-success p-3  mb-3 text-white" id="text-para">
+                <h1>Box Title Hide/Show Effect</h1>
+                <p class="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae commodi itaque
+                    dicta
+                    quis at
+                    laboriosam.</p>
+            </div>
+            <div class="p-3">
+                <div class="col-12">
+                    <button id="hideButton">Hide Button</button>
+                    <button id="showButton">Show Button</button>
+                    <button id="toggleButton">Toggle Button</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="border mb-2">
+            <div class="bg-secondary p-3  mb-3 text-white" id="text-fade">
+                <h1 id="box-text">Box Fade Effect</h1>
+                <p class="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae commodi itaque
+                    dicta
+                    quis at
+                    laboriosam.</p>
+            </div>
+            <div class="p-3">
+                <div class="col-12">
+                    <button id="fadeOut">Fade Out/Hide</button>
+                    <button id="fadeIn">Fade In/Show</button>
+                    <button id="fadetoggle">Fade Toggle</button>
+                    <button id="fadeTo">Fade To</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="border mb-2">
+            <div class="bg-info p-3  mb-3 text-white" id="text-slide">
+                <h1 id="box-text">Box Slide Effect</h1>
+                <p class="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae commodi itaque
+                    dicta
+                    quis at
+                    laboriosam.</p>
+            </div>
+            <div class="p-3">
+                <div class="col-12">
+                    <button id="slideUp">Slide Up</button>
+                    <button id="slideDown">Slide Down</button>
+                    <button id="slideToggle">slide Toggle</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="border">
+            <div class="p-3 text-white" id="text-mouse">
+                <h1 id="box-text">Box Mouse Event 4</h1>
+                <p class="m-0" id="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae commodi
+                    itaque
+                    dicta
+                    quis at
+                    laboriosam.</p>
+            </div>
+            <div class="border-top p-3">
+                <div class="col-12">
+                    <button id="clickButton">Mouse Click</button>
+                    <button id="dblClick">Double Click</button>
+                    <button id="contextMenu">ContextMenu Mouse/Right Click</button>
+                    <button id="mouseEnter">Mouse Enter</button>
+                    <button id="mouseLeave">Mouse Leave</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container-fluid bg-info pt-4 pb-4">
+        <div class="row pb-4">
+            <div class="col">
+                <div class="border bg-light">Custom column padding</div>
+            </div>
+            <div class="col">
+                <div class="border bg-light">Custom column padding</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col bg-success border p-2">1</div>
+            <div class="col bg-info border p-2">2</div>
+            <div class="col bg-warning border p-2">3</div>
+            <div class="col bg-white border p-2">4</div>
+            <div class="col bg-secondary border p-2">5</div>
+            <div class="col bg-primary border p-2">6</div>
+            <div class="col bg-success border p-2">7</div>
+            <div class="col bg-danger border p-2">8</div>
+            <div class="col bg-muted border p-2">9</div>
+            <div class="col bg-primary border p-2">10</div>
+            <div class="col bg-dark border p-2">11</div>
+            <div class="col bg-danger border p-2">12</div>
+        </div>
+
+        <div class="row pt-2">
+            <div class="col-2 bg-success border p-2">1</div>
+            <div class="col bg-danger border p-2">12</div>
+        </div>
+
+        <div class="row pt-2">
+            <div class="col-4 bg-success border p-2">1</div>
+            <div class="col bg-danger border p-2">12</div>
+        </div>
+
+        <div class="row pt-2">
+            <div class="col-6 bg-success border p-2">1</div>
+            <div class="col bg-danger border p-2">12</div>
+        </div>
+
+        <div class="row pt-2">
+            <div class="col-8 bg-success border p-2">1</div>
+            <div class="col bg-danger border p-2">12</div>
+        </div>
+
+        <div class="row pt-2">
+            <div class="col-10 bg-success border p-2">1</div>
+            <div class="col bg-danger border p-2">12</div>
+        </div>
+
+        <div class="row pt-2">
+            <div class="col-12 bg-success border p-2">1</div>
+            <div class="col bg-danger border p-2">12</div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="bg-dark text-white border col-4">.col-4</div>
+            <div class="bg-dark text-white border col-4">.col-4</div>
+            <div class="bg-dark text-white border col-4">.col-4</div>
+          </div>
+          
+          <div class="row">
+            <div class="bg-warning border col-lg-3 col-md-4 col-sm-6">.col-sm-4</div>
+            <div class="bg-warning border col-lg-3 col-md-4 col-sm-6">.col-sm-4</div>
+            <div class="bg-warning border col-lg-3 col-md-4 col-sm-6">.col-sm-4</div>
+            <div class="bg-warning border col-lg-3 col-md-12 col-sm-6">.col-sm-4</div>
+          </div>
+          
+          <div class="row">
+            <div class="bg-secondary border col-lg-6 col-md-10 col-md-12">.col-md-4</div>
+            <div class="bg-secondary border col-lg-6 col-md-2 col-md-12">.col-md-4</div>
+          </div>
+          
+          <div class="row">
+            <div class="bg-primary border col-lg-4">.col-lg-4</div>
+            <div class="bg-primary border col-lg-4">.col-lg-4</div>
+            <div class="bg-primary border col-lg-4">.col-lg-4</div>
+          </div>
+          
+          <div class="row">
+            <div class="bg-success border col-xl-4">.col-xl-4</div>
+            <div class="bg-success border col-xl-4">.col-xl-4</div>
+            <div class="bg-success border col-xl-4">.col-xl-4</div>
+          </div>
+          <div class="row">
+            <div class="bg-success border col-xl-12">.col-xl-12</div>
+          </div>
+    </div> -->
+
+    <script src="js/bootstrap.js"></script>
+    <script src="../jquerytraining/js/jquery-3.6.3.min.js"></script>
+    <script>
+        // hide And show Effect
+        $(document).ready(function () {
+            $("#hideButton").click(function () {
+                $(this).hover().css('background-color', 'teal');
+                $(this).hover().css('color', '#fff');
+                $("#text-para p").hide('fast', function () {
+                    console.log("I am hide")
+                });
+            })
+
+            $("#showButton").on("click", function () {
+                $("#text-para p").show(800, function () {
+                    console.log('hide text i will show');
+                });
+            })
+
+            $("#toggleButton").on("click", function () {
+                $("#text-para").toggle('slow', function () {
+                    alert('toggle');
+                });
+            })
+        })
+
+        // fade Effect by Jquery
+        $(document).ready(function () {
+            $("#fadeOut").click(function () {
+                $("#text-fade p").fadeOut(function () {
+                    alert('Fade out');
+                });
+            })
+
+            $("#fadeIn").click(function () {
+                $("#text-fade p").fadeIn(function () {
+                    alert('Fade In');
+                });
+            })
+
+            $("#fadetoggle").click(function () {
+                $("#text-fade p").fadeToggle(function () {
+                    alert('Toggle');
+                });
+            })
+
+            // fadeTo function (Speed,Opacity,Callback); 
+            $("#fadeTo").click(function () {
+                $("#text-fade").fadeTo(2500, 0.2, function () {
+                    alert('Fade To');
+                });
+            })
+        })
+
+        // slide effect on box by jquery
+        $(document).ready(function () {
+            $("#slideUp").click(function () {
+                $("#text-slide p").slideUp('slow', function () {
+                    alert('slide Up');
+                })
+            })
+
+            $("#slideDown").click(function () {
+                $("#text-slide p").slideDown('fast', function () {
+                    alert('slide down');
+                })
+            })
+
+            $("#slideToggle").click(function () {
+                $("#text-slide p").slideToggle('2500', function () {
+                    alert('toggle');
+                })
+            })
+        })
+
+        // mouse event Jquery
+        $(document).ready(function () {
+            $("#clickButton").click(function () {
+                $("#text-mouse").css('background-color', 'teal');
+            })
+
+            $("#dblClick").dblclick(function () {
+                $("#text-mouse h1").css('color', 'red');
+            })
+
+            $("#contextMenu").contextmenu(function () {
+                $("#text-mouse").css('background-color', 'orange')
+            })
+
+            $("#mouseEnter").mouseenter(function () {
+                $("#text-mouse p").css('color', 'tan');
+            })
+
+            $("#mouseLeave").mouseleave(function () {
+                $("#text-mouse").css('background-color', 'black');
+                $("#text-mouse h1").css('color', '#fff');
+                $("#text-mouse p").css('color', '#fff');
+            })
+        })
+
+        // $(document).ready(function () {
+        //     $("p").hover(function () {
+        //         $(this).css("background-color", "yellow");
+        //     }, function () {
+        //         $(this).css("background-color", "");
+        //     });
+        // });
+        $("p").hover(function () {
+            $(this).css('cursor', 'pointer').attr('title', 'click on Button See Event.');
+            
+        });
+    </script>
+</body>
+
+</html>

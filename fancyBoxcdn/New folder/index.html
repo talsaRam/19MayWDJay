@@ -64,7 +64,7 @@
         // });
 
         $(".fancy-box a").attr('data-fancybox', 'gallery');
-        
+
         var fancyBoc = document.getElementById("body");
         let btn = document.querySelector('#btnSend');
 
@@ -76,12 +76,11 @@
                 } else {
                     fancyBoc.setAttribute('id', 'demo');
                 }
-            })
-
-            if (btn) {
-                btn.hasAttribute('disabled');
+            });
+            if(btn) {
+                let disabled = btn.hasAttribute('disabled');
                 console.log(disabled);
-            }
+            };
 
         })
 

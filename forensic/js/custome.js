@@ -7,8 +7,6 @@ $(document).ready(function () {
     })
 })
 
-
-
 $(window).scroll(function () {
     var secondHeader = document.querySelector(".second-header-bg-white");
     secondHeader.classList.toggle("sticky", window.scrollY > 0);

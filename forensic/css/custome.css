@@ -291,7 +291,7 @@
         opacity: 0;
         visibility: hidden;
         margin-top: 20px;
-        transition: all .1s;
+        transition: all .2s;
     }
 
     .second-header-list .dropdown-menu ul.menu-item li {
@@ -415,7 +415,7 @@
         background-image: url(../images/Layer\ 15.png);
     }
 
-    .news-feed .slide-1 {
+    . .slide-1 news-feed{
         background-image: url(../images/fcsi_bg.png);
     }
 
@@ -854,6 +854,7 @@
         transition: all .3s;
     }
 
+    .client-section .bg-client-slider:hover img,
     .fire_text img:hover,
     .bg-image:hover img {
         transform: scale(1.1);

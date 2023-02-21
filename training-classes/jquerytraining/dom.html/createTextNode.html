@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create text Node</title>
+</head>
+<body>
+    <button id="function">Append</button>
+
+
+
+<div id="list">
+    <p>Hello</p>
+    <p>World</p>
+</div>
+
+<script>
+    
+    // parrent  
+    let listitem = document.getElementById("list");
+
+    // create element
+    //  let createli = document.createElement("li");
+
+     //add text in element
+    //  createli.textContent = 'Banana';
+    //  listitem.appendChild(createli);
+
+    let fruitsList = ['Apple', 'Orange', 'Mango', 'Lemon'];
+
+    for ( let fruit of fruitsList) {
+        let newlistItem = document.createElement('li');
+
+        newlistItem.textContent = fruit;
+
+    listitem.appendChild(newlistItem)
+    }
+
+</script>
+    
+</body>
+</html>

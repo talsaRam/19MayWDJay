@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddEventListener</title>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>The AddEventListener</p>
+
+    <button id="mybtn">Show Example</button>
+    <button id="add">Match Add</button>
+
+    <button id="sameButton">AddMultipleEvent</button>
+    <p id="demo"></p>
+    <h2 id="mathadd"></h2>
+    <script>
+        // var btnClick = document.getElementById("mybtn");
+        // btnClick.addEventListener("click", function () {
+        //     document.getElementById("demo").innerHTML = "Hello World";
+        // });
+
+        // let multipleButtn = document.getElementById("sameButton");
+        // multipleButtn = addEventListener("mouseover", function () {
+        //     document.getElementById("demo").innerHTML += "Moused over ! <br>";
+
+        // });
+
+        // multipleButtn = addEventListener("click", function () {
+        //     document.getElementById("demo").innerHTML += "click !<br>"
+        // })
+        // multipleButtn = addEventListener("mouseout", function () {
+        //     document.getElementById("demo").innerHTML += "mouse Out ! <br>"
+        // })
+        let p1 = 55;
+        let p2 = 55;
+
+        document.getElementById("add").addEventListener("click", function(){
+            myFunction(p1, p2);
+            function myFunction(a,b){
+                document.getElementById("mathadd").innerHTML = a*b;
+            }
+            myDisplay('click on  button');
+        }, true);
+
+        function myDisplay(text){
+            document.getElementById("mathadd").innerHTML += text + "<br>";
+        }
+
+        var H3 = document.getElementById("mathadd");
+        document.getElementById("add").addEventListener("click",function(){
+            H3.style.color = "#fff";
+            H3.style.background = "teal";
+            H3.style.padding = "25px";
+        })
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

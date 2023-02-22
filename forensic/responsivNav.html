@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Menu</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: url(images/fcsi_bg.png) no-repeat center;
+            background-size: cover;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            min-height: 50px;
+            background-color: #111;
+        }
+
+        .bars {
+            color: #fff;
+            font-size: 2em;
+            cursor: pointer;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all .5s;
+            display: none;
+        }
+
+        .bars.rotate {
+            transform: translateY(-50%) rotate(-180deg);
+        }
+
+        .logo {
+            float: left;
+            margin-left: 100px;
+            line-height: 50px;
+        }
+
+        .logo h1 {
+            color: crimson;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        #navbar {
+            float: right;
+            margin-right: 100px;
+            line-height: 50px;
+        }
+
+        #navbar>li {
+            list-style-type: none;
+            display: inline-block;
+            line-height: 50px;
+        }
+
+        #navbar>li:hover {
+            background-color: chocolate;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 25px;
+            text-transform: uppercase;
+        }
+
+        .menu-one {
+            position: absolute;
+            width: 100%;
+            left: -100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 0 3px #000;
+            transition: all 0.1s;
+        }
+
+        .drop-one:hover>.menu-one {
+            left: 0;
+        }
+
+        .menu-one ul {
+            list-style: none;
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu-one ul h4 {
+            color: teal;
+            font-size: 20px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .menu-one ul a {
+            color: #000;
+        }
+
+        .menu-one ul li img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .drop-two {
+            position: relative;
+        }
+
+        .menu-two {
+            position: absolute;
+            list-style: none;
+            background-color: #525050;
+            left: 0;
+            display: none;
+        }
+
+        .menu-two li:hover {
+            background-color: chocolate;
+        }
+
+        .drop-two:hover .menu-two {
+            display: block;
+        }
+
+        .drop-one span,
+        .drop-two span {
+            display: inline-block;
+            margin-left: 5px;
+            transition: all .3s;
+        }
+
+        .drop-one:hover span,
+        .drop-two:hover span {
+            transform: rotate(-180deg);
+        }
+
+        @media (max-width: 1149px) {
+
+            .logo,
+            #navbar {
+                margin: 0;
+                width: 100%;
+                text-align: center;
+                background-color: #000;
+            }
+        }
+
+        @media (max-width: 991px) {
+            #navbar {
+                position: absolute;
+                top: 50px;
+                left: -100%;
+                text-align: left;
+            }
+
+            #navbar li{
+                display: block;
+            }
+
+            .menu-one{
+                position: relative;
+                box-shadow: none;
+                display: none;
+            }
+
+            .drop-one:hover > .menu-one{
+                display: block;
+            }
+
+            .menu-one ul{
+                text-align: left;
+            }
+
+            .menu-two{
+                position: relative;
+            }
+
+            .bars{
+                display: block;
+            }
+
+            #navbar.active{
+                left: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="bars">&#11166;</div>
+        <div class="logo">
+            <h1>TusharWeb</h1>
+        </div>
+        <ul id="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="drop-one">
+                <a href="#">Service<span>&#11167;</span></a>
+                <div class="menu-one">
+                    <ul>
+                        <li>
+                            <h4>Our Company</h4>
+                        </li>
+                        <li><img src="images/fire-demo1.png" width="500" alt="img"></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Development</h4>
+                        </li>
+                        <li><a href="#">Website</a></li>
+                        <li><a href="#">Frontend</a></li>
+                        <li><a href="#">JavaScripts</a></li>
+                        <li><a href="#">Php </a></li>
+                        <li><a href="#">Python</a></li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <h4>Skill</h4>
+                        </li>
+                        <li><a href="#">Website</a></li>
+                        <li><a href="#">Frontend</a></li>
+                        <li><a href="#">JavaScripts</a></li>
+                        <li><a href="#">Php </a></li>
+                        <li><a href="#">Python</a></li>
+                    </ul>
+
+
+                    <ul>
+                        <li>
+                            <h4>News</h4>
+                        </li>
+                        <li><a href="#">Website</a></li>
+                        <li><a href="#">Frontend</a></li>
+                        <li><a href="#">JavaScripts</a></li>
+                        <li><a href="#">Php </a></li>
+                        <li><a href="#">Python</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Team</a></li>
+            <li class="drop-two">
+                <a href="#">Social <span>&#11167;</span></a>
+                <ul class="menu-two">
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <script>
+        const bars = document.querySelector('.bars');
+        const navBar = document.querySelector('#navbar');
+
+        bars.addEventListener("click", function() {
+            navBar.classList.toggle('active');
+            bars.classList.toggle('rotate');
+        })
+    </script>
+</body>
+
+</html>

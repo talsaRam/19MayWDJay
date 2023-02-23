@@ -2,6 +2,7 @@ $(document).ready(function () {
     $(".bar-icon").click(function () {
         $(".second-header-list").toggleClass("showing");
         $("body").toggleClass("show");
+        $(".header-list").toggleClass("show");
         $(".image-x-icon-bar").toggleClass("show");
         $("#imagesChange").toggleClass("hidden");
     })
@@ -43,7 +44,7 @@ $('.carousel-slider').slick({
     slidesToShow: 3,
     loop: true,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 1500,
     focusOnSelect: true,
     pauseOnHover: false,
@@ -53,19 +54,16 @@ $('.carousel-slider').slick({
         settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-            arrows: false,
-            dots: true
-        }
-
-    },
-    {
-        breakpoint: 700,
+            arrows: true,
+            dots: false
+        }},{
+        breakpoint: 576,
         settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            dots: true,
+            dots: false,
             infinite: true,
-            arrows: false
+            arrows: true
         }
     }]
 });
@@ -75,10 +73,11 @@ $('.slick-carousel-client').slick({
     speed: 1000,
     slidesToShow: 5,
     loop: true,
+    arrows: false,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
-    dots: false,
+    dots: true,
     focusOnSelect: true,
     pauseOnHover: false,
     responsive: [{

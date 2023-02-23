@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Placement of Bootstrap Tooltips via jQuery</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <style>
+    .bs-example {
+      margin: 100px 60px;
+    }
+    .mostImportant::after{
+      content: "*" !important;
+      color: red !important;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="bs-example">
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="model-header">
+            <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
+
+            <ul class="list-inliner">
+              <li class="list-inline-item">
+                <a href="#" id="tipTop" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on
+                  top</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" id="tipRight" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip
+                  on right</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" id="tipBottom" data-toggle="tooltip" data-placement="bottom"
+                  title="Tooltip on bottom">Tooltip on bottom</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" id="tipLeft" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on
+                  left</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Toggle</button>
+    <div class="container p-4 d-flex">
+      <div class="col-1">
+        <ul class="list-inliner">
+          <li class="list-inline-item">
+            <a href="#" id="tipTop" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" id="tipRight" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on
+              right</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" id="tipBottom" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip
+              on bottom</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" id="tipLeft" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on
+              left</a>
+          </li>
+        </ul>
+        <p id="toolsBox" data-toggle="tooltip" data-placement="left" title="Hello Title" class="">ToolTio</p>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" data-bs-target="#myModalContact" data-bs-toggle="modal"
+    class="btn btn-success d-inline-block text-center">Hello World</button>
+  <div class="modal" id="myModalContact">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-info">
+          <h5 class="text-white">Hello People</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <form action="">
+            <div class="mb-2">
+              <label for="form-label" class="mostImportant pb-1">Name</label>
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-2">
+              <label for="form-label" class="mostImportant pb-1">Email</label>
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="">
+              <label for="form-label" class="mostImportant pb-1">Message</label>
+              <textarea name="" id="" class="form-control" required></textarea>
+            </div>
+            <button type="submit" value="submit" class="btn btn-primary border mt-3">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Submit</button>
+          <button type="button" data-bs-dismiss="modal" class="btn btn-danger">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#tipTop").tooltip();
+      $("#tipRight").tooltip();
+      $("#tipBottom").tooltip();
+      $("#tipLeft").tooltip();
+      $("#toolsBox").tooltip();
+    });
+  </script>
+</body>
+
+</html>

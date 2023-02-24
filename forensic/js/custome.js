@@ -13,6 +13,11 @@ $(window).scroll(function () {
     secondHeader.classList.toggle("sticky", window.scrollY > 0);
 })
 
+$("#slideToggle").click(function () {
+    $("#slider-list").slideToggle('slow');
+    $("#rotate").toggleClass('down');
+})
+
 
 $('.owl-carousel').owlCarousel({
     items: 1,

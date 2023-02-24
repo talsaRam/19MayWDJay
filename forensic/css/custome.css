@@ -119,6 +119,10 @@
         display: inline-block;
     }
 
+    .second-header-bg-white.sticky .header-contact li{
+        margin-right: 30px;
+    }
+
     .second-header-bg-white .header-contact .call-768,
     .second-header-bg-white .header-contact .mail-768 {
         display: none;
@@ -163,11 +167,6 @@
         padding: 10px 0;
     }
 
-    .second-header-bg-white.sticky .dropdown-menu .none {
-        opacity: 1;
-        visibility: visible;
-    }
-
 
 
     .header-contact,
@@ -204,7 +203,7 @@
     }
 
     .header-contact li img {
-        width: 20px;
+        width: 18px;
         display: inline;
         margin-right: 20px;
         vertical-align: middle;
@@ -232,7 +231,8 @@
         color: var(--text-color);
         position: relative;
         font-size: 16px;
-        padding: 15px 30px;
+        padding: 16px 30px;
+        font-weight: 600;
         border-radius: 25px;
         z-index: 1;
     }
@@ -315,8 +315,7 @@
 
     /* dropdown */
     .second-header-list .dropdown-menu img {
-        width: 0px;
-        margin-left: 10px;
+        width: 14px;
         display: inline-block;
         vertical-align: middle;
     }
@@ -694,8 +693,16 @@
         overflow: hidden;
     }
 
-    .col-33.slick-slide {
-        margin: 0 15px !important;
+    #service .col-33.slick-slide {
+        margin: 0 10px;
+    }
+    .client-section .slick-track{
+        display: flex;
+        column-gap: 5px;
+    }
+    .client-section  .container{
+        padding-left: 15px;
+        padding-right: 0;
     }
 
 
@@ -828,9 +835,9 @@
         margin-bottom: 5px;
     }
 
-    .slick-next,
-    .slick-prev {
-        color: var(--main-color) !important;
+    #service .slick-next,
+    #service .slick-prev {
+        color: var(--main-color);
     }
 
     /* other serive */
@@ -868,7 +875,7 @@
         font-size: 24px;
         line-height: 42px;
         color: #000000;
-        font-weight: 800;
+        font-weight: 600;
     }
 
 
@@ -1158,6 +1165,11 @@
         color: tan;
     }
 
+    .footer ul li a.active,
+    .second-header-list li[class="active"] a.active{
+        color: var(--text-color);
+    }
+
     .contact-tool a:nth-child(2) {
         line-height: 30px;
     }
@@ -1319,11 +1331,11 @@
     }
 
     .fire_text p {
-        line-height: 20px;
         margin: 15px 0;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 400;
         text-align: justify;
+        margin-bottom: 20px;
     }
 
     .fire_text h5,
@@ -1339,7 +1351,7 @@
 
     .overhiddn {
         overflow: hidden;
-        margin: 15px 0;
+        margin: 25px 0;
     }
 
     .order-list span {
@@ -1418,7 +1430,7 @@
         border: none;
         z-index: 1;
         border-radius: 3px;
-        background-color: #386201;
+        background-color: var(--main-color);
     }
 
 
@@ -1624,7 +1636,12 @@
 
     .details-us a,
     .contact-details-form a {
-        color: blue;
+        color: var(--text-color);
+    }
+
+    .details-us a:hover,
+    .contact-details-form a:hover {
+        color: purple;
     }
 
     .right-form {
@@ -1640,6 +1657,11 @@
         outline: none;
         padding: 15px 25px;
         border-radius: 5px;
+    }
+
+    .form-control-contact input:hover,
+    .form-control-contact textarea:hover{
+        border: 1px solid var(--text-color);
     }
 
     .form-control-contact input::placeholder,
@@ -1672,3 +1694,98 @@
     .button-submit .buuton-control:hover{
         background-color: purple;
     }
+
+    /* text-about-us */
+    .text-about-us p:nth-child(4),
+    .order-list.clean-crime p:nth-child(4){
+        padding: 25px 15px 25px 25px;
+        line-height: 40px;
+        border-left: 5px solid var(--main-color);
+        margin: 40px 0;
+    }
+    .text-about-us p:nth-child(4) q{
+        font-style: italic;
+        font-family: var(--font-inter-regualar);
+        font-size: 16px;
+    }
+
+    .pos-abs-mobile{
+        margin: 25px 0 50px;
+    }
+
+    .pos-abs-mobile .main-mobile-heading{
+        background-color: var(--main-color);
+        display: inline-flex;
+        align-items: center;
+        padding: 15px;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .pos-abs-mobile {
+        display: none;
+    }
+
+    .pos-abs-mobile .main-mobile-heading h5{
+        color: var(--color-white);
+        font-size: 22px;
+        font-family: var(--font-semi-bold);
+    }
+
+    .pos-abs-mobile .main-mobile-heading img{
+        margin-left: auto;
+        transform:rotate(270deg);
+    }
+    .pos-abs-mobile .list-item ul li a{
+        padding: 0 15px;
+    }
+
+    .pos-abs-mobile .main-mobile-heading img.down {
+        transform:rotate(90deg);
+    }
+
+    /* latest news */
+    .ip-section-post{
+        width: 28%;
+    }
+
+    .il-row{
+        row-gap: 25px;
+    }
+
+    #latest-news{
+        margin-bottom: 50px;
+    }
+
+/* clean-crime-scane-cleaners */
+.fire_text h1{
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    font-weight: 800;
+    margin: 10px 0;
+    font-family: var(--font-extra-semi-bold);
+}
+
+.fire_text h2{
+    font-size: 24px;
+    font-family: var(--font-semi-bold);
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.clean-crime .fire_text ul{
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.clean-crime .fire_text ul li{
+    list-style: disc;
+    margin-bottom: 10px;
+}
+.clean-crime .fire_text p{
+    font-size: 16px;
+    list-style: 30px;
+    font-family: var(--font-inter-regualar);
+}
+.fire_text span{
+    color: var(--text-color);
+}

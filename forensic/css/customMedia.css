@@ -84,15 +84,7 @@
         font-size: 14px;
     }
 
-    .second-header-list .dropdown-menu .white-arrow,
-    .second-header-bg-white .header-contact .call-768,
-    .second-header-bg-white .header-contact .mail-768 {
-        display: none;
-    }
 
-    .second-header-bg-white.sticky .header-contact {
-        display: block;
-    }
 
     .second-header .logo {
         margin-right: auto;
@@ -100,22 +92,6 @@
 
     .second-header-bg-white .header-contact {
         flex-grow: inherit;
-    }
-
-
-    .second-header-list .dropdown-menu .none {
-        width: 20px;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .fire_demo .slide-1,
-    .fire_demo .slide-2,
-    .fire_demo .slide-3 {
-        height: 300px;
     }
 
     .background.fire_demo.contact .slide-2 {
@@ -136,79 +112,12 @@
         flex-grow: 1;
     }
 
-    .free-quatos .btn-outline {
+    .free-quatos .btn-outline,
+    .second-header-bg-white .second-header ul li a {
         font-size: 13px;
     }
 
-    .bar-icon {
-        opacity: 1;
-        visibility: visible;
-        position: relative;
-        z-index: 850;
-        display: block;
-    }
 
-    .second-header .second-header-list {
-        position: absolute;
-        right: -150%;
-        flex-direction: column;
-        top: -65px;
-        width: 100%;
-        max-width: 350px;
-        background-color: #fff;
-        transition: all .5s;
-        z-index: 800;
-    }
-
-    .second-header .second-header-list>li {
-        border-bottom: 1px solid gray;
-        margin: 0;
-        padding: 15px 25px;
-        width: 100%;
-        position: relative;
-        display: block;
-    }
-
-    .second-header-list .dropdown-menu .menu-item {
-        width: 100%;
-        position: relative;
-        box-shadow: none;
-        top: 0;
-        padding: 0;
-        display: none;
-    }
-
-    .second-header-list .dropdown-menu:hover .menu-item {
-        display: block;
-    }
-
-    .second-header-list .dropdown-menu .menu-item li a {
-        line-height: 22px;
-        width: 100%;
-    }
-
-    .second-header-list .dropdown-menu .menu-item li {
-        padding: 10px 10px;
-        border-bottom: 1px solid #000;
-    }
-
-    .second-header-list li.none {
-        display: block;
-        background-color: #8cc63f;
-        color: #fff;
-        width: 100%;
-        text-align: center;
-    }
-
-    .second-header-bg-white .second-header ul li a {
-        font-size: 14px;
-        color: #000;
-        padding: 0;
-    }
-
-    .second-header-list.showing {
-        right: -15px;
-    }
 
     .col-75 {
         margin-top: 50px;
@@ -250,6 +159,7 @@
     .fist-slider p {
         font-size: 16px;
     }
+
     .footer h3 {
         font-size: 18px;
     }
@@ -265,9 +175,97 @@
     .contact_us .col-70 {
         width: 65%;
     }
+
+    .second-header-bg-white .second-header ul li a {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 1024px) {
+
+    .bar-icon {
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        z-index: 850;
+        display: block;
+    }
+
+    .second-header-list .dropdown-menu img {
+        position: absolute;
+        right: 22px;
+        top: 22px;
+    }
+
+    .second-header .second-header-list {
+        position: absolute;
+        right: -150%;
+        flex-direction: column;
+        top: -65px;
+        width: 100%;
+        max-width: 350px;
+        background-color: #fff;
+        transition: all .5s;
+        z-index: 800;
+    }
+
+    .second-header .second-header-list>li {
+        border-bottom: 1px solid gray;
+        margin: 0;
+        padding: 15px 25px;
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+
+    .second-header-list .dropdown-menu .menu-item {
+        width: 100%;
+        position: relative;
+        box-shadow: none;
+        top: 0;
+        padding: 0;
+        display: none;
+    }
+
+    .pos-abs-mobile,
+    .second-header-list .dropdown-menu:hover .menu-item,
+    .second-header-bg-white.sticky .header-contact {
+        display: block;
+    }
+
+    .second-header-list .dropdown-menu .menu-item li a {
+        line-height: 22px;
+        width: 100%;
+    }
+
+    .second-header-list .dropdown-menu .menu-item li {
+        padding: 10px 10px;
+        border-bottom: 1px solid #000;
+    }
+
+    .second-header-list li.none {
+        display: block;
+        background-color: #8cc63f;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+    }
+
+    .second-header-bg-white .second-header ul li a {
+        font-size: 12px;
+        color: #000;
+        padding: 0;
+    }
+
+    .second-header-list.showing {
+        right: -15px;
+    }
+
+    .dis-none,
+    .second-header-bg-white .header-contact .call-768,
+    .second-header-bg-white .header-contact .mail-768 {
+        display: none;
+    }
 
     .service .col-25,
     .col-75 {
@@ -294,13 +292,20 @@
         padding-left: 0;
         width: 50%;
     }
+
     .post-Heading h2,
     .box-title .contain h2,
     .background.fire_demo.contact .slide-2 h1,
     .details-us h1,
-    .contact-details-form h1
-     {
+    .contact-details-form h1 {
         font-size: 30px;
+    }
+
+    .about-us .col-65,
+    .about-us .col-33,
+    .il-row-order,
+    .ip-section-post {
+        width: 100%;
     }
 
 
@@ -314,6 +319,21 @@
 
     .contact_us .col-70 {
         width: 59%;
+    }
+
+    .w25-Post .category,
+    .il-row .col-33 {
+        width: 48%;
+    }
+
+    .category:nth-child(1),
+    .il-row-order {
+        margin-bottom: 30px;
+    }
+
+    .il-row-order,
+    #order-1 {
+        order: -1;
     }
 }
 
@@ -447,7 +467,9 @@
 }
 
 @media (max-width: 576px) {
-    .slide-content-1 p {
+
+    .slide-content-1 p,
+    .pos-abs-mobile .list-item ul li {
         font-size: 14px;
     }
 
@@ -507,8 +529,7 @@
 
     .slide-content h1,
     .details-us h1,
-    .contact-details-form h1
-     {
+    .contact-details-form h1 {
         font-size: 25px;
     }
 
@@ -527,10 +548,8 @@
         top: 5px;
     }
 
-    .col-45 {
-        width: 100%;
-    }
-
+    .col-45,
+    .il-row .col-33,
     .footer-col-1,
     .footer-col-2,
     .footer-col-3,

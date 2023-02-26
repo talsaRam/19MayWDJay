@@ -5,8 +5,25 @@ $(document).ready(function () {
         $(".header-list").toggleClass("show");
         $(".image-x-icon-bar").toggleClass("show");
         $("#imagesChange").toggleClass("hidden");
+        $("#item-view").removeClass("view-data");
+        $(".left-icon").removeClass("view-minus");
     })
 })
+
+$(document).ready(function(){
+    $("#single-column-view").click(function(){
+        $("#item-view").toggleClass("view-data");
+        $(".left-icon").toggleClass("view-minus");
+    }); 
+})
+$(document).ready(function(){
+    $(".left-arrow-croos").click(function(){
+        $("#item-view").removeClass("view-data");
+        $(".left-icon").removeClass("view-minus");
+    });
+})
+
+
 
 $(window).scroll(function () {
     var secondHeader = document.querySelector(".second-header-bg-white");

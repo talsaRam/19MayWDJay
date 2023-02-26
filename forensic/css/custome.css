@@ -167,7 +167,9 @@
         padding: 10px 0;
     }
 
-
+    .second-header-list > ul >li{
+        display: inline-block;
+    }
 
     .header-contact,
     .second-header-list {
@@ -312,6 +314,32 @@
         top: -30px;
     }
 
+    .left-icon{
+        position: absolute;
+        width: 18px;
+        height: 20px;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 900;
+        left: 25px;
+        top: 15px;
+        transition: 0.3s;
+    }
+
+    .left-icon.view-minus{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .left-icon img{
+        width: 60%;
+        cursor: pointer;
+    }
+
+    .text-title-change{
+        display: none;
+    }
+
 
     /* dropdown */
     .second-header-list .dropdown-menu img {
@@ -348,6 +376,7 @@
         visibility: hidden;
         margin-top: 10px;
     }
+
 
     .second-header-list .dropdown-menu .menu-item ul {
         flex: 1;

@@ -1818,3 +1818,18 @@
 .fire_text span{
     color: var(--text-color);
 }
+.d-flex{
+    width: 100%;
+    display: flex;
+    padding: 25px 0 0;
+    flex-wrap: wrap;
+}
+.cloumf-flex{
+    width: 32%;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cloumf-flex img{
+    width: 100%;
+}

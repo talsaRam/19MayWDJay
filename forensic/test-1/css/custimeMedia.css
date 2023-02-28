@@ -1,0 +1,259 @@
+@media (max-width:1450px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navbar-menu .ul-item li {
+        margin-right: 50px;
+    }
+
+    .contact-number .number a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1368px) {
+    .col-33 {
+        width: 40%;
+    }
+
+    .col-64 {
+        width: 55%;
+    }
+
+    .content-col .text-para p {
+        font-size: 16px;
+        line-height: 27px;
+    }
+}
+
+@media (max-width:1199px) {
+    .left-icon-logo {
+        width: 200px;
+        align-items: center;
+    }
+
+    .left-icon-logo img {
+        width: 80%;
+    }
+
+    .navbar-menu .ul-item li {
+        margin-right: 30px;
+    }
+
+    .navbar-menu .ul-item li a {
+        font-size: 16px;
+    }
+
+    .contact-number .call-box {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width:1024px) {
+
+    .main-title h1,
+    .welcome .main-hading h2 {
+        font-size: 55px;
+        line-height: 70px;
+    }
+
+    .col {
+        transform: translateY(140%);
+    }
+
+    .main-title p,
+    .welcome .main-hading p {
+        line-height: 35px;
+        font-size: 20px;
+    }
+
+    .col-33 {
+        width: 80%;
+    }
+
+    .col-64 {
+        width: 100%;
+    }
+}
+
+
+@media (max-width:991px) {
+
+    header {
+        background: #fff;
+    }
+
+    .dropimg img {
+        position: absolute;
+        right: 0;
+        padding: 15px;
+    }
+
+    .main-title h1,
+    .welcome .main-hading h2 {
+        font-size: 55px;
+    }
+
+    .ul-item {
+        position: fixed;
+        top: 130px;
+        background-color: #fff;
+        right: 500%;
+        height: 100%;
+        width: 250px;
+        transform: all .5s;
+    }
+
+    .navbar-menu .ul-item li.active a,
+    .navbar-menu .ul-item li a:hover:after {
+        border-bottom: 0;
+        transform: scale(0);
+    }
+
+    .navbar-menu .ul-item li a {
+        padding: 0 25px;
+
+    }
+
+    .ul-item li {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .ul-item.show {
+        right: 0;
+    }
+
+    .bar-icon {
+        opacity: 1;
+        visibility: visible;
+        display: block;
+    }
+
+}
+
+
+@media (max-width:767px) {
+    .left-icon-logo img {
+        width: 60%;
+    }
+
+    .left-icon-logo {
+        flex-grow: unset;
+        height: 50px;
+    }
+
+    .background-section {
+        height: 700px;
+    }
+
+    .col {
+        transform: translateY(95%);
+    }
+
+    .welcome .main-hading h2 {
+        font-size: 37px;
+        line-height: 50px;
+    }
+
+    .ul-item {
+        top: 95px;
+    }
+
+    .content-col .text-para h3 {
+        font-size: 40px;
+    }
+
+    .welcome .main-hading p {
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .welcome .main-hading h2,
+    .welcome .main-hading p {
+        text-align: left;
+        padding: 0;
+    }
+
+
+
+}
+
+@media (max-width:567px) {
+    .ul-item {
+        top: 70px;
+    }
+
+    .dis-none {
+        display: none;
+    }
+
+    .main-title h1 {
+        font-size: 43px;
+        line-height: 60px;
+    }
+
+    .welcome .main-hading h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .welcome .main-hading p {
+        padding: 0;
+    }
+
+    .background-section {
+        height: 600px;
+    }
+
+    .main-title p,
+    .welcome .main-hading p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width:379px) {
+    .left-icon-logo {
+        width: 160px;
+    }
+
+    .main-title h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .main-title h1::after {
+        bottom: -6px;
+    }
+
+    .background-section {
+        height: 450px;
+    }
+
+    .main-title p {
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+
+    .col {
+        transform: translateY(80%);
+    }
+
+    .contact-number .call-box {
+        width: 35px;
+        height: 35px;
+    }
+
+    .bar-icon {
+        width: 30px;
+    }
+
+}

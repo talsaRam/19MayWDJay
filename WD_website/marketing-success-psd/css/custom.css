@@ -172,7 +172,7 @@ ul {
     display: none;
     transition: all .3s;
 }
-
+ 
 .bar-icon img {
     width: 100%;
     vertical-align: middle;
@@ -210,6 +210,16 @@ ul {
 
 .navbar-list>.link-navbar>li:nth-child(8)>a {
     padding: 12px 0 12px 5px;
+}
+
+.navbar-list img{
+    transition: all .3s;
+}
+
+.web-design-list:hover img,
+.digital-marketing:hover img,
+.analytics:hover img{
+rotate: 180deg;
 }
 
 /* dropdown data */

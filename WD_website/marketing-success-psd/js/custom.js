@@ -11,6 +11,34 @@ $(document).ready(function () {
   });
 })
 
+$(document).ready(function () {
+  $('.web-design-list').click(function () {
+    $('.drop-list-one').toggleClass("show");
+    $(".drop-list-two").removeClass('show');
+    $(".drop-list-three").removeClass('show');
+
+  });
+})
+
+$(document).ready(function () {
+  $('.digital-marketing').click(function () {
+    $('.drop-list-two').toggleClass("show");
+    $(".drop-list-one").removeClass('show');
+    $(".drop-list-three").removeClass('show');
+
+  });
+})
+
+$(document).ready(function () {
+  $('.analytics').click(function () {
+    $('.drop-list-three').toggleClass("show");
+    $(".drop-list-one").removeClass('show');
+    $(".drop-list-two").removeClass('show');
+
+  });
+})
+
+
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
@@ -21,6 +49,9 @@ var img = document.getElementById("imagesChange");
 jQuery(document).on('click', function (event) {
   if (!$(event.target).closest('.wrapper').length) {
     $("body").removeClass('show');
+    $(".drop-list-one").removeClass('show');
+    $(".drop-list-two").removeClass('show');
+    $(".drop-list-three").removeClass('show');
     $(".navbar-list").removeClass('show');
     if (img.src.match('images/X-icon-white.png')) {
       img.src = 'images/white-bars.psd.png';
@@ -66,14 +97,14 @@ $(document).ready(function ($) {
         }
       },
       {
-        breakpoint: 868,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 576,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1

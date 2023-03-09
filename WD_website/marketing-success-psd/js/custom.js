@@ -34,18 +34,16 @@ $(document).ready(function () {
     $('.drop-list-three').toggleClass("show");
     $(".drop-list-one").removeClass('show');
     $(".drop-list-two").removeClass('show');
-
   });
 })
 
+$(document).ready(function(){
+  $("#changeImages").click(function(){
+    $(window).scrollTop(0);
+  })
+})
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
 
-
-var img = document.getElementById("imagesChange");
 jQuery(document).on('click', function (event) {
   if (!$(event.target).closest('.wrapper').length) {
     $("body").removeClass('show');
@@ -53,21 +51,22 @@ jQuery(document).on('click', function (event) {
     $(".drop-list-two").removeClass('show');
     $(".drop-list-three").removeClass('show');
     $(".navbar-list").removeClass('show');
-    if (img.src.match('images/X-icon-white.png')) {
-      img.src = 'images/white-bars.psd.png';
-    } else {
-      img.src = 'images/X-icon-white.png';
-    }
+    if($("#changeImages").attr('src') == 'images/X-icon-white.png')
+    $("#changeImages").attr('src', 'images/white-bars.psd.png');
+    else
+    $("#changeImages").attr('src','images/X-icon-white.png');
   }
 });
 
-function changeImages() {
-  if (img.src.match('images/white-bars.psd.png')) {
-    img.src = 'images/X-icon-white.png';
-  } else {
-    img.src = 'images/white-bars.psd.png';
-  }
-};
+
+$(document).ready(function () {
+  $("#changeImages").click(function () {
+      if ($(this).attr('src') == 'images/white-bars.psd.png')
+          $(this).attr('src', 'images/X-icon-white.png');
+      else
+          $(this).attr('src', 'images/white-bars.psd.png');
+  })
+})
 
 $(document).ready(function ($) {
   $('.client-slider').slick({

@@ -871,7 +871,6 @@ body.show::before {
 /* --------------what-our-clients-say--------------- */
 .what-our-clients-say {
     margin-top: 75px;
-    margin-bottom: 75px;
     overflow: hidden;
 }
 
@@ -951,7 +950,7 @@ body.show::before {
 }
 
 .read-more {
-    margin-top: 50px;
+    padding: 50px 0 15px;
 }
 
 /* -------------client-case-section-------------- */

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header" id="header">
+            <div class="container">
+                <div class="row align-center">
+                    <div class="left-item">
+                        <div class="logo">
+                            <a href="header.html" class="brand">
+                                <img src="images/google logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="right-item">
+                        <div class="mobile-menu">
+                            <button class="right-icon"></button>
+                            <button class="cancel-icon"></button>
+                        </div>
+                        <ul class="nav-item">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Address Book</a></li>
+                            <li><a href="#">Components</a></li>
+                            <li><a href="#">Calender</a></li>
+                            <li class="dropdown-menu"><a href="#">Charts</a><img src="images/white-arrow1.png" alt="arrow">
+                                <ul class="drop-item">
+                                    <li><a href="#">UI Chart</a></li>
+                                    <li><a href="#">UX Chart</a></li>
+                                    <li><a href="#">Mini Calender</a></li>
+                                    <li><a href="#">Nav Bharat</a></li>
+                                    <li><a href="#">Denik Bhaskar</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Document</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-icon">
+                        <img src="images/white-bars.psd.png" class="imageChange" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="banner-background">
+            <div class="container">
+                <div class="main-title">
+                    <h1>Header design</h1>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".imageChange").click(function () {
+                $(".right-item").toggleClass('show');
+                $("body").toggleClass('show');
+                if ($(this).attr('src') == 'images/white-bars.psd.png')
+                    $(this).attr('src', 'images/X-icon-white.png');
+                else
+                    $(this).attr('src', 'images/white-bars.psd.png');
+            })
+        })
+
+        $(document).ready(function () {
+            $(".dropdown-menu").click(function () {
+                $(this).toggleClass('show')
+                $(".drop-item").toggleClass('show')
+            })
+
+            $(".cancel-icon").click(function () {
+                $("body").removeClass('show')
+                $(".right-item").removeClass('show')
+                if ($(".imageChange").attr('src') == 'images/X-icon-white.png')
+                    $(".imageChange").attr('src', 'images/white-bars.psd.png');
+                else
+                    $(".imageChange").attr('src', 'images/X-icon-white.png');
+            })
+        })
+
+
+        jQuery(document).on('click', function (event) {
+            if (!$(event.target).closest('.wrapper').length) {
+                $(".right-item").removeClass('show');
+                $("body").removeClass('show');
+                $(".dropdown-menu").removeClass('show')
+                $(".drop-item").removeClass('show');
+                if ($(".imageChange").attr('src') == 'images/X-icon-white.png')
+                    $(".imageChange").attr('src', 'images/white-bars.psd.png');
+                else
+                    $(".imageChange").attr('src', 'images/X-icon-white.png');
+            }
+        });
+
+
+        $(window).scroll(function () {
+            var header = document.querySelector('.header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+    </script>
+</body>
+
+</html>
